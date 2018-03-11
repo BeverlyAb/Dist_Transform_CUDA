@@ -1,0 +1,47 @@
+Script began: Sun Mar 11 11:47:34 PDT 2018
+Node: compute-1-14.local
+Current directory: /data/users/jbhanush/Project/h3n
+
+=== Running 5 trials of naive ... ===
+*** Trial 1 ***
+N: 8388608
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+Time to execute naive GPU reduction kernel: 0.00335 secs
+Effective bandwidth: 10.02 GB/s
+Time to execute naive CPU reduction: 0.116036 secs
+SUCCESS: GPU: 41.940979 	CPU: 41.940975
+*** Trial 2 ***
+N: 8388608
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+Time to execute naive GPU reduction kernel: 0.003349 secs
+Effective bandwidth: 10.02 GB/s
+Time to execute naive CPU reduction: 0.116045 secs
+SUCCESS: GPU: 41.945789 	CPU: 41.945789
+*** Trial 3 ***
+N: 8388608
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+Time to execute naive GPU reduction kernel: 0.004293 secs
+Effective bandwidth: 7.82 GB/s
+Time to execute naive CPU reduction: 0.116196 secs
+SUCCESS: GPU: 41.943050 	CPU: 41.943050
+*** Trial 4 ***
+N: 8388608
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+Time to execute naive GPU reduction kernel: 0.004357 secs
+Effective bandwidth: 7.70 GB/s
+Time to execute naive CPU reduction: 0.116047 secs
+SUCCESS: GPU: 41.940357 	CPU: 41.940357
+*** Trial 5 ***
+N: 8388608
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+Time to execute naive GPU reduction kernel: 0.004829 secs
+Effective bandwidth: 6.95 GB/s
+Time to execute naive CPU reduction: 0.116052 secs
+SUCCESS: GPU: 41.948402 	CPU: 41.948399
+
+=== Done! ===
