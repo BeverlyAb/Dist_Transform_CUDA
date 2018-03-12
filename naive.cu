@@ -119,14 +119,14 @@ int
 main(int argc, char** argv)
 {
 
-/*  if (argc != 3) {
+  if (argc != 3) {
     fprintf(stderr, "usage: %s input(pbm) output(pgm)\n", argv[0]);
     return 1;
   }
   char *input_name = argv[1];
   char *output_name = argv[2];
-//  image<uchar> *input = loadPGM(input_name);
-//  image<float> *out = dt(input);
+  image<uchar> *input = loadPGM(input_name);
+  image<float> *out = dt(input);
 //for (int y = 0; y < out->height(); y++) {
 //    for (int x = 0; x < out->width(); x++) {
  //     imRef(out, x, y) = sqrt(imRef(out, x, y));
@@ -137,7 +137,7 @@ main(int argc, char** argv)
  // delete input;
  // delete out;
  // delete gray;
-*/
+
 //================//
 
   int tN = 256;
