@@ -1,0 +1,52 @@
+Script began: Sun Mar 11 14:46:51 PDT 2018
+Node: compute-1-14.local
+Current directory: /data/users/jbhanush/Project/h3n
+
+=== Running 5 trials of naive ... ===
+*** Trial 1 ***
+0=20.0 1=1.0 2=2.0 3=23.0 4=4.0 5=5.0 6=26.0 7=7.0 8=8.0 9=29.0 10=10.0 11=11.0 12=32.0 13=13.0 14=14.0 15=35.0 16=16.0 17=17.0 18=38.0 19=19.0 
+N: 8388608
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+Time to execute naive GPU reduction kernel: 0.003349 secs
+Effective bandwidth: 10.02 GB/s
+Time to execute naive CPU reduction: 0.116056 secs
+SUCCESS: GPU: 41.943020 	CPU: 41.943016
+*** Trial 2 ***
+0=20.0 1=1.0 2=2.0 3=23.0 4=4.0 5=5.0 6=26.0 7=7.0 8=8.0 9=29.0 10=10.0 11=11.0 12=32.0 13=13.0 14=14.0 15=35.0 16=16.0 17=17.0 18=38.0 19=19.0 
+N: 8388608
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+Time to execute naive GPU reduction kernel: 0.00395 secs
+Effective bandwidth: 8.49 GB/s
+Time to execute naive CPU reduction: 0.104544 secs
+SUCCESS: GPU: 41.957970 	CPU: 41.957970
+*** Trial 3 ***
+0=20.0 1=1.0 2=2.0 3=23.0 4=4.0 5=5.0 6=26.0 7=7.0 8=8.0 9=29.0 10=10.0 11=11.0 12=32.0 13=13.0 14=14.0 15=35.0 16=16.0 17=17.0 18=38.0 19=19.0 
+N: 8388608
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+Time to execute naive GPU reduction kernel: 0.003486 secs
+Effective bandwidth: 9.63 GB/s
+Time to execute naive CPU reduction: 0.116067 secs
+SUCCESS: GPU: 41.942226 	CPU: 41.942226
+*** Trial 4 ***
+0=20.0 1=1.0 2=2.0 3=23.0 4=4.0 5=5.0 6=26.0 7=7.0 8=8.0 9=29.0 10=10.0 11=11.0 12=32.0 13=13.0 14=14.0 15=35.0 16=16.0 17=17.0 18=38.0 19=19.0 
+N: 8388608
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+Time to execute naive GPU reduction kernel: 0.00347 secs
+Effective bandwidth: 9.67 GB/s
+Time to execute naive CPU reduction: 0.116109 secs
+SUCCESS: GPU: 41.954689 	CPU: 41.954689
+*** Trial 5 ***
+0=20.0 1=1.0 2=2.0 3=23.0 4=4.0 5=5.0 6=26.0 7=7.0 8=8.0 9=29.0 10=10.0 11=11.0 12=32.0 13=13.0 14=14.0 15=35.0 16=16.0 17=17.0 18=38.0 19=19.0 
+N: 8388608
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+Time to execute naive GPU reduction kernel: 0.007189 secs
+Effective bandwidth: 4.67 GB/s
+Time to execute naive CPU reduction: 0.11609 secs
+SUCCESS: GPU: 41.929195 	CPU: 41.929192
+
+=== Done! ===

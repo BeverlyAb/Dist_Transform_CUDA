@@ -1,9 +1,13 @@
+//#include <cstdio>
+//#include <cstdlib>
 #include <stdlib.h>
 #include <stdio.h>
-
+//#include <cmath>
 #include "timer.h"
 #include "cuda_utils.h"
-
+#include "pnmfile.h"
+#include "imconv.h"
+#include "dt.h"
 typedef float dtype;
 
 #define N_ (8 * 1024 * 1024)
@@ -115,7 +119,25 @@ int
 main(int argc, char** argv)
 {
 
-
+/*  if (argc != 3) {
+    fprintf(stderr, "usage: %s input(pbm) output(pgm)\n", argv[0]);
+    return 1;
+  }
+  char *input_name = argv[1];
+  char *output_name = argv[2];
+//  image<uchar> *input = loadPGM(input_name);
+//  image<float> *out = dt(input);
+//for (int y = 0; y < out->height(); y++) {
+//    for (int x = 0; x < out->width(); x++) {
+ //     imRef(out, x, y) = sqrt(imRef(out, x, y));
+ //   }
+ // }
+ // image<uchar> *gray = imageFLOATtoUCHAR(out);
+//  savePGM(input, output_name);
+ // delete input;
+ // delete out;
+ // delete gray;
+*/
 //================//
 
   int tN = 256;
@@ -160,108 +182,6 @@ printf("\n");
 /*===================================================*/
 
 
-  int i;
-
-  /* data structure */
-  dtype *h_idata, h_odata, h_cpu;
-  dtype *d_idata, *d_odata;	
-
-  /* timer */
-  struct stopwatch_t* timer = NULL;
-  long double t_kernel_0, t_cpu;
-
-  /* which kernel are we running */
-  int whichKernel;
-
-  /* number of threads and thread blocks */
-  int threads, blocks;
-
-  int N;
-  if(argc > 1) {
-    N = atoi (argv[1]);
-    printf("N: %d\n", N);
-  } else {
-    N = N_;
-    printf("N: %d\n", N);
-  }
-
-  /* naive kernel */
-  whichKernel = 0;
-  getNumBlocksAndThreads (whichKernel, N, MAX_BLOCKS, MAX_THREADS, 
-			  blocks, threads);
-
-  /* initialize timer */
-  stopwatch_init ();
-  timer = stopwatch_create ();
-
-  /* allocate memory */
-  h_idata = (dtype*) malloc (N * sizeof (dtype));
-  CUDA_CHECK_ERROR (cudaMalloc (&d_idata, N * sizeof (dtype)));
-  CUDA_CHECK_ERROR (cudaMalloc (&d_odata, blocks * sizeof (dtype)));
-
-  /* Initialize array */
-  srand48(time(NULL));
-  for(i = 0; i < N; i++) {
-    h_idata[i] = drand48() / 100000;
-  }
-  CUDA_CHECK_ERROR (cudaMemcpy (d_idata, h_idata, N * sizeof (dtype), 
-				cudaMemcpyHostToDevice));
-
-	
-  /* ================================================== */
-  /* GPU kernel */
-  dim3 gb(16, ((blocks + 16 - 1) / 16), 1);
-  dim3 tb(threads, 1, 1);
-
-  /* warm up */
-  kernel0 <<<gb, tb>>> (d_idata, d_odata, N);
-  cudaThreadSynchronize ();
-	
-  stopwatch_start (timer);
-
-  /* execute kernel */
-  kernel0 <<<gb, tb>>> (d_idata, d_odata, N);
-  int s = blocks;
-  while(s > 1) {
-    threads = 0;
-    blocks = 0;
-    getNumBlocksAndThreads (whichKernel, s, MAX_BLOCKS, MAX_THREADS, 
-			    blocks, threads);
-
-    dim3 gb(16, (blocks + 16 - 1) / 16, 1);
-    dim3 tb(threads, 1, 1);
-
-    kernel0 <<<gb, tb>>> (d_odata, d_odata, s);
-
-    s = (s + threads - 1) / threads;
-  }
-  cudaThreadSynchronize ();
-
-  t_kernel_0 = stopwatch_stop (timer);
-  fprintf (stdout, "Time to execute naive GPU reduction kernel: %Lg secs\n",
-	   t_kernel_0);
-  double bw = (N * sizeof(dtype)) / (t_kernel_0 * 1e9);
-  fprintf (stdout, "Effective bandwidth: %.2lf GB/s\n", bw);
-	
-  /* copy result back from GPU */
-  CUDA_CHECK_ERROR (cudaMemcpy (&h_odata, d_odata, sizeof (dtype), 
-				cudaMemcpyDeviceToHost));
-  /* ================================================== */
-
-  /* ================================================== */
-  /* CPU kernel */
-  stopwatch_start (timer);
-  h_cpu = reduce_cpu (h_idata, N);
-  t_cpu = stopwatch_stop (timer);
-  fprintf (stdout, "Time to execute naive CPU reduction: %Lg secs\n",
-	   t_cpu);
-  /* ================================================== */
-
-  if(abs (h_odata - h_cpu) > 1e-5) {
-    fprintf(stderr, "FAILURE: GPU: %f 	CPU: %f\n", h_odata, h_cpu);
-  } else {
-    printf("SUCCESS: GPU: %f 	CPU: %f\n", h_odata, h_cpu);
-  }
 
   return 0;
 }

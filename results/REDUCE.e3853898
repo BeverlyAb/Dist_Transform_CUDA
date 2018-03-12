@@ -1,0 +1,5 @@
+/var/spool/sge/compute-1-14/job_scripts/3853898: line 43: 31461 Floating point exception(core dumped) ./naive input.pgm out6.pgm
+/var/spool/sge/compute-1-14/job_scripts/3853898: line 43: 31466 Floating point exception(core dumped) ./naive input.pgm out6.pgm
+/var/spool/sge/compute-1-14/job_scripts/3853898: line 43: 31468 Floating point exception(core dumped) ./naive input.pgm out6.pgm
+/var/spool/sge/compute-1-14/job_scripts/3853898: line 43: 31470 Floating point exception(core dumped) ./naive input.pgm out6.pgm
+/var/spool/sge/compute-1-14/job_scripts/3853898: line 43: 31473 Floating point exception(core dumped) ./naive input.pgm out6.pgm
