@@ -270,13 +270,14 @@ for(int i=0;i<height;i++)
 for(int j=0;j<width;j++)
 {
 
-   if(j>20 && j<80)
-	imRef(output_img,j,i) = h_idata[img_index+j];
+//   if(j>20 && j<80)
+	//imRef(output_img,j,i) = h_idata[img_index+j];
+	//h_idata[img_index+j]=0;
 }
 
 
 }
- // output_img->data = h_odata;
+  output_img->data = h_idata;
 
 
 
