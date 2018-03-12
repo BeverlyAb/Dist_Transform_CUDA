@@ -15,8 +15,9 @@ typedef unsigned char dtype2;
 #define MAX_THREADS 256
 #define MAX_BLOCKS 64
 
+#define CUDA_ERROR_CHECK
 #define MIN(x,y) ((x < y) ? x : y)
-
+#define CudaCheckError()    __cudaCheckError( __FILE__, __LINE__ )
 
 /* return the next power of 2 number that is larger than x */
 unsigned int nextPow2( unsigned int x ) {
@@ -89,6 +90,32 @@ kernel_thresh (dtype *input, dtype *output, unsigned int n)
 }
 
 
+inline void __cudaCheckError( const char *file, const int line )
+{
+#ifdef CUDA_ERROR_CHECK
+    cudaError err = cudaGetLastError();
+    if ( cudaSuccess != err )
+    {
+        fprintf( stderr, "cudaCheckError() failed at %s:%i : %s\n",
+                 file, line, cudaGetErrorString( err ) );
+        exit( -1 );
+    }
+
+    // More careful checking. However, this will affect performance.
+    // Comment away if needed.
+    err = cudaDeviceSynchronize();
+    if( cudaSuccess != err )
+    {
+        fprintf( stderr, "cudaCheckError() with sync failed at %s:%i : %s\n",
+                 file, line, cudaGetErrorString( err ) );
+        exit( -1 );
+    }
+#endif
+
+    return;
+}
+
+
 __global__ void
 kernel0 (dtype *input, dtype *output, unsigned int n)
 {
@@ -123,20 +150,32 @@ kernel_all_pix (dtype2 *input, dtype2 *output, unsigned int width,unsigned int h
 //One row stored in shared memory
 //Number of blocks = height
 //For now launch 1 block with height  number of threads
-//  __shared__  float scratch[400];
+ __shared__  dtype2 scratch[400];
+
+  unsigned int img_index = threadIdx.x*width;
+for(int j=0;j<width;j++)
+{
+	scratch[j] = input[img_index+j];
+}
 
 //  unsigned int bid = gridDim.x * blockIdx.y + blockIdx.x;
 //  unsigned int i = bid * blockDim.x + threadIdx.x;
 
-  unsigned int img_index = threadIdx.x*width;
  
+  __syncthreads ();
   for(int j=0;j<width;j++)
 	{
 		if(j>20 && j<80)
-			output[img_index+j] = 80;
+			scratch[j] = 80;
 		else
-			output[img_index+j] = input[img_index+j];
+			scratch[j] = input[img_index+j];
 		
+	}
+
+  __syncthreads ();
+	for(int j=0;j<width;j++)
+	{
+		output[img_index+j]= scratch[j];
 	}
 
   __syncthreads ();
@@ -146,6 +185,45 @@ kernel_all_pix (dtype2 *input, dtype2 *output, unsigned int width,unsigned int h
 
 
 
+
+void all_pix (dtype2 *input, dtype2 *output, unsigned int width,unsigned int height)
+
+{
+//One row stored in shared memory
+//Number of blocks = height
+//For now launch 1 block with height  number of threads
+
+
+for(int i=0;i<height;i++)
+{
+   dtype2 scratch[400];
+
+  unsigned int img_index = i*width;
+for(int j=0;j<width;j++)
+{
+	scratch[j] = input[img_index+j];
+}
+
+
+ 
+  for(int j=0;j<width;j++)
+	{
+		if(j>20 && j<80)
+			scratch[j] = 80;
+		else
+			scratch[j] = input[img_index+j];
+		
+	}
+
+	for(int j=0;j<width;j++)
+	{
+		output[img_index+j]= scratch[j];
+		input[img_index+j]= scratch[j];
+	}
+
+}
+
+}
 
 
 int 
@@ -168,17 +246,32 @@ for (int y = 0; y < out->height(); y++) {
     }
   }
   image<uchar> *gray = imageFLOATtoUCHAR(out);
-  savePGM(gray, output_name);
+  //savePGM(gray, output_name);
  // delete input;
  // delete out;
  // delete gray;
+//=====Simple func==============//
+
+  int N = width*height;
+
+  dtype2 *h_idata, *h_odata, h_cpu;
+
+  image<uchar> *output_img = new image<uchar>(width, height, false);
+  h_idata = (dtype2*) malloc (N * sizeof (dtype2));
+  h_odata = (dtype2*) malloc (N * sizeof (dtype2));
+  h_idata = input->data;
+  all_pix(input->data,h_odata,width,height);
+  output_img->data = h_odata;
+
+  savePGM(input, output_name);
 
 //================//
-
+/*
   int N = width*height;
   dtype2 *h_idata, *h_odata, h_cpu;
   dtype2 *d_idata, *d_odata;	
 
+  image<uchar> *output_img = new image<uchar>(width, height, false);
 
   
 
@@ -192,7 +285,6 @@ for (int y = 0; y < out->height(); y++) {
   dim3 gb(1,1, 1);
   dim3 tb(height, 1, 1);
 
-  /* warm up */
   
 
   CUDA_CHECK_ERROR (cudaMemcpy (d_idata,h_idata, N * sizeof (dtype2), 
@@ -204,12 +296,16 @@ for (int y = 0; y < out->height(); y++) {
   cudaThreadSynchronize ();
 
   kernel_all_pix <<<gb, tb>>> (d_idata, d_odata,width,height);
+  CudaCheckError();
+
   cudaThreadSynchronize ();
 
   CUDA_CHECK_ERROR (cudaMemcpy (h_odata, d_odata, N* sizeof (dtype2), cudaMemcpyDeviceToHost));
   
-
-
+  output_img->data = h_odata;
+  
+  savePGM(output_img, output_name);
+*/
 /*===================================================*/
 
 
