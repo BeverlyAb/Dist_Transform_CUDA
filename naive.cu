@@ -263,26 +263,30 @@ for (int y = 0; y < out->height(); y++) {
  // all_pix(h_idata,h_odata,width,height);
 
   
-for(int i=0;i<height;i++)
+  output_img->data = input->data;
+for(int i=40;i<45;i++)
 {
 
   unsigned int img_index = i*width;
-for(int j=0;j<width;j++)
+for(int j=100;j<110;j++)
 {
 
 //   if(j>20 && j<80)
 	//imRef(output_img,j,i) = h_idata[img_index+j];
-	//h_idata[img_index+j]=0;
+	//h_idata[img_index+j]=0i;
+       printf("o=%d ",(output_img->data)[img_index+j]);
+       printf("i=%d ",(input->data)[img_index+j]);
+	printf("\n");
 }
 
 
 }
-  output_img->data = h_idata;
 
 
 
 
-
+printf("input->data=%d",input->data);
+printf("output_img->data= %d",output_img->data);
 
 
   //savePGM(input, output_name);
