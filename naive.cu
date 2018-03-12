@@ -9,6 +9,7 @@
 #include "imconv.h"
 #include "dt.h"
 typedef float dtype;
+typedef unsigned char dtype2;
 
 #define N_ (8 * 1024 * 1024)
 #define MAX_THREADS 256
@@ -117,7 +118,7 @@ kernel0 (dtype *input, dtype *output, unsigned int n)
 
 
 __global__ void
-kernel_all_pix (dtype *input, dtype *output, unsigned int width,unsigned int height)
+kernel_all_pix (dtype2 *input, dtype2 *output, unsigned int width,unsigned int height)
 {
 //One row stored in shared memory
 //Number of blocks = height
@@ -159,6 +160,8 @@ main(int argc, char** argv)
   char *output_name = argv[2];
   image<uchar> *input = loadPGM(input_name);
   image<float> *out = dt(input);
+  int height = input-> height();
+  int width = input->width();
 for (int y = 0; y < out->height(); y++) {
     for (int x = 0; x < out->width(); x++) {
       imRef(out, x, y) = sqrt(imRef(out, x, y));
@@ -172,6 +175,45 @@ for (int y = 0; y < out->height(); y++) {
 
 //================//
 
+  int N = width*height;
+  dtype2 *h_idata, *h_odata, h_cpu;
+  dtype2 *d_idata, *d_odata;	
+
+
+  
+
+  h_idata = (dtype2*) malloc (N * sizeof (dtype2));
+  h_odata = (dtype2*) malloc (N * sizeof (dtype2));
+  CUDA_CHECK_ERROR (cudaMalloc (&d_idata,N * sizeof (dtype2)));
+  CUDA_CHECK_ERROR (cudaMalloc (&d_odata, N * sizeof (dtype2)));
+
+  h_idata = input->data;
+
+  dim3 gb(1,1, 1);
+  dim3 tb(height, 1, 1);
+
+  /* warm up */
+  
+
+  CUDA_CHECK_ERROR (cudaMemcpy (d_idata,h_idata, N * sizeof (dtype2), 
+				cudaMemcpyHostToDevice));
+
+
+
+  kernel_all_pix <<<gb, tb>>> (d_idata, d_odata, width,height);
+  cudaThreadSynchronize ();
+
+  kernel_all_pix <<<gb, tb>>> (d_idata, d_odata,width,height);
+  cudaThreadSynchronize ();
+
+  CUDA_CHECK_ERROR (cudaMemcpy (h_odata, d_odata, N* sizeof (dtype2), cudaMemcpyDeviceToHost));
+  
+
+
+/*===================================================*/
+
+
+/*===================================================*/
   int tN = 256;
   dtype *th_idata, *th_odata, th_cpu;
   dtype *td_idata, *td_odata;	
@@ -212,8 +254,6 @@ printf("\n");
 
 
 /*===================================================*/
-
-
 
   return 0;
 }
