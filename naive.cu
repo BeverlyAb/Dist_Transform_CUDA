@@ -115,6 +115,38 @@ kernel0 (dtype *input, dtype *output, unsigned int n)
   }
 }
 
+
+__global__ void
+kernel_all_pix (dtype *input, dtype *output, unsigned int width,unsigned int height)
+{
+//One row stored in shared memory
+//Number of blocks = height
+//For now launch 1 block with height  number of threads
+//  __shared__  float scratch[400];
+
+//  unsigned int bid = gridDim.x * blockIdx.y + blockIdx.x;
+//  unsigned int i = bid * blockDim.x + threadIdx.x;
+
+  unsigned int img_index = threadIdx.x*width;
+ 
+  for(int j=0;j<width;j++)
+	{
+		if(j>20 && j<80)
+			output[img_index+j] = 80;
+		else
+			output[img_index+j] = input[img_index+j];
+		
+	}
+
+  __syncthreads ();
+
+
+}
+
+
+
+
+
 int 
 main(int argc, char** argv)
 {
