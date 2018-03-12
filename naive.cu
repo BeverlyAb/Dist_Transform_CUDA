@@ -127,13 +127,13 @@ main(int argc, char** argv)
   char *output_name = argv[2];
   image<uchar> *input = loadPGM(input_name);
   image<float> *out = dt(input);
-//for (int y = 0; y < out->height(); y++) {
-//    for (int x = 0; x < out->width(); x++) {
- //     imRef(out, x, y) = sqrt(imRef(out, x, y));
- //   }
- // }
- // image<uchar> *gray = imageFLOATtoUCHAR(out);
-//  savePGM(input, output_name);
+for (int y = 0; y < out->height(); y++) {
+    for (int x = 0; x < out->width(); x++) {
+      imRef(out, x, y) = sqrt(imRef(out, x, y));
+    }
+  }
+  image<uchar> *gray = imageFLOATtoUCHAR(out);
+  savePGM(gray, output_name);
  // delete input;
  // delete out;
  // delete gray;
