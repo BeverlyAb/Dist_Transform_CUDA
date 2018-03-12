@@ -260,10 +260,32 @@ for (int y = 0; y < out->height(); y++) {
   h_idata = (dtype2*) malloc (N * sizeof (dtype2));
   h_odata = (dtype2*) malloc (N * sizeof (dtype2));
   h_idata = input->data;
-  all_pix(input->data,h_odata,width,height);
-  output_img->data = h_odata;
+ // all_pix(h_idata,h_odata,width,height);
 
-  savePGM(input, output_name);
+  
+for(int i=0;i<height;i++)
+{
+
+  unsigned int img_index = i*width;
+for(int j=0;j<width;j++)
+{
+
+   if(j>20 && j<80)
+	imRef(output_img,j,i) = h_idata[img_index+j];
+}
+
+
+}
+ // output_img->data = h_odata;
+
+
+
+
+
+
+
+  //savePGM(input, output_name);
+  savePGM(output_img, output_name);
 
 //================//
 /*
