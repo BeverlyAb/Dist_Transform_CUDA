@@ -251,7 +251,7 @@ for (int y = 0; y < out->height(); y++) {
  // delete out;
  // delete gray;
 //=====Simple func==============//
-
+/*
   int N = width*height;
 
   dtype2 *h_idata, *h_odata, h_cpu;
@@ -291,9 +291,9 @@ printf("output_img->data= %d",output_img->data);
 
   //savePGM(input, output_name);
   savePGM(output_img, output_name);
-
+*/
 //================//
-/*
+
   int N = width*height;
   dtype2 *h_idata, *h_odata, h_cpu;
   dtype2 *d_idata, *d_odata;	
@@ -332,7 +332,7 @@ printf("output_img->data= %d",output_img->data);
   output_img->data = h_odata;
   
   savePGM(output_img, output_name);
-*/
+
 /*===================================================*/
 
 
