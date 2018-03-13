@@ -153,17 +153,19 @@ kernel_all_pix (dtype2 *input, dtype2 *output, unsigned int width,unsigned int h
  __shared__  dtype2 scratch[400];
 
   unsigned int img_index = threadIdx.x*width;
+/*
 for(int j=0;j<width;j++)
 {
 	scratch[j] = input[img_index+j];
 }
+*/
 
 //  unsigned int bid = gridDim.x * blockIdx.y + blockIdx.x;
 //  unsigned int i = bid * blockDim.x + threadIdx.x;
 
  
   __syncthreads ();
-  for(int j=0;j<width;j++)
+ /* for(int j=0;j<width;j++)
 	{
 		if(j>20 && j<80)
 			scratch[j] = 80;
@@ -173,9 +175,13 @@ for(int j=0;j<width;j++)
 	}
 
   __syncthreads ();
+*/
 	for(int j=0;j<width;j++)
 	{
-		output[img_index+j]= scratch[j];
+		if(j>20 && j<80)
+		output[img_index+j]= 40;
+		else
+		output[img_index+j]= input[img_index+j];
 	}
 
   __syncthreads ();
@@ -193,32 +199,36 @@ void all_pix (dtype2 *input, dtype2 *output, unsigned int width,unsigned int hei
 //Number of blocks = height
 //For now launch 1 block with height  number of threads
 
-
+/*
 for(int i=0;i<height;i++)
 {
-   dtype2 scratch[400];
 
+   dtype2 scratch[400];
   unsigned int img_index = i*width;
 for(int j=0;j<width;j++)
 {
 	scratch[j] = input[img_index+j];
 }
 
-
- 
-  for(int j=0;j<width;j++)
+}
+ */
+/*  for(int j=0;j<width;j++)
 	{
-		if(j>20 && j<80)
-			scratch[j] = 80;
-		else
+//		if(j>20 && j<80)
+//			scratch[j] = 80;
+//		else
 			scratch[j] = input[img_index+j];
 		
 	}
+*/
 
-	for(int j=0;j<width;j++)
+for(int i=0;i<height;i++)
+{
+  unsigned int img_index = i*width;
+	for(int j=width/2;j<width;j++)
 	{
-		output[img_index+j]= scratch[j];
-		input[img_index+j]= scratch[j];
+		output[img_index+j]= input[img_index+j];
+//		input[img_index+j]= scratch[j];
 	}
 
 }
@@ -260,7 +270,7 @@ for (int y = 0; y < out->height(); y++) {
   h_idata = (dtype2*) malloc (N * sizeof (dtype2));
   h_odata = (dtype2*) malloc (N * sizeof (dtype2));
   h_idata = input->data;
- // all_pix(h_idata,h_odata,width,height);
+  all_pix(h_idata,h_odata,width,height);
 
   
   output_img->data = input->data;
@@ -285,9 +295,9 @@ for(int j=100;j<110;j++)
 
 
 
-printf("input->data=%d",input->data);
-printf("output_img->data= %d",output_img->data);
-
+//printf("input->data=%d",input->data);
+//printf("output_img->data= %d",output_img->data);
+output_img->data = h_odata;
 
   //savePGM(input, output_name);
   savePGM(output_img, output_name);
