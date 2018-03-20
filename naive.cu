@@ -115,35 +115,6 @@ inline void __cudaCheckError( const char *file, const int line )
     return;
 }
 
-
-__global__ void
-kernel0 (dtype *input, dtype *output, unsigned int n)
-{
-  __shared__  dtype scratch[MAX_THREADS];
-
-  unsigned int bid = gridDim.x * blockIdx.y + blockIdx.x;
-  unsigned int i = bid * blockDim.x + threadIdx.x;
-
-  if(i < n) {
-    scratch[threadIdx.x] = input[i]; 
-  } else {
-    scratch[threadIdx.x] = 0;
-  }
-  __syncthreads ();
-
-  for(unsigned int s = 1; s < blockDim.x; s = s << 1) {
-    if((threadIdx.x % (2 * s)) == 0) {
-      scratch[threadIdx.x] += scratch[threadIdx.x + s];
-    }
-    __syncthreads ();
-  }
-
-  if(threadIdx.x == 0) {
-    output[bid] = scratch[0];
-  }
-}
-
-
 __global__ void
 kernel_all_pix (dtype2 *input, dtype2 *output, unsigned int width,unsigned int height)
 {
@@ -153,29 +124,32 @@ kernel_all_pix (dtype2 *input, dtype2 *output, unsigned int width,unsigned int h
  __shared__  dtype2 scratch[400];
 
   unsigned int img_index = threadIdx.x*width;
-/*
-for(int j=0;j<width;j++)
-{
-	scratch[j] = input[img_index+j];
-}
-*/
 
-//  unsigned int bid = gridDim.x * blockIdx.y + blockIdx.x;
-//  unsigned int i = bid * blockDim.x + threadIdx.x;
-
- 
   __syncthreads ();
- /* for(int j=0;j<width;j++)
+	for(int j=0;j<width;j++)
 	{
 		if(j>20 && j<80)
-			scratch[j] = 80;
+		output[img_index+j]= 40;
 		else
-			scratch[j] = input[img_index+j];
-		
+		output[img_index+j]= input[img_index+j];
 	}
 
   __syncthreads ();
-*/
+
+
+}
+
+__global__ void
+kernel_all_pix_float (dtype *input, dtype *output, unsigned int width,unsigned int height)
+{
+//One row stored in shared memory
+//Number of blocks = height
+//For now launch 1 block with height  number of threads
+ __shared__  dtype2 scratch[400];
+
+  unsigned int img_index = threadIdx.x*width;
+
+  __syncthreads ();
 	for(int j=0;j<width;j++)
 	{
 		if(j>20 && j<80)
@@ -190,37 +164,9 @@ for(int j=0;j<width;j++)
 }
 
 
-
-
 void all_pix (dtype2 *input, dtype2 *output, unsigned int width,unsigned int height)
 
 {
-//One row stored in shared memory
-//Number of blocks = height
-//For now launch 1 block with height  number of threads
-
-/*
-for(int i=0;i<height;i++)
-{
-
-   dtype2 scratch[400];
-  unsigned int img_index = i*width;
-for(int j=0;j<width;j++)
-{
-	scratch[j] = input[img_index+j];
-}
-
-}
- */
-/*  for(int j=0;j<width;j++)
-	{
-//		if(j>20 && j<80)
-//			scratch[j] = 80;
-//		else
-			scratch[j] = input[img_index+j];
-		
-	}
-*/
 
 for(int i=0;i<height;i++)
 {
@@ -247,7 +193,8 @@ main(int argc, char** argv)
   char *input_name = argv[1];
   char *output_name = argv[2];
   image<uchar> *input = loadPGM(input_name);
-  image<float> *out = dt(input);
+//------------Basic DT ------//
+ image<float> *out = dt(input);
   int height = input-> height();
   int width = input->width();
 for (int y = 0; y < out->height(); y++) {
@@ -256,92 +203,99 @@ for (int y = 0; y < out->height(); y++) {
     }
   }
   image<uchar> *gray = imageFLOATtoUCHAR(out);
-  //savePGM(gray, output_name);
- // delete input;
- // delete out;
- // delete gray;
-//=====Simple func==============//
-/*
+//-----------------------------//
   int N = width*height;
-
+/*  
   dtype2 *h_idata, *h_odata, h_cpu;
-
-  image<uchar> *output_img = new image<uchar>(width, height, false);
-  h_idata = (dtype2*) malloc (N * sizeof (dtype2));
-  h_odata = (dtype2*) malloc (N * sizeof (dtype2));
-  h_idata = input->data;
-  all_pix(h_idata,h_odata,width,height);
-
-  
-  output_img->data = input->data;
-for(int i=40;i<45;i++)
-{
-
-  unsigned int img_index = i*width;
-for(int j=100;j<110;j++)
-{
-
-//   if(j>20 && j<80)
-	//imRef(output_img,j,i) = h_idata[img_index+j];
-	//h_idata[img_index+j]=0i;
-       printf("o=%d ",(output_img->data)[img_index+j]);
-       printf("i=%d ",(input->data)[img_index+j]);
-	printf("\n");
-}
-
-
-}
-
-
-
-
-//printf("input->data=%d",input->data);
-//printf("output_img->data= %d",output_img->data);
-output_img->data = h_odata;
-
-  //savePGM(input, output_name);
-  savePGM(output_img, output_name);
-*/
-//================//
-
-  int N = width*height;
-  dtype2 *h_idata, *h_odata, h_cpu;
+ 
   dtype2 *d_idata, *d_odata;	
 
-  image<uchar> *output_img = new image<uchar>(width, height, false);
+*/
+
+
+  dtype *h_idata, *h_odata, h_cpu;
+  dtype *d_idata, *d_odata;	
+
+  image<dtype> *input_float = imageUCHARtoFLOAT(input);
+  image<dtype> *output_img = new image<dtype>(width, height, false);
 
   
 
+
+  h_idata = (dtype*) malloc (N * sizeof (dtype));
+  h_odata = (dtype*) malloc (N * sizeof (dtype));
+  CUDA_CHECK_ERROR (cudaMalloc (&d_idata,N * sizeof (dtype)));
+  CUDA_CHECK_ERROR (cudaMalloc (&d_odata, N * sizeof (dtype)));
+
+
+
+/* //Switch to this in case of dtype2
   h_idata = (dtype2*) malloc (N * sizeof (dtype2));
   h_odata = (dtype2*) malloc (N * sizeof (dtype2));
   CUDA_CHECK_ERROR (cudaMalloc (&d_idata,N * sizeof (dtype2)));
   CUDA_CHECK_ERROR (cudaMalloc (&d_odata, N * sizeof (dtype2)));
-
-  h_idata = input->data;
+*/
+  h_idata = input_float->data;
 
   dim3 gb(1,1, 1);
   dim3 tb(height, 1, 1);
 
   
 
-  CUDA_CHECK_ERROR (cudaMemcpy (d_idata,h_idata, N * sizeof (dtype2), 
+  //CUDA_CHECK_ERROR (cudaMemcpy (d_idata,h_idata, N * sizeof (dtype2), 
+//				cudaMemcpyHostToDevice));
+
+  CUDA_CHECK_ERROR (cudaMemcpy (d_idata,h_idata, N * sizeof (dtype), 
 				cudaMemcpyHostToDevice));
 
 
-
-  kernel_all_pix <<<gb, tb>>> (d_idata, d_odata, width,height);
+  kernel_all_pix_float <<<gb, tb>>> (d_idata, d_odata, width,height);
   cudaThreadSynchronize ();
 
-  kernel_all_pix <<<gb, tb>>> (d_idata, d_odata,width,height);
+  kernel_all_pix_float <<<gb, tb>>> (d_idata, d_odata,width,height);
   CudaCheckError();
 
   cudaThreadSynchronize ();
 
-  CUDA_CHECK_ERROR (cudaMemcpy (h_odata, d_odata, N* sizeof (dtype2), cudaMemcpyDeviceToHost));
+  //CUDA_CHECK_ERROR (cudaMemcpy (h_odata, d_odata, N* sizeof (dtype2), cudaMemcpyDeviceToHost));
+  CUDA_CHECK_ERROR (cudaMemcpy (h_odata, d_odata, N* sizeof (dtype), cudaMemcpyDeviceToHost));
   
   output_img->data = h_odata;
+
+  for(int i=0;i<3;i++)
+  {
+	for(int j=0;j<100;j++)
+	{
+		printf("%0.1f ",output_img->data[i*width+j]);
+	}
+	printf("\n--------------------------------\n");
+  }
+
   
-  savePGM(output_img, output_name);
+  //image<uchar> *out_res= imageFLOATtoUCHAR(output_img,0.0,255.0);
+    image<uchar> *out_res = new image<uchar>(width,height,false); 
+  for(int i=0;i<height;i++)
+  {
+	for(int j=0;j<width;j++)
+	{
+		out_res->data[i*width+j] = (uchar)output_img->data[i*width+j];		
+	}
+  }
+
+
+	printf("\n\n\n\n------NOW AFTER--------------------------\n");
+  
+  for(int i=0;i<3;i++)
+  {
+	for(int j=0;j<100;j++)
+	{
+		printf("%d ",out_res->data[i*width+j]);
+	}
+	printf("\n--------------------------------\n");
+  }
+
+
+  savePGM(out_res, output_name);
 
 /*===================================================*/
 
@@ -371,7 +325,7 @@ output_img->data = h_odata;
 
 
 
-  kernel_thresh <<<tgb, ttb>>> (td_idata, td_odata, tN);
+  kernel_thresh <<<tgb, ttb>>> (td_idata, td_odata, tN);//To warm up
   cudaThreadSynchronize ();
 
   kernel_thresh <<<tgb, ttb>>> (td_idata, td_odata,tN);
