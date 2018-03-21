@@ -1,5 +1,6 @@
 //#include <cstdio>
 //#include <cstdlib>
+#include <assert.h> //This is assert to check for conditions in kernels
 #include <stdlib.h>
 #include <stdio.h>
 //#include <cmath>
@@ -66,7 +67,8 @@ dtype reduce_cpu(dtype *data, int n) {
 
 __device__ void
 
-dt_i(float f[], int n) {
+dt_i(float f[], int n) 
+{
     float d[MAX_WIDTH_HEIGHT];
     int v[MAX_WIDTH_HEIGHT];
     float z[MAX_WIDTH_HEIGHT+1];
@@ -75,17 +77,28 @@ dt_i(float f[], int n) {
     v[0] = 0;
     z[0] = -INF;
     z[1] = +INF;
+	
+    for(int q=0;q<MAX_WIDTH_HEIGHT;q++)
+    {
+	v[q]=0;
+    }
     for (int q = 1; q <= n-1; q++) {
       float s  = ((f[q]+(q*q))-(f[v[k]]+(v[k]*v[k])))/(2*q-2*v[k]);
       while (s <= z[k]) {
         k--;
 	float temp = f[q];
-	float temp2 = f[v[k]];
-	int temp_int = v[k];
-	temp_sum = temp+temp2+temp_int;	
-        s  = ((f[q]+(q*q))-(f[v[k]]+(v[k]*v[k])))/(2*q-2*v[k]);
+	
+	int t = v[k];
+//Below 3 for debugging
+	t= (t<n)?t:n-1;
+	t= (t>-1)?t:0;
+	float temp2 = f[t];
+	temp_sum = temp+temp2+t;	
+       // s  = ((f[q]+(q*q))-(f[v[k]]+(v[k]*v[k])))/(2*q-2*v[k]);
+        s  = ((f[q]+(q*q))-(f[t]+(v[k]*v[k])))/(2*q-2*v[k]);
       }
       k++;
+	
       v[k] = q;
       z[k] = s;
       z[k+1] = +INF;
@@ -191,6 +204,7 @@ kernel_all_pix_float (dtype *input, dtype *output, unsigned int width,unsigned i
     unsigned int row_num = blockIdx.x * blockDim.x + threadIdx.x;
     unsigned int img_index = (row_num)*width;
 
+  // assert(row_num<height);
   __syncthreads ();
     if(row_num < height)
 {  
@@ -202,6 +216,9 @@ kernel_all_pix_float (dtype *input, dtype *output, unsigned int width,unsigned i
       f[x] = input[img_index+x];
     }
     dt_i(f, width);
+  
+  
+  
     for (int x = 0; x < width; x++) 
     {
       output[img_index+x] = f[x];
