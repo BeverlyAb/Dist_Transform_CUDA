@@ -14,7 +14,7 @@ typedef unsigned char dtype2;
 #define N_ (8 * 1024 * 1024)
 #define MAX_THREADS 256
 #define MAX_BLOCKS 64
-
+#define MAX_WIDTH_HEIGHT 500
 #define CUDA_ERROR_CHECK
 #define MIN(x,y) ((x < y) ? x : y)
 #define CudaCheckError()    __cudaCheckError( __FILE__, __LINE__ )
@@ -64,7 +64,46 @@ dtype reduce_cpu(dtype *data, int n) {
   return sum;
 }
 
+__device__ void
 
+dt_i(float f[], int n) {
+    float d[MAX_WIDTH_HEIGHT];
+    int v[MAX_WIDTH_HEIGHT];
+    float z[MAX_WIDTH_HEIGHT+1];
+    int k = 0;
+    float temp_sum = 0.0;
+    v[0] = 0;
+    z[0] = -INF;
+    z[1] = +INF;
+    for (int q = 1; q <= n-1; q++) {
+      float s  = ((f[q]+(q*q))-(f[v[k]]+(v[k]*v[k])))/(2*q-2*v[k]);
+      while (s <= z[k]) {
+        k--;
+	float temp = f[q];
+	float temp2 = f[v[k]];
+	int temp_int = v[k];
+	temp_sum = temp+temp2+temp_int;	
+        s  = ((f[q]+(q*q))-(f[v[k]]+(v[k]*v[k])))/(2*q-2*v[k]);
+      }
+      k++;
+      v[k] = q;
+      z[k] = s;
+      z[k+1] = +INF;
+    }
+  
+    k = 0;
+    for (int q = 0; q <= n-1; q++) {
+      while (z[k+1] < q)
+        k++;
+      d[q] = (q-v[k])*(q-v[k]) + f[v[k]] + temp_sum; //!!!!!REMOVE_TEMP_SUM DEBUG - added for debugging
+    }
+  
+    for(int q=0;q<n;q++)
+    { 
+      f[q] = d[q];
+    }
+  
+  }
 
 __global__ void
 kernel_thresh (dtype *input, dtype *output, unsigned int n)
@@ -145,11 +184,33 @@ kernel_all_pix_float (dtype *input, dtype *output, unsigned int width,unsigned i
 //One row stored in shared memory
 //Number of blocks = height
 //For now launch 1 block with height  number of threads
- __shared__  dtype2 scratch[400];
+ //__shared__  dtype2 scratch[400];
 
-  unsigned int img_index = threadIdx.x*width;
+  //unsigned int img_index = threadIdx.x*width;
+
+    unsigned int row_num = blockIdx.x * blockDim.x + threadIdx.x;
+    unsigned int img_index = (row_num)*width;
 
   __syncthreads ();
+    if(row_num < height)
+{  
+
+    float f[MAX_WIDTH_HEIGHT];
+
+    for (int x = 0; x < width; x++) 
+    {
+      f[x] = input[img_index+x];
+    }
+    dt_i(f, width);
+    for (int x = 0; x < width; x++) 
+    {
+      output[img_index+x] = f[x];
+    }
+
+}
+
+
+/*  __syncthreads ();
 	for(int j=0;j<width;j++)
 	{
 		if(j>20 && j<80)
@@ -157,7 +218,7 @@ kernel_all_pix_float (dtype *input, dtype *output, unsigned int width,unsigned i
 		else
 		output[img_index+j]= input[img_index+j];
 	}
-
+*/
   __syncthreads ();
 
 
@@ -259,16 +320,55 @@ for (int y = 0; y < out->height(); y++) {
 
   //CUDA_CHECK_ERROR (cudaMemcpy (h_odata, d_odata, N* sizeof (dtype2), cudaMemcpyDeviceToHost));
   CUDA_CHECK_ERROR (cudaMemcpy (h_odata, d_odata, N* sizeof (dtype), cudaMemcpyDeviceToHost));
-  
-  output_img->data = h_odata;
+ 
 
-  for(int i=0;i<3;i++)
+ image<dtype> *transpose_img = new image<dtype>(height, width, false); //Note: Here height, width oppositve of above, doesn't matter though because memory allocated same
+
+  /*----Below loop is to do transpose, make this part parallel later*/
+   for(int i=0;i<height;i++)
   {
-	for(int j=0;j<100;j++)
-	{
-		printf("%0.1f ",output_img->data[i*width+j]);
-	}
-	printf("\n--------------------------------\n");
+    for(int j=0;j<width;j++)
+    {
+      transpose_img->data[j*width+i] = h_odata[i*width+j];  
+
+    }
+  }
+
+  dim3 gb2(2,1, 1);
+  dim3 tb2(width, 1, 1);
+
+  h_idata = transpose_img->data;
+
+
+
+  CUDA_CHECK_ERROR (cudaMemcpy (d_idata,h_idata, N * sizeof (dtype), 
+        cudaMemcpyHostToDevice));
+
+
+  kernel_all_pix_float <<<gb2, tb2>>> (d_idata, d_odata, height,width); //reversed width,height
+  cudaThreadSynchronize ();
+
+   
+
+
+  kernel_all_pix_float <<<gb2, tb2>>> (d_idata, d_odata,height,width); //reversed width,height
+  CudaCheckError();
+
+  cudaThreadSynchronize ();
+
+
+
+  //CUDA_CHECK_ERROR (cudaMemcpy (h_odata, d_odata, N* sizeof (dtype2), cudaMemcpyDeviceToHost));
+  CUDA_CHECK_ERROR (cudaMemcpy (h_odata, d_odata, N* sizeof (dtype), cudaMemcpyDeviceToHost));
+  
+  
+//This section is to do the tranpose again
+   for(int i=0;i<height;i++)
+  {
+    for(int j=0;j<width;j++)
+    {
+      output_img->data[i*width+j] = h_odata[j*width+i];
+    }
   }
 
   
@@ -276,26 +376,20 @@ for (int y = 0; y < out->height(); y++) {
     image<uchar> *out_res = new image<uchar>(width,height,false); 
   for(int i=0;i<height;i++)
   {
-	for(int j=0;j<width;j++)
-	{
-		out_res->data[i*width+j] = (uchar)output_img->data[i*width+j];		
-	}
+  	for(int j=0;j<width;j++)
+  	{
+  		out_res->data[i*width+j] = (uchar)(2.276 * sqrt(output_img->data[i*width+j]));		//Hardcoding scale value here, need to find min ,max automatically and do it properly
+  	}
   }
 
-
-	printf("\n\n\n\n------NOW AFTER--------------------------\n");
-  
-  for(int i=0;i<3;i++)
-  {
-	for(int j=0;j<100;j++)
-	{
-		printf("%d ",out_res->data[i*width+j]);
-	}
-	printf("\n--------------------------------\n");
-  }
 
 
   savePGM(out_res, output_name);
+
+
+
+
+ 
 
 /*===================================================*/
 
