@@ -1,0 +1,2 @@
+cudaCheckError() failed at naive.cu:372 : unknown error
+========= Error: process didn't terminate successfully

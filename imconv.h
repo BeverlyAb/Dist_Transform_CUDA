@@ -100,7 +100,8 @@ static image<uchar> *imageFLOATtoUCHAR(image<float> *input,
   for (int y = 0; y < height; y++) {
     for (int x = 0; x < width; x++) {
       uchar val = (uchar)((imRef(input, x, y) - min) * scale);
-      imRef(output, x, y) = bound(val, (uchar)0, (uchar)UCHAR_MAX);
+      	
+	imRef(output, x, y) = bound(val, (uchar)0, (uchar)UCHAR_MAX);
     }
   }
   return output;

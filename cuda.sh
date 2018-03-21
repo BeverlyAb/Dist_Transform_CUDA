@@ -40,9 +40,9 @@ echo "Current directory: ${PWD}"
 
 echo ""
 echo "=== Running 5 trials of naive ... ==="
-for trial in 1 2 3 4 5; do
+for trial in 1 ; do
   echo "*** Trial ${trial} ***"
-  ./naive input.pgm out.pgm
+  cuda-memcheck ./naive input.pgm out.pgm
 done
 
 echo ""

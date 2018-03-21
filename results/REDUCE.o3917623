@@ -1,0 +1,113 @@
+Script began: Tue Mar 20 18:35:06 PDT 2018
+Node: compute-1-14.local
+Current directory: /data/users/jbhanush/Project/h3n
+
+=== Running 5 trials of naive ... ===
+*** Trial 1 ***
+========= CUDA-MEMCHECK
+========= Invalid __local__ read of size 4
+=========     at 0x00000b08 in naive.cu:91:kernel_all_pix_float(float*, float*, unsigned int, unsigned int)
+=========     by thread (208,0,0) in block (0,0,0)
+=========     Address 0x01026548 is out of bounds
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========     Host Frame:/usr/lib64/libcuda.so (cuLaunchKernel + 0x2cd) [0x150cad]
+=========     Host Frame:/data/apps/cuda/5.0/lib64/libcudart.so.5.0 [0x11d54]
+=========     Host Frame:/data/apps/cuda/5.0/lib64/libcudart.so.5.0 (cudaLaunch + 0x182) [0x38152]
+=========     Host Frame:./naive [0x51e4]
+=========     Host Frame:./naive [0x4654]
+=========     Host Frame:./naive [0x4692]
+=========     Host Frame:./naive [0x3f4d]
+=========     Host Frame:/lib64/libc.so.6 (__libc_start_main + 0xfd) [0x1ed1d]
+=========     Host Frame:./naive [0x17c9]
+=========
+========= Invalid __local__ read of size 4
+=========     at 0x00000b08 in naive.cu:91:kernel_all_pix_float(float*, float*, unsigned int, unsigned int)
+=========     by thread (147,0,0) in block (0,0,0)
+=========     Address 0x812df53c is out of bounds
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========     Host Frame:/usr/lib64/libcuda.so (cuLaunchKernel + 0x2cd) [0x150cad]
+=========     Host Frame:/data/apps/cuda/5.0/lib64/libcudart.so.5.0 [0x11d54]
+=========     Host Frame:/data/apps/cuda/5.0/lib64/libcudart.so.5.0 (cudaLaunch + 0x182) [0x38152]
+=========     Host Frame:./naive [0x51e4]
+=========     Host Frame:./naive [0x4654]
+=========     Host Frame:./naive [0x4692]
+=========     Host Frame:./naive [0x3f4d]
+=========     Host Frame:/lib64/libc.so.6 (__libc_start_main + 0xfd) [0x1ed1d]
+=========     Host Frame:./naive [0x17c9]
+=========
+========= Invalid __local__ read of size 4
+=========     at 0x00000b08 in naive.cu:91:kernel_all_pix_float(float*, float*, unsigned int, unsigned int)
+=========     by thread (144,0,0) in block (0,0,0)
+=========     Address 0x85427d4c is out of bounds
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========     Host Frame:/usr/lib64/libcuda.so (cuLaunchKernel + 0x2cd) [0x150cad]
+=========     Host Frame:/data/apps/cuda/5.0/lib64/libcudart.so.5.0 [0x11d54]
+=========     Host Frame:/data/apps/cuda/5.0/lib64/libcudart.so.5.0 (cudaLaunch + 0x182) [0x38152]
+=========     Host Frame:./naive [0x51e4]
+=========     Host Frame:./naive [0x4654]
+=========     Host Frame:./naive [0x4692]
+=========     Host Frame:./naive [0x3f4d]
+=========     Host Frame:/lib64/libc.so.6 (__libc_start_main + 0xfd) [0x1ed1d]
+=========     Host Frame:./naive [0x17c9]
+=========
+========= Invalid __local__ read of size 4
+=========     at 0x00000b08 in naive.cu:91:kernel_all_pix_float(float*, float*, unsigned int, unsigned int)
+=========     by thread (75,0,0) in block (0,0,0)
+=========     Address 0x6d38f53c is out of bounds
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========     Host Frame:/usr/lib64/libcuda.so (cuLaunchKernel + 0x2cd) [0x150cad]
+=========     Host Frame:/data/apps/cuda/5.0/lib64/libcudart.so.5.0 [0x11d54]
+=========     Host Frame:/data/apps/cuda/5.0/lib64/libcudart.so.5.0 (cudaLaunch + 0x182) [0x38152]
+=========     Host Frame:./naive [0x51e4]
+=========     Host Frame:./naive [0x4654]
+=========     Host Frame:./naive [0x4692]
+=========     Host Frame:./naive [0x3f4d]
+=========     Host Frame:/lib64/libc.so.6 (__libc_start_main + 0xfd) [0x1ed1d]
+=========     Host Frame:./naive [0x17c9]
+=========
+========= Invalid __local__ read of size 4
+=========     at 0x00000b08 in naive.cu:91:kernel_all_pix_float(float*, float*, unsigned int, unsigned int)
+=========     by thread (3,0,0) in block (0,0,0)
+=========     Address 0x50fff53c is out of bounds
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========     Host Frame:/usr/lib64/libcuda.so (cuLaunchKernel + 0x2cd) [0x150cad]
+=========     Host Frame:/data/apps/cuda/5.0/lib64/libcudart.so.5.0 [0x11d54]
+=========     Host Frame:/data/apps/cuda/5.0/lib64/libcudart.so.5.0 (cudaLaunch + 0x182) [0x38152]
+=========     Host Frame:./naive [0x51e4]
+=========     Host Frame:./naive [0x4654]
+=========     Host Frame:./naive [0x4692]
+=========     Host Frame:./naive [0x3f4d]
+=========     Host Frame:/lib64/libc.so.6 (__libc_start_main + 0xfd) [0x1ed1d]
+=========     Host Frame:./naive [0x17c9]
+=========
+========= Program hit error 30 on CUDA API call to cudaThreadSynchronize 
+=========     Saved host backtrace up to driver entry point at error
+=========     Host Frame:/usr/lib64/libcuda.so [0x2e40d3]
+=========     Host Frame:/data/apps/cuda/5.0/lib64/libcudart.so.5.0 (cudaThreadSynchronize + 0x1dd) [0x3e52d]
+=========     Host Frame:./naive [0x3f52]
+=========     Host Frame:/lib64/libc.so.6 (__libc_start_main + 0xfd) [0x1ed1d]
+=========     Host Frame:./naive [0x17c9]
+=========
+========= Program hit error 30 on CUDA API call to cudaLaunch 
+=========     Saved host backtrace up to driver entry point at error
+=========     Host Frame:/usr/lib64/libcuda.so [0x2e40d3]
+=========     Host Frame:/data/apps/cuda/5.0/lib64/libcudart.so.5.0 (cudaLaunch + 0x246) [0x38216]
+=========     Host Frame:./naive [0x51e4]
+=========     Host Frame:./naive [0x4654]
+=========     Host Frame:./naive [0x4692]
+=========     Host Frame:./naive [0x3fab]
+=========     Host Frame:/lib64/libc.so.6 (__libc_start_main + 0xfd) [0x1ed1d]
+=========     Host Frame:./naive [0x17c9]
+=========
+========= Program hit error 30 on CUDA API call to cudaGetLastError 
+=========     Saved host backtrace up to driver entry point at error
+=========     Host Frame:/usr/lib64/libcuda.so [0x2e40d3]
+=========     Host Frame:/data/apps/cuda/5.0/lib64/libcudart.so.5.0 (cudaGetLastError + 0x1da) [0x3d77a]
+=========     Host Frame:./naive [0x4895]
+=========     Host Frame:./naive [0x3fba]
+=========     Host Frame:/lib64/libc.so.6 (__libc_start_main + 0xfd) [0x1ed1d]
+=========     Host Frame:./naive [0x17c9]
+=========
+========= ERROR SUMMARY: 8 errors
+
+=== Done! ===
