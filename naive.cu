@@ -205,7 +205,7 @@ kernel_all_pix_float (dtype *input, dtype *output, unsigned int width,unsigned i
     unsigned int img_index = (row_num)*width;
 
   // assert(row_num<height);
-  __syncthreads ();
+/*  __syncthreads ();
     if(row_num < height)
 {  
 
@@ -226,8 +226,8 @@ kernel_all_pix_float (dtype *input, dtype *output, unsigned int width,unsigned i
 
 }
 
-
-/*  __syncthreads ();
+*/
+	  __syncthreads ();
 	for(int j=0;j<width;j++)
 	{
 		if(j>20 && j<80)
@@ -235,8 +235,8 @@ kernel_all_pix_float (dtype *input, dtype *output, unsigned int width,unsigned i
 		else
 		output[img_index+j]= input[img_index+j];
 	}
-*/
-  __syncthreads ();
+
+  	__syncthreads ();
 
 
 }
@@ -342,23 +342,37 @@ for (int y = 0; y < out->height(); y++) {
  image<dtype> *transpose_img = new image<dtype>(height, width, false); //Note: Here height, width oppositve of above, doesn't matter though because memory allocated same
 
   /*----Below loop is to do transpose, make this part parallel later*/
-   for(int i=0;i<height;i++)
+   for(int i=0;i<width;i++)
   {
-    for(int j=0;j<width;j++)
+    for(int j=0;j<height;j++)
     {
-      transpose_img->data[j*width+i] = h_odata[i*width+j];  
+      transpose_img->data[i*height+j] = h_odata[j*width+i];  
 
     }
   }
 
+/*
+ for(int i=0;i<width;i++)
+  {
+    for(int j=0;j<height;j++)
+    {
+      gray_trans->data[i*height + j] = input->data[j*width + i];
+    }
+  }
+
+*/
+
   dim3 gb2(2,1, 1);
-  dim3 tb2(width, 1, 1);
+  dim3 tb2(200, 1, 1);
 
-  h_idata = transpose_img->data;
+  dtype *hidata2;
+  hidata2 = transpose_img->data;
+
+  dtype *hodata2;
+  hodata2 = transpose_img->data;
 
 
-
-  CUDA_CHECK_ERROR (cudaMemcpy (d_idata,h_idata, N * sizeof (dtype), 
+  CUDA_CHECK_ERROR (cudaMemcpy (d_idata,hidata2, N * sizeof (dtype), 
         cudaMemcpyHostToDevice));
 
 
@@ -376,15 +390,15 @@ for (int y = 0; y < out->height(); y++) {
 
 
   //CUDA_CHECK_ERROR (cudaMemcpy (h_odata, d_odata, N* sizeof (dtype2), cudaMemcpyDeviceToHost));
-  CUDA_CHECK_ERROR (cudaMemcpy (h_odata, d_odata, N* sizeof (dtype), cudaMemcpyDeviceToHost));
+  CUDA_CHECK_ERROR (cudaMemcpy (hodata2, d_odata, N* sizeof (dtype), cudaMemcpyDeviceToHost));
   
   
 //This section is to do the tranpose again
-   for(int i=0;i<height;i++)
+   for(int i=0;i<width;i++)
   {
-    for(int j=0;j<width;j++)
+    for(int j=0;j<height;j++)
     {
-      output_img->data[i*width+j] = h_odata[j*width+i];
+      output_img->data[j*width+i] = hodata2[i*height+j];
     }
   }
 
@@ -395,7 +409,8 @@ for (int y = 0; y < out->height(); y++) {
   {
   	for(int j=0;j<width;j++)
   	{
-  		out_res->data[i*width+j] = (uchar)(2.276 * sqrt(output_img->data[i*width+j]));		//Hardcoding scale value here, need to find min ,max automatically and do it properly
+  		//out_res->data[i*width+j] = (uchar)(2.276 * sqrt(output_img->data[i*width+j]));		//Hardcoding scale value here, need to find min ,max automatically and do it properly
+  		out_res->data[i*width+j] = (uchar)(output_img->data[i*width+j]);		//Hardcoding scale value here, need to find min ,max automatically and do it properly
   	}
   }
 
