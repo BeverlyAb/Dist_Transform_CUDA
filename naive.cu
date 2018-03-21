@@ -399,9 +399,9 @@ for (int y = 0; y < out->height(); y++) {
   //image<uchar> *out_res= imageFLOATtoUCHAR(output_img,0.0,255.0);
     image<uchar> *out_res = new image<uchar>(width,height,false);
     //output_img->data = out->data; 
-    float min_val = out->data[0];
+    float min_val = output_img->data[0];
     float max_val = min_val;
-/* for(int i=0;i<height;i++)
+for(int i=0;i<height;i++)
 {
 	for(int j=0;j<width;j++)
 	{
@@ -410,8 +410,8 @@ for (int y = 0; y < out->height(); y++) {
 	
 	}
 }   
-*/
 
+/*
  for(int i=0;i<height;i++)
 {
 	for(int j=0;j<width;j++)
@@ -421,14 +421,14 @@ for (int y = 0; y < out->height(); y++) {
 	
 	}
 }
-
+*/
 	float scale = 255/(sqrt(max_val)-sqrt(min_val));
 	printf("max:%0.2f min:%0.2f s=%0.2f\n",max_val,min_val,scale);	
   for(int i=0;i<height;i++)
   {
   	for(int j=0;j<width;j++)
   	{
-  		out_res->data[i*width+j] = (uchar)(scale * (sqrt(out->data[i*width+j])-sqrt(min_val)));		//Hardcoding scale value here, need to find min ,max automatically and do it properly
+  		out_res->data[i*width+j] = (uchar)(scale * (sqrt(output_img->data[i*width+j])-sqrt(min_val)));		//Hardcoding scale value here, need to find min ,max automatically and do it properly
   		//out_res->data[i*width+j] = (uchar)(output_img->data[i*width+j]);		//Hardcoding scale value here, need to find min ,max automatically and do it properly
   	}
   }
