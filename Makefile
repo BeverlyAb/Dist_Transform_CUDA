@@ -1,5 +1,5 @@
 naive: naive.cu timer.c
-	nvcc  -G -g naive.cu timer.c -o naive
+	nvcc  -G -g -lcublas naive.cu timer.c -o naive
 
 
 cdt: naive.cu timer.c

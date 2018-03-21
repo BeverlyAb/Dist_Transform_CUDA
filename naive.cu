@@ -1,6 +1,8 @@
 //#include <cstdio>
 //#include <cstdlib>
 #include <assert.h> //This is assert to check for conditions in kernels
+//#include <conio.h>
+//#include <assert.h>
 #include <stdlib.h>
 #include <stdio.h>
 //#include <cmath>
@@ -14,6 +16,8 @@
 #include <thrust/sort.h>
 typedef float dtype;
 typedef unsigned char dtype2;
+typedef float dtype3;
+#include <cublas_v2.h>
 
 #define N_ (8 * 1024 * 1024)
 #define MAX_THREADS 256
@@ -23,6 +27,26 @@ typedef unsigned char dtype2;
 #define MIN(x,y) ((x < y) ? x : y)
 #define CudaCheckError()    __cudaCheckError( __FILE__, __LINE__ )
 #define INFDT 1E20
+
+/**********************/
+/* cuBLAS ERROR CHECK */
+/**********************/
+#ifndef cublasSafeCall
+#define cublasSafeCall(err)     __cublasSafeCall(err, __FILE__, __LINE__)
+#endif
+
+inline void __cublasSafeCall(cublasStatus_t err, const char *file, const int line)
+{
+    if( CUBLAS_STATUS_SUCCESS != err) {
+		fprintf(stderr, "CUBLAS error in file '%s', line %d\n \nerror %d \nterminating!\n",__FILE__, __LINE__,err); 
+	//	getch(); //causing error as nvcc unable to find conio.h
+		cudaDeviceReset(); 
+		assert(0); 
+    }
+}
+
+
+
 /* return the next power of 2 number that is larger than x */
 unsigned int nextPow2( unsigned int x ) {
   --x;
@@ -437,11 +461,52 @@ printf("Time to execute DT: %Lg %Lg minmax:%Lg secs\n",t_kernel_ap1,t_kernel_ap2
   	}
   }
 
+/*
+---------------Testing CuBLAS-------------------
+*/
 
+	dtype3 *incb,*dincb ;
+	dtype3 *outcb,*doutcb;
+ 	int m1,n1;
+	m1 = height;
+	n1 = width;
+  	incb = (dtype3*) malloc (N * sizeof (dtype3));
+  	outcb = (dtype3*) malloc (N * sizeof (dtype3));
+	for(int i=0;i<height;i++)
+	{
+		for(int j=0;j<width;j++)
+		{
+			incb[i*width +j] = (float)out_res->data[i*width+j];
+		}
+	}
+       
+        //incb = out_res->data;
+        CUDA_CHECK_ERROR (cudaMalloc (&dincb,N * sizeof (dtype3)));
+        CUDA_CHECK_ERROR (cudaMalloc (&doutcb, N * sizeof (dtype3)));
+	//outcb = trans_res->data;
+  CUDA_CHECK_ERROR (cudaMemcpy (dincb,incb, N * sizeof (dtype3), 
+				cudaMemcpyHostToDevice));
+        image<uchar> *trans_res = new image<uchar>(height,width);
+	cublasHandle_t handle;
+	dtype3 alpha = 1.;
+	dtype3 beta  = 0.;
+	cublasSafeCall(cublasCreate(&handle));
+	cublasSafeCall(cublasSgeam(handle, CUBLAS_OP_T, CUBLAS_OP_T, m1, n1, &alpha, dincb, n1, &beta, dincb, n1, doutcb, m1));
 
-  savePGM(out_res, output_name);
+  CUDA_CHECK_ERROR (cudaMemcpy (outcb, doutcb, N* sizeof (dtype3), cudaMemcpyDeviceToHost));
+	
+	//trans_res->data = outcb; 
 
+	for(int i=0;i<width;i++)
+	{
+		for(int j=0;j<height;j++)
+		{
+			trans_res->data[i*height +j] = (uchar)outcb[i*height+j];
+		}
+	}
+  savePGM(trans_res, output_name);
 
+//------------------------------------------------
 
 
  
