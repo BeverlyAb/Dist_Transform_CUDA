@@ -221,8 +221,11 @@ kernel_all_pix_float (dtype *input, dtype *output, unsigned int width,unsigned i
     unsigned int img_index = (row_num)*width;
 
   // assert(row_num<height);
-  __syncthreads ();
+ 
+    __syncthreads ();
 
+if(row_num < height)
+{
     float f[MAX_WIDTH_HEIGHT];
 
     for (int x = 0; x < width; x++) 
@@ -240,7 +243,7 @@ kernel_all_pix_float (dtype *input, dtype *output, unsigned int width,unsigned i
     }
 
 
-
+}
 /*	  __syncthreads ();
 	for(int j=0;j<width;j++)
 	{
@@ -331,8 +334,12 @@ for (int y = 0; y < out->height(); y++) {
 */
   h_idata = input_float->data;
 
-  dim3 gb(1,1, 1);
-  dim3 tb(height, 1, 1);
+  unsigned int max_width_height = (height>width)?height:width;
+  int num_blocks = int(max_width_height/MAX_THREADS) + 1;  
+  int num_threads = MAX_THREADS;
+
+  dim3 gb(num_blocks,1, 1);
+  dim3 tb(num_threads, 1, 1);
 
   
 
@@ -380,8 +387,8 @@ for (int y = 0; y < out->height(); y++) {
 
 */
 
-  dim3 gb2(2,1, 1);
-  dim3 tb2(200, 1, 1);
+  dim3 gb2(num_blocks,1, 1);
+  dim3 tb2(num_threads, 1, 1);
 
   dtype *hidata2;
   hidata2 = transpose_img->data;
@@ -438,7 +445,8 @@ for(int i=0;i<height;i++)
 	}
 } 
 t_min_max3 = stopwatch_stop(timer);  
-printf("Time to execute DT: %Lg %Lg minmax:%Lg secs\n",t_kernel_ap1,t_kernel_ap2,t_min_max3);
+//printf("Time to execute DT: %Lg %Lg minmax:%Lg secs\n",t_kernel_ap1,t_kernel_ap2,t_min_max3);
+printf("Time to execute DT: %Lg secs\n",t_kernel_ap1+t_kernel_ap2);
 /*
  for(int i=0;i<height;i++)
 {
@@ -504,7 +512,7 @@ printf("Time to execute DT: %Lg %Lg minmax:%Lg secs\n",t_kernel_ap1,t_kernel_ap2
 			trans_res->data[i*height +j] = (uchar)outcb[i*height+j];
 		}
 	}
-  savePGM(trans_res, output_name);
+  savePGM(out_res, output_name);
 
 //------------------------------------------------
 

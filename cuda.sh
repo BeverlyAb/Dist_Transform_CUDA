@@ -42,7 +42,7 @@ echo ""
 echo "=== Running 5 trials of naive ... ==="
 for trial in 1 ; do
   echo "*** Trial ${trial} ***"
-  cuda-memcheck ./naive input.pgm out.pgm
+  nvprof --print-gpu-trace ./naive build.pgm out.pgm
 done
 
 echo ""
