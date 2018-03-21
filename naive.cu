@@ -279,7 +279,8 @@ for (int y = 0; y < out->height(); y++) {
   dtype2 *d_idata, *d_odata;	
 
 */
-
+  struct stopwatch_t* timer = NULL;
+  long double t_kernel_ap1,t_kernel_ap2;
 
   dtype *h_idata, *h_odata, h_cpu;
   dtype *d_idata, *d_odata;	
@@ -288,7 +289,8 @@ for (int y = 0; y < out->height(); y++) {
   image<dtype> *output_img = new image<dtype>(width, height, false);
 
   
-
+  stopwatch_init();
+  timer = stopwatch_create();
 
   h_idata = (dtype*) malloc (N * sizeof (dtype));
   h_odata = (dtype*) malloc (N * sizeof (dtype));
@@ -319,7 +321,9 @@ for (int y = 0; y < out->height(); y++) {
 
   kernel_all_pix_float <<<gb, tb>>> (d_idata, d_odata, width,height);
   cudaThreadSynchronize ();
-
+  
+  
+  stopwatch_start(timer);
   kernel_all_pix_float <<<gb, tb>>> (d_idata, d_odata,width,height);
   CudaCheckError();
 
@@ -364,12 +368,12 @@ for (int y = 0; y < out->height(); y++) {
 
   CUDA_CHECK_ERROR (cudaMemcpy (d_idata,hidata2, N * sizeof (dtype), 
         cudaMemcpyHostToDevice));
-
+t_kernel_ap1 = stopwatch_stop(timer);
 
   kernel_all_pix_float <<<gb2, tb2>>> (d_idata, d_odata, height,width); //reversed width,height
   cudaThreadSynchronize ();
 
-   
+stopwatch_start(timer);   
 
 
   kernel_all_pix_float <<<gb2, tb2>>> (d_idata, d_odata,height,width); //reversed width,height
@@ -391,13 +395,15 @@ for (int y = 0; y < out->height(); y++) {
       output_img->data[j*width+i] = hodata2[i*height+j];
     }
   }
-
+t_kernel_ap2 = stopwatch_stop(timer);
   
   //image<uchar> *out_res= imageFLOATtoUCHAR(output_img,0.0,255.0);
     image<uchar> *out_res = new image<uchar>(width,height,false);
     //output_img->data = out->data; 
     float min_val = output_img->data[0];
     float max_val = min_val;
+long double t_min_max3;
+stopwatch_start(timer);
 for(int i=0;i<height;i++)
 {
 	for(int j=0;j<width;j++)
@@ -406,8 +412,9 @@ for(int i=0;i<height;i++)
 		if(min_val > output_img->data[i*width+j]) min_val = output_img->data[i*width+j];
 	
 	}
-}   
-
+} 
+t_min_max3 = stopwatch_stop(timer);  
+printf("Time to execute DT: %Lg %Lg minmax:%Lg secs\n",t_kernel_ap1,t_kernel_ap2,t_min_max3);
 /*
  for(int i=0;i<height;i++)
 {
