@@ -9,6 +9,9 @@
 #include "pnmfile.h"
 #include "imconv.h"
 #include "dt.h"
+#include <thrust/host_vector.h>
+#include <thrust/device_vector.h>
+#include <thrust/sort.h>
 typedef float dtype;
 typedef unsigned char dtype2;
 
@@ -86,16 +89,9 @@ dt_i(float f[], int n)
       float s  = ((f[q]+(q*q))-(f[v[k]]+(v[k]*v[k])))/(2*q-2*v[k]);
       while (s <= z[k]) {
         k--;
-	float temp = f[q];
 	
-	int t = v[k];
-//Below 3 for debugging
-	t= (t<n)?t:n-1;
-	t= (t>-1)?t:0;
-	float temp2 = f[t];
-	temp_sum = temp+temp2+t;	
-       // s  = ((f[q]+(q*q))-(f[v[k]]+(v[k]*v[k])))/(2*q-2*v[k]);
-        s  = ((f[q]+(q*q))-(f[t]+(v[k]*v[k])))/(2*q-2*v[k]);
+        s  = ((f[q]+(q*q))-(f[v[k]]+(v[k]*v[k])))/(2*q-2*v[k]);
+       // s  = ((f[q]+(q*q))-(f[t]+(v[k]*v[k])))/(2*q-2*v[k]);
       }
       k++;
 	
@@ -108,7 +104,7 @@ dt_i(float f[], int n)
     for (int q = 0; q <= n-1; q++) {
       while (z[k+1] < q)
         k++;
-      d[q] = (q-v[k])*(q-v[k]) + f[v[k]] + temp_sum; //!!!!!REMOVE_TEMP_SUM DEBUG - added for debugging
+      d[q] = (q-v[k])*(q-v[k]) + f[v[k]] ; //!!!!!REMOVE_TEMP_SUM DEBUG - added for debugging
     }
   
     for(int q=0;q<n;q++)
@@ -205,9 +201,7 @@ kernel_all_pix_float (dtype *input, dtype *output, unsigned int width,unsigned i
     unsigned int img_index = (row_num)*width;
 
   // assert(row_num<height);
-/*  __syncthreads ();
-    if(row_num < height)
-{  
+  __syncthreads ();
 
     float f[MAX_WIDTH_HEIGHT];
 
@@ -224,10 +218,9 @@ kernel_all_pix_float (dtype *input, dtype *output, unsigned int width,unsigned i
       output[img_index+x] = f[x];
     }
 
-}
 
-*/
-	  __syncthreads ();
+
+/*	  __syncthreads ();
 	for(int j=0;j<width;j++)
 	{
 		if(j>20 && j<80)
@@ -235,7 +228,7 @@ kernel_all_pix_float (dtype *input, dtype *output, unsigned int width,unsigned i
 		else
 		output[img_index+j]= input[img_index+j];
 	}
-
+*/
   	__syncthreads ();
 
 
@@ -277,7 +270,7 @@ main(int argc, char** argv)
   int width = input->width();
 for (int y = 0; y < out->height(); y++) {
     for (int x = 0; x < out->width(); x++) {
-      imRef(out, x, y) = sqrt(imRef(out, x, y));
+     // imRef(out, x, y) = sqrt(imRef(out, x, y));
     }
   }
   image<uchar> *gray = imageFLOATtoUCHAR(out);
@@ -404,13 +397,39 @@ for (int y = 0; y < out->height(); y++) {
 
   
   //image<uchar> *out_res= imageFLOATtoUCHAR(output_img,0.0,255.0);
-    image<uchar> *out_res = new image<uchar>(width,height,false); 
+    image<uchar> *out_res = new image<uchar>(width,height,false);
+    //output_img->data = out->data; 
+    float min_val = out->data[0];
+    float max_val = min_val;
+/* for(int i=0;i<height;i++)
+{
+	for(int j=0;j<width;j++)
+	{
+		if(max_val < output_img->data[i*width+j]) max_val = output_img->data[i*width+j];
+		if(min_val > output_img->data[i*width+j]) min_val = output_img->data[i*width+j];
+	
+	}
+}   
+*/
+
+ for(int i=0;i<height;i++)
+{
+	for(int j=0;j<width;j++)
+	{
+		if(max_val < out->data[i*width+j]) max_val = out->data[i*width+j];
+		if(min_val > out->data[i*width+j]) min_val = out->data[i*width+j];
+	
+	}
+}
+
+	float scale = 255/(sqrt(max_val)-sqrt(min_val));
+	printf("max:%0.2f min:%0.2f s=%0.2f\n",max_val,min_val,scale);	
   for(int i=0;i<height;i++)
   {
   	for(int j=0;j<width;j++)
   	{
-  		//out_res->data[i*width+j] = (uchar)(2.276 * sqrt(output_img->data[i*width+j]));		//Hardcoding scale value here, need to find min ,max automatically and do it properly
-  		out_res->data[i*width+j] = (uchar)(output_img->data[i*width+j]);		//Hardcoding scale value here, need to find min ,max automatically and do it properly
+  		out_res->data[i*width+j] = (uchar)(scale * (sqrt(out->data[i*width+j])-sqrt(min_val)));		//Hardcoding scale value here, need to find min ,max automatically and do it properly
+  		//out_res->data[i*width+j] = (uchar)(output_img->data[i*width+j]);		//Hardcoding scale value here, need to find min ,max automatically and do it properly
   	}
   }
 
@@ -467,6 +486,15 @@ printf("\n");
 
 
 /*===================================================*/
-
+/*
+thrust::host_vector<int> h_vec( 16*1024*1024 );
+thrust::generate(h_vec.begin(), h_vec.end(), rand);
+// transfer data to the device
+thrust::device_vector<int> d_vec = h_vec;
+thrust::sort(d_vec.begin(), d_vec.end()); // sort data on the device
+// transfer data back to host
+thrust::copy(d_vec.begin(), d_vec.end(), h_vec.begin());
+printf("thrust finished sorting\n");
+*/
   return 0;
 }
