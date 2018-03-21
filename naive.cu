@@ -22,7 +22,7 @@ typedef unsigned char dtype2;
 #define CUDA_ERROR_CHECK
 #define MIN(x,y) ((x < y) ? x : y)
 #define CudaCheckError()    __cudaCheckError( __FILE__, __LINE__ )
-
+#define INFDT 1E20
 /* return the next power of 2 number that is larger than x */
 unsigned int nextPow2( unsigned int x ) {
   --x;
@@ -78,13 +78,9 @@ dt_i(float f[], int n)
     int k = 0;
     float temp_sum = 0.0;
     v[0] = 0;
-    z[0] = -INF;
-    z[1] = +INF;
+    z[0] = -INFDT;
+    z[1] = +INFDT;
 	
-    for(int q=0;q<MAX_WIDTH_HEIGHT;q++)
-    {
-	v[q]=0;
-    }
     for (int q = 1; q <= n-1; q++) {
       float s  = ((f[q]+(q*q))-(f[v[k]]+(v[k]*v[k])))/(2*q-2*v[k]);
       while (s <= z[k]) {
@@ -97,7 +93,7 @@ dt_i(float f[], int n)
 	
       v[k] = q;
       z[k] = s;
-      z[k+1] = +INF;
+      z[k+1] = +INFDT;
     }
   
     k = 0;
@@ -212,6 +208,7 @@ kernel_all_pix_float (dtype *input, dtype *output, unsigned int width,unsigned i
     dt_i(f, width);
   
   
+  	__syncthreads ();
   
     for (int x = 0; x < width; x++) 
     {
