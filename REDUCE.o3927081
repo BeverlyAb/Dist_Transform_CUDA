@@ -1,0 +1,30 @@
+Script began: Wed Mar 21 18:53:00 PDT 2018
+Node: compute-1-14.local
+Current directory: /data/users/jbhanush/Project/h3n
+
+=== Running 5 trials of naive ... ===
+*** Trial 1 ***
+======== NVPROF is profiling naive...
+======== Command: naive input.pgm out.pgm
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+Time to execute DT: 0.010576 0.006175 minmax:0.000754 secs
+max:223.00 min:0.00 s=17.08
+0=20.0 1=1.0 2=2.0 3=23.0 4=4.0 5=5.0 6=26.0 7=7.0 8=8.0 9=29.0 10=10.0 11=11.0 12=32.0 13=13.0 14=14.0 15=35.0 16=16.0 17=17.0 18=38.0 19=19.0 
+======== Profiling result:
+ Time(%)      Time   Calls       Avg       Min       Max  Name
+   99.33   29.39ms       4    7.35ms    5.39ms    9.31ms  kernel_all_pix_float(float*, float*, unsigned int, unsigned int)
+    0.29   86.17us       4   21.54us    1.73us   80.35us  [CUDA memcpy HtoD]
+    0.28   84.03us       2   42.02us    2.98us   81.05us  [CUDA memcpy DtoH]
+    0.07   20.20us       2   10.10us   10.01us   10.20us  void transpose_readWrite_alignment_kernel<float, int=1, bool=0, int=6, int=5, int=3>(cublasTransposeParams<float>)
+    0.02    7.20us       2    3.60us    3.23us    3.97us  kernel_thresh(float*, float*, unsigned int)
+======== NVPROF is profiling naive...
+======== Command: naive dog3.pgm out_dog3.pgm
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+======== Profiling result:
+ Time(%)      Time   Calls       Avg       Min       Max  Name
+  100.00    1.66ms       1    1.66ms    1.66ms    1.66ms  [CUDA memcpy HtoD]
+    0.00       0ns       1       0ns       0ns       0ns  kernel_all_pix_float(float*, float*, unsigned int, unsigned int)
+
+=== Done! ===

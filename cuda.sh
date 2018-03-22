@@ -42,8 +42,9 @@ echo ""
 echo "=== Running 5 trials of naive ... ==="
 for trial in 1 ; do
   echo "*** Trial ${trial} ***"
-  nvprof ./naive input.pgm out.pgm
-  nvprof ./naive dog3.pgm out_dog3.pgm
+#  nvprof ./naive input.pgm out.pgm
+#  cuda-memcheck ./naive dog3.pgm out_dog3.pgm
+  cuda-memcheck ./naive test.pgm out_test.pgm
 done
 
 echo ""

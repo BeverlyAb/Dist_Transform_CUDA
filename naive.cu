@@ -186,6 +186,8 @@ kernel_all_pix_float (dtype *input, dtype *output, unsigned int width,unsigned i
 
   __syncthreads ();
 
+if(row_num < height)
+{
     float f[MAX_WIDTH_HEIGHT];
 
     for (int x = 0; x < width; x++) 
@@ -194,13 +196,13 @@ kernel_all_pix_float (dtype *input, dtype *output, unsigned int width,unsigned i
     }
     dt_i(f, width);
   
-  	__syncthreads ();
+ // 	__syncthreads ();
   
     for (int x = 0; x < width; x++) 
     {
       output[img_index+x] = f[x];
     }
-
+}
   	__syncthreads ();
 }
 
@@ -244,10 +246,15 @@ main(int argc, char** argv)
 
   h_idata = input_float->data;
 
-  dim3 gb(1,1, 1);
-  dim3 tb(height, 1, 1);
-
-  
+  unsigned int max_width_height = 0;
+  max_width_height = (height>width)? height:width;
+ 
+ int num_blocks =0;
+ num_blocks =  (max_width_height/MAX_THREADS) + 1;  
+  int num_threads = MAX_THREADS;
+  dim3 gb(num_blocks,1, 1);
+  dim3 tb(num_threads, 1, 1);
+ printf("max_width_height:%d  MAX_THREADS: %d num_blocks:%d threads:%d\n",max_width_height,num_threads,num_blocks,num_threads); 
 
 
   CUDA_CHECK_ERROR (cudaMemcpy (d_idata,h_idata, N * sizeof (dtype), 
@@ -289,8 +296,10 @@ main(int argc, char** argv)
 	n1 = width;
 	cublasSafeCall(cublasCreate(&handle));
 	cublasSafeCall(cublasSgeam(handle, CUBLAS_OP_T, CUBLAS_OP_T, m1, n1, &alpha, d_odata, n1, &beta, d_odata, n1, d_idata, m1));
-  dim3 gb2(2,1, 1);
-  dim3 tb2(200, 1, 1);
+
+
+  dim3 gb2(num_blocks,1, 1);
+  dim3 tb2(num_threads, 1, 1);
 
   dtype *hidata2;
   hidata2 = transpose_img->data;
