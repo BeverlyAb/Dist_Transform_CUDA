@@ -229,14 +229,23 @@ if(row_num < height)
 if(img_index ==0) //this has to be later turned it to block indx condition , so that computation is for every image
 {
 	//cublas transpose
-   for(int i=0;i<width;i++)
+  /* for(int i=0;i<width;i++)
   {
     for(int j=0;j<height;j++)
     {
       input[i*height+j] = output[j*width+i];  
 
     }
-  }
+  }*/
+
+	int m1 = height;
+	int n1 = width;
+	cublasHandle_t handle;
+	dtype3 alpha = 1.;
+	dtype3 beta  = 0.;
+	cublasSafeCall(cublasCreate(&handle));
+	cublasSafeCall(cublasSgeam(handle, CUBLAS_OP_T, CUBLAS_OP_T, m1, n1, &alpha, output, n1, &beta, output, n1, input, m1));
+
 
 }
 
@@ -265,7 +274,7 @@ if(row_num<width)
 	  __syncthreads ();
 if(img_index ==0) //this has to be later turned it to block indx condition , so that computation is for every image
 {
-	//cublas transpose
+/*	//cublas transpose
    for(int i=0;i<width;i++)
   {
     for(int j=0;j<height;j++)
@@ -273,6 +282,17 @@ if(img_index ==0) //this has to be later turned it to block indx condition , so 
       input[j*width+i] = output[i*height+j];
     }
   }
+*/
+
+	int m1 = width;
+	int n1 = height;
+	cublasHandle_t handle;
+	dtype3 alpha = 1.;
+	dtype3 beta  = 0.;
+	cublasSafeCall(cublasCreate(&handle));
+	cublasSafeCall(cublasSgeam(handle, CUBLAS_OP_T, CUBLAS_OP_T, m1, n1, &alpha, output, n1, &beta, output, n1, input, m1));
+
+
 }
 
 /*	  __syncthreads ();
