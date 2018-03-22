@@ -2,7 +2,7 @@
 #$ -N REDUCE
 #$ -q gpu
 #$ -l gpu=1
-#$ -pe gpu-node-cores 1
+#$ -pe gpu-node-cores 6
 
 # Notes: 
 # The GPU node (compute-1-14) has 4 Tesla M2090 GPU cards. The node also

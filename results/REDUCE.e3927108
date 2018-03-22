@@ -1,0 +1,2 @@
+cudaCheckError() failed at naive.cu:267 : unspecified launch failure
+======== Warning: Application returned non-zero code 255

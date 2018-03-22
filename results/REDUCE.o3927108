@@ -1,0 +1,16 @@
+Script began: Wed Mar 21 18:56:59 PDT 2018
+Node: compute-1-14.local
+Current directory: /data/users/jbhanush/Project/h3n
+
+=== Running 5 trials of naive ... ===
+*** Trial 1 ***
+======== NVPROF is profiling naive...
+======== Command: naive dog3.pgm out_dog3.pgm
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+======== Profiling result:
+ Time(%)      Time   Calls       Avg       Min       Max  Name
+  100.00    1.68ms       1    1.68ms    1.68ms    1.68ms  [CUDA memcpy HtoD]
+    0.00       0ns       1       0ns       0ns       0ns  kernel_all_pix_float(float*, float*, unsigned int, unsigned int)
+
+=== Done! ===

@@ -1,0 +1,21 @@
+Script began: Thu Mar 22 00:15:02 PDT 2018
+Node: compute-1-14.local
+Current directory: /data/users/jbhanush/Project/h3n
+
+=== Running 5 trials of naive ... ===
+*** Trial 1 ***
+4. 
+.. 
+2092.pgm 
+35008.pgm 
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+max_width_height:481  MAX_THREADS: 256 num_blocks:2 threads:256
+Time to execute DT: 0.035983 0.023705 minmax:0 secs
+max:189.00 min:0.00 s=18.55
+max:240.00 min:16.00 s=22.19
+0=20.0 1=1.0 2=2.0 3=23.0 4=4.0 
+========= CUDA-MEMCHECK
+========= ERROR SUMMARY: 0 errors
+
+=== Done! ===

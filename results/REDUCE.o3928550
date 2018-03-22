@@ -1,0 +1,40 @@
+Script began: Wed Mar 21 22:02:23 PDT 2018
+Node: compute-1-14.local
+Current directory: /data/users/jbhanush/Project/h3n
+
+=== Running 5 trials of naive ... ===
+*** Trial 1 ***
+Device Number: 0
+  Device name: Tesla M2090
+  Memory Clock Rate (KHz): 1848000
+  Memory Bus Width (bits): 384
+  Peak Memory Bandwidth (GB/s): 177.408000
+
+Device Number: 1
+  Device name: Tesla M2090
+  Memory Clock Rate (KHz): 1848000
+  Memory Bus Width (bits): 384
+  Peak Memory Bandwidth (GB/s): 177.408000
+
+Device Number: 2
+  Device name: Tesla M2090
+  Memory Clock Rate (KHz): 1848000
+  Memory Bus Width (bits): 384
+  Peak Memory Bandwidth (GB/s): 177.408000
+
+Device Number: 3
+  Device name: Tesla M2090
+  Memory Clock Rate (KHz): 1848000
+  Memory Bus Width (bits): 384
+  Peak Memory Bandwidth (GB/s): 177.408000
+
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+max_width_height:481  MAX_THREADS: 256 num_blocks:2 threads:256
+Time to execute DT: 0.023674 0.035391 minmax:0.001195 secs
+max:227.00 min:0.00 s=16.92
+0=20.0 1=1.0 2=2.0 3=23.0 4=4.0 
+========= CUDA-MEMCHECK
+========= ERROR SUMMARY: 0 errors
+
+=== Done! ===
