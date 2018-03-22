@@ -78,19 +78,6 @@ void getNumBlocksAndThreads(int whichKernel, int n, int maxBlocks, int maxThread
     blocks = MIN(maxBlocks, blocks);
 }
 
-/* special type of reduction to account for floating point error */
-dtype reduce_cpu(dtype *data, int n) {
-  dtype sum = data[0];
-  dtype c = (dtype)0.0;
-  for (int i = 1; i < n; i++)
-    {
-      dtype y = data[i] - c;
-      dtype t = sum + y;
-      c = (t - sum) - y;
-      sum = t;
-    }
-  return sum;
-}
 
 __device__ void
 
@@ -183,29 +170,6 @@ inline void __cudaCheckError( const char *file, const int line )
     return;
 }
 
-__global__ void
-kernel_all_pix (dtype2 *input, dtype2 *output, unsigned int width,unsigned int height)
-{
-//One row stored in shared memory
-//Number of blocks = height
-//For now launch 1 block with height  number of threads
- __shared__  dtype2 scratch[400];
-
-  unsigned int img_index = threadIdx.x*width;
-
-  __syncthreads ();
-	for(int j=0;j<width;j++)
-	{
-		if(j>20 && j<80)
-		output[img_index+j]= 40;
-		else
-		output[img_index+j]= input[img_index+j];
-	}
-
-  __syncthreads ();
-
-
-}
 
 __global__ void
 kernel_all_pix_float (dtype *input, dtype *output, unsigned int width,unsigned int height)
@@ -220,7 +184,6 @@ kernel_all_pix_float (dtype *input, dtype *output, unsigned int width,unsigned i
     unsigned int row_num = blockIdx.x * blockDim.x + threadIdx.x;
     unsigned int img_index = (row_num)*width;
 
-  // assert(row_num<height);
   __syncthreads ();
 
     float f[MAX_WIDTH_HEIGHT];
@@ -231,7 +194,6 @@ kernel_all_pix_float (dtype *input, dtype *output, unsigned int width,unsigned i
     }
     dt_i(f, width);
   
-  
   	__syncthreads ();
   
     for (int x = 0; x < width; x++) 
@@ -239,40 +201,8 @@ kernel_all_pix_float (dtype *input, dtype *output, unsigned int width,unsigned i
       output[img_index+x] = f[x];
     }
 
-
-
-/*	  __syncthreads ();
-	for(int j=0;j<width;j++)
-	{
-		if(j>20 && j<80)
-		output[img_index+j]= 40;
-		else
-		output[img_index+j]= input[img_index+j];
-	}
-*/
   	__syncthreads ();
-
-
 }
-
-
-void all_pix (dtype2 *input, dtype2 *output, unsigned int width,unsigned int height)
-
-{
-
-for(int i=0;i<height;i++)
-{
-  unsigned int img_index = i*width;
-	for(int j=width/2;j<width;j++)
-	{
-		output[img_index+j]= input[img_index+j];
-//		input[img_index+j]= scratch[j];
-	}
-
-}
-
-}
-
 
 int 
 main(int argc, char** argv)
@@ -289,20 +219,9 @@ main(int argc, char** argv)
  image<float> *out = dt(input);
   int height = input-> height();
   int width = input->width();
-for (int y = 0; y < out->height(); y++) {
-    for (int x = 0; x < out->width(); x++) {
-     // imRef(out, x, y) = sqrt(imRef(out, x, y));
-    }
-  }
-  image<uchar> *gray = imageFLOATtoUCHAR(out);
 //-----------------------------//
   int N = width*height;
-/*  
-  dtype2 *h_idata, *h_odata, h_cpu;
- 
-  dtype2 *d_idata, *d_odata;	
 
-*/
   struct stopwatch_t* timer = NULL;
   long double t_kernel_ap1,t_kernel_ap2;
 
@@ -323,12 +242,6 @@ for (int y = 0; y < out->height(); y++) {
 
 
 
-/* //Switch to this in case of dtype2
-  h_idata = (dtype2*) malloc (N * sizeof (dtype2));
-  h_odata = (dtype2*) malloc (N * sizeof (dtype2));
-  CUDA_CHECK_ERROR (cudaMalloc (&d_idata,N * sizeof (dtype2)));
-  CUDA_CHECK_ERROR (cudaMalloc (&d_odata, N * sizeof (dtype2)));
-*/
   h_idata = input_float->data;
 
   dim3 gb(1,1, 1);
@@ -336,8 +249,6 @@ for (int y = 0; y < out->height(); y++) {
 
   
 
-  //CUDA_CHECK_ERROR (cudaMemcpy (d_idata,h_idata, N * sizeof (dtype2), 
-//				cudaMemcpyHostToDevice));
 
   CUDA_CHECK_ERROR (cudaMemcpy (d_idata,h_idata, N * sizeof (dtype), 
 				cudaMemcpyHostToDevice));
@@ -447,17 +358,6 @@ for(int i=0;i<height;i++)
 } 
 t_min_max3 = stopwatch_stop(timer);  
 printf("Time to execute DT: %Lg %Lg minmax:%Lg secs\n",t_kernel_ap1,t_kernel_ap2,t_min_max3);
-/*
- for(int i=0;i<height;i++)
-{
-	for(int j=0;j<width;j++)
-	{
-		if(max_val < out->data[i*width+j]) max_val = out->data[i*width+j];
-		if(min_val > out->data[i*width+j]) min_val = out->data[i*width+j];
-	
-	}
-}
-*/
 	float scale = 255/(sqrt(max_val)-sqrt(min_val));
 	printf("max:%0.2f min:%0.2f s=%0.2f\n",max_val,min_val,scale);	
   for(int i=0;i<height;i++)
@@ -469,58 +369,11 @@ printf("Time to execute DT: %Lg %Lg minmax:%Lg secs\n",t_kernel_ap1,t_kernel_ap2
   	}
   }
 
-/*
----------------Testing CuBLAS-------------------
-*/
 
-	dtype3 *incb,*dincb ;
-	dtype3 *outcb,*doutcb;
-  	incb = (dtype3*) malloc (N * sizeof (dtype3));
-  	outcb = (dtype3*) malloc (N * sizeof (dtype3));
-	for(int i=0;i<height;i++)
-	{
-		for(int j=0;j<width;j++)
-		{
-			incb[i*width +j] = (float)out_res->data[i*width+j];
-		}
-	}
-       
-        //incb = out_res->data;
-        CUDA_CHECK_ERROR (cudaMalloc (&dincb,N * sizeof (dtype3)));
-        CUDA_CHECK_ERROR (cudaMalloc (&doutcb, N * sizeof (dtype3)));
-	//outcb = trans_res->data;
-  CUDA_CHECK_ERROR (cudaMemcpy (dincb,incb, N * sizeof (dtype3), 
-				cudaMemcpyHostToDevice));
-        image<uchar> *trans_res = new image<uchar>(height,width);
-	
- //	int m1,n1;
-	m1 = height;
-	n1 = width;
-//	cublasHandle_t handle;
-//	dtype3 alpha = 1.;
-//	dtype3 beta  = 0.;
-	cublasSafeCall(cublasCreate(&handle));
-	cublasSafeCall(cublasSgeam(handle, CUBLAS_OP_T, CUBLAS_OP_T, m1, n1, &alpha, dincb, n1, &beta, dincb, n1, doutcb, m1));
 
-  CUDA_CHECK_ERROR (cudaMemcpy (outcb, doutcb, N* sizeof (dtype3), cudaMemcpyDeviceToHost));
-	
-	//trans_res->data = outcb; 
-
-	for(int i=0;i<width;i++)
-	{
-		for(int j=0;j<height;j++)
-		{
-			trans_res->data[i*height +j] = (uchar)outcb[i*height+j];
-		}
-	}
   savePGM(out_res, output_name);
 
 //------------------------------------------------
-
-
- 
-
-/*===================================================*/
 
 
 /*===================================================*/
@@ -563,16 +416,5 @@ for(int i=0;i<20;i++)
 printf("\n");
 
 
-/*===================================================*/
-/*
-thrust::host_vector<int> h_vec( 16*1024*1024 );
-thrust::generate(h_vec.begin(), h_vec.end(), rand);
-// transfer data to the device
-thrust::device_vector<int> d_vec = h_vec;
-thrust::sort(d_vec.begin(), d_vec.end()); // sort data on the device
-// transfer data back to host
-thrust::copy(d_vec.begin(), d_vec.end(), h_vec.begin());
-printf("thrust finished sorting\n");
-*/
   return 0;
 }
