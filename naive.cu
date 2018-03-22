@@ -354,13 +354,13 @@ for (int y = 0; y < out->height(); y++) {
   cudaThreadSynchronize ();
 
   //CUDA_CHECK_ERROR (cudaMemcpy (h_odata, d_odata, N* sizeof (dtype2), cudaMemcpyDeviceToHost));
-  CUDA_CHECK_ERROR (cudaMemcpy (h_odata, d_odata, N* sizeof (dtype), cudaMemcpyDeviceToHost));
+//  CUDA_CHECK_ERROR (cudaMemcpy (h_odata, d_odata, N* sizeof (dtype), cudaMemcpyDeviceToHost));
  
 
  image<dtype> *transpose_img = new image<dtype>(height, width, false); //Note: Here height, width oppositve of above, doesn't matter though because memory allocated same
 
   /*----Below loop is to do transpose, make this part parallel later*/
-   for(int i=0;i<width;i++)
+/*   for(int i=0;i<width;i++)
   {
     for(int j=0;j<height;j++)
     {
@@ -368,18 +368,16 @@ for (int y = 0; y < out->height(); y++) {
 
     }
   }
-
-/*
- for(int i=0;i<width;i++)
-  {
-    for(int j=0;j<height;j++)
-    {
-      gray_trans->data[i*height + j] = input->data[j*width + i];
-    }
-  }
-
 */
 
+ 	int m1,n1;
+	cublasHandle_t handle;
+	dtype3 alpha = 1.;
+	dtype3 beta  = 0.;
+	m1 = height;
+	n1 = width;
+	cublasSafeCall(cublasCreate(&handle));
+	cublasSafeCall(cublasSgeam(handle, CUBLAS_OP_T, CUBLAS_OP_T, m1, n1, &alpha, d_odata, n1, &beta, d_odata, n1, d_idata, m1));
   dim3 gb2(2,1, 1);
   dim3 tb2(200, 1, 1);
 
@@ -389,9 +387,10 @@ for (int y = 0; y < out->height(); y++) {
   dtype *hodata2;
   hodata2 = transpose_img->data;
 
-
+/*
   CUDA_CHECK_ERROR (cudaMemcpy (d_idata,hidata2, N * sizeof (dtype), 
         cudaMemcpyHostToDevice));
+*/
 t_kernel_ap1 = stopwatch_stop(timer);
 
   kernel_all_pix_float <<<gb2, tb2>>> (d_idata, d_odata, height,width); //reversed width,height
@@ -406,12 +405,13 @@ stopwatch_start(timer);
   cudaThreadSynchronize ();
 
 
-
+/*
   //CUDA_CHECK_ERROR (cudaMemcpy (h_odata, d_odata, N* sizeof (dtype2), cudaMemcpyDeviceToHost));
   CUDA_CHECK_ERROR (cudaMemcpy (hodata2, d_odata, N* sizeof (dtype), cudaMemcpyDeviceToHost));
   
   
 //This section is to do the tranpose again
+
    for(int i=0;i<width;i++)
   {
     for(int j=0;j<height;j++)
@@ -419,11 +419,19 @@ stopwatch_start(timer);
       output_img->data[j*width+i] = hodata2[i*height+j];
     }
   }
+ */ 
+	m1 = width;
+	n1 = height;
+	cublasSafeCall(cublasCreate(&handle));
+	cublasSafeCall(cublasSgeam(handle, CUBLAS_OP_T, CUBLAS_OP_T, m1, n1, &alpha, d_odata, n1, &beta, d_odata, n1, d_idata, m1));
+
+  CUDA_CHECK_ERROR (cudaMemcpy (hodata2, d_idata, N* sizeof (dtype), cudaMemcpyDeviceToHost));
+  
 t_kernel_ap2 = stopwatch_stop(timer);
   
   //image<uchar> *out_res= imageFLOATtoUCHAR(output_img,0.0,255.0);
     image<uchar> *out_res = new image<uchar>(width,height,false);
-    //output_img->data = out->data; 
+    output_img->data = hodata2; 
     float min_val = output_img->data[0];
     float max_val = min_val;
 long double t_min_max3;
@@ -467,9 +475,6 @@ printf("Time to execute DT: %Lg %Lg minmax:%Lg secs\n",t_kernel_ap1,t_kernel_ap2
 
 	dtype3 *incb,*dincb ;
 	dtype3 *outcb,*doutcb;
- 	int m1,n1;
-	m1 = height;
-	n1 = width;
   	incb = (dtype3*) malloc (N * sizeof (dtype3));
   	outcb = (dtype3*) malloc (N * sizeof (dtype3));
 	for(int i=0;i<height;i++)
@@ -487,9 +492,13 @@ printf("Time to execute DT: %Lg %Lg minmax:%Lg secs\n",t_kernel_ap1,t_kernel_ap2
   CUDA_CHECK_ERROR (cudaMemcpy (dincb,incb, N * sizeof (dtype3), 
 				cudaMemcpyHostToDevice));
         image<uchar> *trans_res = new image<uchar>(height,width);
-	cublasHandle_t handle;
-	dtype3 alpha = 1.;
-	dtype3 beta  = 0.;
+	
+ //	int m1,n1;
+	m1 = height;
+	n1 = width;
+//	cublasHandle_t handle;
+//	dtype3 alpha = 1.;
+//	dtype3 beta  = 0.;
 	cublasSafeCall(cublasCreate(&handle));
 	cublasSafeCall(cublasSgeam(handle, CUBLAS_OP_T, CUBLAS_OP_T, m1, n1, &alpha, dincb, n1, &beta, dincb, n1, doutcb, m1));
 
@@ -504,7 +513,7 @@ printf("Time to execute DT: %Lg %Lg minmax:%Lg secs\n",t_kernel_ap1,t_kernel_ap2
 			trans_res->data[i*height +j] = (uchar)outcb[i*height+j];
 		}
 	}
-  savePGM(trans_res, output_name);
+  savePGM(out_res, output_name);
 
 //------------------------------------------------
 
