@@ -236,6 +236,26 @@ main(int argc, char** argv)
   }
   //char *input_name = argv[1];
   //char *output_name = argv[2];
+//---Print device properties----//
+
+ int nDevices;
+
+  cudaGetDeviceCount(&nDevices);
+  for (int i = 0; i < nDevices; i++) {
+    cudaDeviceProp prop;
+    cudaGetDeviceProperties(&prop, i);
+    printf("Device Number: %d\n", i);
+    printf("  Device name: %s\n", prop.name);
+    printf("  Memory Clock Rate (KHz): %d\n",
+           prop.memoryClockRate);
+    printf("  Memory Bus Width (bits): %d\n",
+           prop.memoryBusWidth);
+    printf("  Peak Memory Bandwidth (GB/s): %f\n\n",
+           2.0*prop.memoryClockRate*(prop.memoryBusWidth/8)/1.0e6);
+    printf(" Shared Memory per block(bytes): %d\n", prop.sharedMemPerBlock);
+    printf("Total memory available(bytes): %d\n",prop.totalConstMem);
+  }
+//-----------------------------//
 
   string dir = string("./img/");
   vector<string> files = vector<string>();
@@ -266,7 +286,7 @@ main(int argc, char** argv)
 
   for (unsigned int i = 0;i < files.size();i++)//change 5 to files.size() 
  {
-	cout << files[i] << " \n";		
+//	cout << files[i] << " \n";		
   }
   
   for (unsigned int i = 2;i < files.size();i++)//change 5 to files.size() 
@@ -291,7 +311,7 @@ main(int argc, char** argv)
   //int N = width*height;
   
   struct stopwatch_t* timer = NULL;
-  long double t_kernel_ap1,t_kernel_ap2;
+  long double t_kernel_ap1,t_kernel_ap2,t_kernel_ap3,t_kernel_ap4;
   
   
   image<dtype> *input_float = imageUCHARtoFLOAT(input);
@@ -325,13 +345,15 @@ main(int argc, char** argv)
   
   stopwatch_start(timer);
   kernel_all_pix_float <<<gb, tb>>> (d_idata, d_odata,width,height);
-  CudaCheckError();
-  
+ 
   cudaThreadSynchronize ();
+  t_kernel_ap1 = stopwatch_stop(timer); 
+
+ //CudaCheckError();
   
   
   
-  
+  stopwatch_start(timer);
   
   int m1,n1;
 	cublasHandle_t handle;
@@ -350,6 +372,7 @@ main(int argc, char** argv)
   
   }
   
+  t_kernel_ap4 = stopwatch_stop(timer);
   dim3 gb2(Num_Files,num_blocks, 1);
   dim3 tb2(num_threads, 1, 1);
   
@@ -364,7 +387,6 @@ main(int argc, char** argv)
   cudaMemcpyHostToDevice));
   */
   
-  t_kernel_ap1 = stopwatch_stop(timer);
   kernel_all_pix_float <<<gb2, tb2>>> (d_idata, d_odata, height,width); //reversed width,height
   cudaThreadSynchronize ();
   
@@ -372,16 +394,20 @@ main(int argc, char** argv)
   
   
   kernel_all_pix_float <<<gb2, tb2>>> (d_idata, d_odata,height,width); //reversed width,height
-  CudaCheckError();
-  
+ 
   cudaThreadSynchronize ();
+  t_kernel_ap2 = stopwatch_stop(timer);
+  
   
   
  
 	m1 = width;
 	n1 = height;
   
-  for(int i=0;i<Num_Files;i++)
+  
+
+  stopwatch_start(timer);   
+for(int i=0;i<Num_Files;i++)
   {
     dtype *curr_image_o,*curr_image_i;
     curr_image_o = d_odata+(Num_Pixels*i);
@@ -391,8 +417,8 @@ main(int argc, char** argv)
   
   }
   CUDA_CHECK_ERROR (cudaMemcpy (hodata2, d_idata, Total_Num_Pixels* sizeof (dtype), cudaMemcpyDeviceToHost));
-  
-  t_kernel_ap2 = stopwatch_stop(timer);
+ t_kernel_ap3 = stopwatch_stop(timer);
+printf("Time for  transpose: %Lg %Lg seconds\n",t_kernel_ap3,t_kernel_ap4); 
   
   //image<uchar> *out_res= imageFLOATtoUCHAR(output_img,0.0,255.0);
   
@@ -418,7 +444,7 @@ main(int argc, char** argv)
       }
     } 
     float scale = 255/(sqrt(max_val)-sqrt(min_val));
-    printf("max:%0.2f min:%0.2f s=%0.2f\n",max_val,min_val,scale);	
+  //  printf("max:%0.2f min:%0.2f s=%0.2f\n",max_val,min_val,scale);	
     image<uchar> *out_res = new image<uchar>(width,height,false);
     for(int i=0;i<height;i++)
     {
