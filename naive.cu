@@ -183,17 +183,99 @@ inline void __cudaCheckError( const char *file, const int line )
     return;
 }
 
+
+
+
+
 __global__ void
-kernel_all_pix (dtype2 *input, dtype2 *output, unsigned int width,unsigned int height)
+kernel_all_pix_float_trans (dtype *input, dtype *output, unsigned int width,unsigned int height)
 {
 //One row stored in shared memory
 //Number of blocks = height
 //For now launch 1 block with height  number of threads
- __shared__  dtype2 scratch[400];
+ //__shared__  dtype2 scratch[400];
 
-  unsigned int img_index = threadIdx.x*width;
+  //unsigned int img_index = threadIdx.x*width;
 
-  __syncthreads ();
+    unsigned int row_num = blockIdx.x * blockDim.x + threadIdx.x;
+    unsigned int img_index = (row_num)*width;
+
+  // assert(row_num<height);
+ 
+    __syncthreads ();
+
+if(row_num < height)
+{
+    float f[MAX_WIDTH_HEIGHT];
+
+    for (int x = 0; x < width; x++) 
+    {
+      f[x] = input[img_index+x];
+    }
+    dt_i(f, width);
+  
+  
+  	__syncthreads ();
+  
+    for (int x = 0; x < width; x++) 
+    {
+      output[img_index+x] = f[x];
+    }
+
+
+}
+
+  	__syncthreads ();
+if(img_index ==0) //this has to be later turned it to block indx condition , so that computation is for every image
+{
+	//cublas transpose
+   for(int i=0;i<width;i++)
+  {
+    for(int j=0;j<height;j++)
+    {
+      input[i*height+j] = output[j*width+i];  
+
+    }
+  }
+
+}
+
+  	__syncthreads ();
+if(row_num<width)
+{
+
+    unsigned int img_index = (row_num)*height;
+    float f[MAX_WIDTH_HEIGHT];
+
+    for (int x = 0; x < height; x++) 
+    {
+      f[x] = input[img_index+x];
+    }
+    dt_i(f, width);
+  	__syncthreads ();
+    for (int x = 0; x < height; x++) 
+    {
+      output[img_index+x] = f[x];
+    }
+
+
+}
+	
+
+	  __syncthreads ();
+if(img_index ==0) //this has to be later turned it to block indx condition , so that computation is for every image
+{
+	//cublas transpose
+   for(int i=0;i<width;i++)
+  {
+    for(int j=0;j<height;j++)
+    {
+      input[j*width+i] = output[i*height+j];
+    }
+  }
+}
+
+/*	  __syncthreads ();
 	for(int j=0;j<width;j++)
 	{
 		if(j>20 && j<80)
@@ -201,11 +283,14 @@ kernel_all_pix (dtype2 *input, dtype2 *output, unsigned int width,unsigned int h
 		else
 		output[img_index+j]= input[img_index+j];
 	}
-
-  __syncthreads ();
+*/
+  	__syncthreads ();
 
 
 }
+
+
+
 
 __global__ void
 kernel_all_pix_float (dtype *input, dtype *output, unsigned int width,unsigned int height)
@@ -244,19 +329,12 @@ if(row_num < height)
 
 
 }
-/*	  __syncthreads ();
-	for(int j=0;j<width;j++)
-	{
-		if(j>20 && j<80)
-		output[img_index+j]= 40;
-		else
-		output[img_index+j]= input[img_index+j];
-	}
-*/
-  	__syncthreads ();
+
 
 
 }
+	
+
 
 
 void all_pix (dtype2 *input, dtype2 *output, unsigned int width,unsigned int height)
@@ -299,13 +377,8 @@ for (int y = 0; y < out->height(); y++) {
   }
   image<uchar> *gray = imageFLOATtoUCHAR(out);
 //-----------------------------//
+/*
   int N = width*height;
-/*  
-  dtype2 *h_idata, *h_odata, h_cpu;
- 
-  dtype2 *d_idata, *d_odata;	
-
-*/
   struct stopwatch_t* timer = NULL;
   long double t_kernel_ap1,t_kernel_ap2;
 
@@ -326,12 +399,6 @@ for (int y = 0; y < out->height(); y++) {
 
 
 
-/* //Switch to this in case of dtype2
-  h_idata = (dtype2*) malloc (N * sizeof (dtype2));
-  h_odata = (dtype2*) malloc (N * sizeof (dtype2));
-  CUDA_CHECK_ERROR (cudaMalloc (&d_idata,N * sizeof (dtype2)));
-  CUDA_CHECK_ERROR (cudaMalloc (&d_odata, N * sizeof (dtype2)));
-*/
   h_idata = input_float->data;
 
   unsigned int max_width_height = (height>width)?height:width;
@@ -366,7 +433,7 @@ for (int y = 0; y < out->height(); y++) {
 
  image<dtype> *transpose_img = new image<dtype>(height, width, false); //Note: Here height, width oppositve of above, doesn't matter though because memory allocated same
 
-  /*----Below loop is to do transpose, make this part parallel later*/
+  //----Below loop is to do transpose, make this part parallel later
    for(int i=0;i<width;i++)
   {
     for(int j=0;j<height;j++)
@@ -376,16 +443,7 @@ for (int y = 0; y < out->height(); y++) {
     }
   }
 
-/*
- for(int i=0;i<width;i++)
-  {
-    for(int j=0;j<height;j++)
-    {
-      gray_trans->data[i*height + j] = input->data[j*width + i];
-    }
-  }
 
-*/
 
   dim3 gb2(num_blocks,1, 1);
   dim3 tb2(num_threads, 1, 1);
@@ -447,17 +505,156 @@ for(int i=0;i<height;i++)
 t_min_max3 = stopwatch_stop(timer);  
 //printf("Time to execute DT: %Lg %Lg minmax:%Lg secs\n",t_kernel_ap1,t_kernel_ap2,t_min_max3);
 printf("Time to execute DT: %Lg secs\n",t_kernel_ap1+t_kernel_ap2);
+	float scale = 255/(sqrt(max_val)-sqrt(min_val));
+	printf("max:%0.2f min:%0.2f s=%0.2f\n",max_val,min_val,scale);	
+  for(int i=0;i<height;i++)
+  {
+  	for(int j=0;j<width;j++)
+  	{
+  		out_res->data[i*width+j] = (uchar)(scale * (sqrt(output_img->data[i*width+j])-sqrt(min_val)));		//Hardcoding scale value here, need to find min ,max automatically and do it properly
+  		//out_res->data[i*width+j] = (uchar)(output_img->data[i*width+j]);		//Hardcoding scale value here, need to find min ,max automatically and do it properly
+  	}
+  }
+*/
+
+//--------------------------------------------------
+	// TRANSPOSE in KERNEL
+//--------------------------------------------------
+
+  int N = width*height;
+/*  
+  dtype2 *h_idata, *h_odata, h_cpu;
+ 
+  dtype2 *d_idata, *d_odata;	
+
+*/
+  struct stopwatch_t* timer = NULL;
+  long double t_kernel_ap1=0.0,t_kernel_ap2=0.0;
+
+  dtype *h_idata, *h_odata, h_cpu;
+  dtype *d_idata, *d_odata;	
+
+  image<dtype> *input_float = imageUCHARtoFLOAT(input);
+  image<dtype> *output_img = new image<dtype>(width, height, false);
+
+  
+  stopwatch_init();
+  timer = stopwatch_create();
+
+  h_idata = (dtype*) malloc (N * sizeof (dtype));
+  h_odata = (dtype*) malloc (N * sizeof (dtype));
+  CUDA_CHECK_ERROR (cudaMalloc (&d_idata,N * sizeof (dtype)));
+  CUDA_CHECK_ERROR (cudaMalloc (&d_odata, N * sizeof (dtype)));
+
+
+
+  h_idata = input_float->data;
+
+  unsigned int max_width_height = (height>width)?height:width;
+  int num_blocks = int(max_width_height/MAX_THREADS) + 1;  
+  int num_threads = MAX_THREADS;
+
+  dim3 gb(num_blocks,1, 1);
+  dim3 tb(num_threads, 1, 1);
+
+  
+
+  //CUDA_CHECK_ERROR (cudaMemcpy (d_idata,h_idata, N * sizeof (dtype2), 
+//				cudaMemcpyHostToDevice));
+
+  CUDA_CHECK_ERROR (cudaMemcpy (d_idata,h_idata, N * sizeof (dtype), 
+				cudaMemcpyHostToDevice));
+
+
+  kernel_all_pix_float_trans <<<gb, tb>>> (d_idata, d_odata, width,height);
+  cudaThreadSynchronize ();
+  
+  
+  stopwatch_start(timer);
+  kernel_all_pix_float_trans <<<gb, tb>>> (d_idata, d_odata,width,height);
+  CudaCheckError();
+
+  cudaThreadSynchronize ();
+
+  //CUDA_CHECK_ERROR (cudaMemcpy (h_odata, d_odata, N* sizeof (dtype2), cudaMemcpyDeviceToHost));
+  CUDA_CHECK_ERROR (cudaMemcpy (h_odata, d_idata, N* sizeof (dtype), cudaMemcpyDeviceToHost));
+ 
 /*
- for(int i=0;i<height;i++)
+ image<dtype> *transpose_img = new image<dtype>(height, width, false); //Note: Here height, width oppositve of above, doesn't matter though because memory allocated same
+
+  //----Below loop is to do transpose, make this part parallel later
+   for(int i=0;i<width;i++)
+  {
+    for(int j=0;j<height;j++)
+    {
+      transpose_img->data[i*height+j] = h_odata[j*width+i];  
+
+    }
+  }
+
+
+  dim3 gb2(num_blocks,1, 1);
+  dim3 tb2(num_threads, 1, 1);
+
+  dtype *hidata2;
+  hidata2 = transpose_img->data;
+
+  dtype *hodata2;
+  hodata2 = transpose_img->data;
+
+
+  CUDA_CHECK_ERROR (cudaMemcpy (d_idata,hidata2, N * sizeof (dtype), 
+        cudaMemcpyHostToDevice));
+t_kernel_ap1 = stopwatch_stop(timer);
+
+  kernel_all_pix_float <<<gb2, tb2>>> (d_idata, d_odata, height,width); //reversed width,height
+  cudaThreadSynchronize ();
+
+stopwatch_start(timer);   
+
+
+  kernel_all_pix_float <<<gb2, tb2>>> (d_idata, d_odata,height,width); //reversed width,height
+  CudaCheckError();
+
+  cudaThreadSynchronize ();
+
+
+
+  //CUDA_CHECK_ERROR (cudaMemcpy (h_odata, d_odata, N* sizeof (dtype2), cudaMemcpyDeviceToHost));
+  CUDA_CHECK_ERROR (cudaMemcpy (hodata2, d_odata, N* sizeof (dtype), cudaMemcpyDeviceToHost));
+  
+  
+//This section is to do the tranpose again
+   for(int i=0;i<width;i++)
+  {
+    for(int j=0;j<height;j++)
+    {
+      output_img->data[j*width+i] = hodata2[i*height+j];
+    }
+  }
+*/
+t_kernel_ap2 = stopwatch_stop(timer);
+  
+  //image<uchar> *out_res= imageFLOATtoUCHAR(output_img,0.0,255.0);
+    image<uchar> *out_res = new image<uchar>(width,height,false);
+    output_img->data = h_odata; 
+    float min_val = output_img->data[0];
+    float max_val = min_val;
+long double t_min_max3;
+stopwatch_start(timer);
+for(int i=0;i<height;i++)
 {
 	for(int j=0;j<width;j++)
 	{
-		if(max_val < out->data[i*width+j]) max_val = out->data[i*width+j];
-		if(min_val > out->data[i*width+j]) min_val = out->data[i*width+j];
+		if(max_val < output_img->data[i*width+j]) max_val = output_img->data[i*width+j];
+		if(min_val > output_img->data[i*width+j]) min_val = output_img->data[i*width+j];
 	
 	}
-}
-*/
+} 
+t_min_max3 = stopwatch_stop(timer);  
+//printf("Time to execute DT: %Lg %Lg minmax:%Lg secs\n",t_kernel_ap1,t_kernel_ap2,t_min_max3);
+printf("Time to execute DT: %Lg secs\n",t_kernel_ap1+t_kernel_ap2);
+	
 	float scale = 255/(sqrt(max_val)-sqrt(min_val));
 	printf("max:%0.2f min:%0.2f s=%0.2f\n",max_val,min_val,scale);	
   for(int i=0;i<height;i++)
@@ -469,15 +666,31 @@ printf("Time to execute DT: %Lg secs\n",t_kernel_ap1+t_kernel_ap2);
   	}
   }
 
+
+
+  savePGM(out_res, output_name);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 ---------------Testing CuBLAS-------------------
 */
 
 	dtype3 *incb,*dincb ;
 	dtype3 *outcb,*doutcb;
- 	int m1,n1;
-	m1 = height;
-	n1 = width;
   	incb = (dtype3*) malloc (N * sizeof (dtype3));
   	outcb = (dtype3*) malloc (N * sizeof (dtype3));
 	for(int i=0;i<height;i++)
@@ -495,6 +708,9 @@ printf("Time to execute DT: %Lg secs\n",t_kernel_ap1+t_kernel_ap2);
   CUDA_CHECK_ERROR (cudaMemcpy (dincb,incb, N * sizeof (dtype3), 
 				cudaMemcpyHostToDevice));
         image<uchar> *trans_res = new image<uchar>(height,width);
+ 	int m1,n1;
+	m1 = height;
+	n1 = width;
 	cublasHandle_t handle;
 	dtype3 alpha = 1.;
 	dtype3 beta  = 0.;
@@ -512,7 +728,7 @@ printf("Time to execute DT: %Lg secs\n",t_kernel_ap1+t_kernel_ap2);
 			trans_res->data[i*height +j] = (uchar)outcb[i*height+j];
 		}
 	}
-  savePGM(out_res, output_name);
+  //savePGM(out_res, output_name);
 
 //------------------------------------------------
 

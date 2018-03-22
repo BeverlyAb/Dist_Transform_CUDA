@@ -1,0 +1,33 @@
+Script began: Wed Mar 21 17:30:46 PDT 2018
+Node: compute-1-14.local
+Current directory: /data/users/jbhanush/Project/h3n
+
+=== Running 5 trials of naive ... ===
+*** Trial 1 ***
+======== NVPROF is profiling naive...
+======== Command: naive build.pgm out.pgm
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+Time to execute DT: 0.184393 secs
+max:251.00 min:0.00 s=16.10
+0=20.0 1=1.0 2=2.0 3=23.0 4=4.0 5=5.0 6=26.0 7=7.0 8=8.0 9=29.0 10=10.0 11=11.0 12=32.0 13=13.0 14=14.0 15=35.0 16=16.0 17=17.0 18=38.0 19=19.0 
+======== Profiling result:
+     Start  Duration           Grid Size     Block Size     Regs*    SSMem*    DSMem*      Size  Throughput    Device   Context    Stream  Name
+  415.44ms  122.78us                   -              -         -         -         -  617.60KB    5.03GB/s         0         1         1  [CUDA memcpy HtoD]
+  416.13ms  186.12ms             (2 1 1)      (256 1 1)        14        0B        0B         -           -         0         1         1  kernel_all_pix_float_trans(float*, float*, unsigned int, unsigned int)
+  602.58ms  183.72ms             (2 1 1)      (256 1 1)        14        0B        0B         -           -         0         1         1  kernel_all_pix_float_trans(float*, float*, unsigned int, unsigned int)
+  786.43ms  127.01us                   -              -         -         -         -  617.60KB    4.86GB/s         0         1         1  [CUDA memcpy DtoH]
+  797.67ms  124.00us                   -              -         -         -         -  617.60KB    4.98GB/s         0         1         1  [CUDA memcpy HtoD]
+  798.47ms    1.95us                   -              -         -         -         -      112B   57.38MB/s         0         1         1  [CUDA memcpy HtoD]
+  798.75ms   13.64us             (8 6 1)      (256 1 1)        35    8.32KB        0B         -           -         0         1         1  void transpose_readWrite_alignment_kernel<float, int=1, bool=0, int=6, int=5, int=3>(cublasTransposeParams<float>)
+  798.77ms  112.29us                   -              -         -         -         -  617.60KB    5.50GB/s         0         1         1  [CUDA memcpy DtoH]
+  800.03ms    1.70us                   -              -         -         -         -    1.02KB  603.77MB/s         0         1         1  [CUDA memcpy HtoD]
+  800.04ms    3.99us             (1 1 1)      (256 1 1)        10    1.02KB        0B         -           -         0         1         1  kernel_thresh(float*, float*, unsigned int)
+  800.18ms    3.23us             (1 1 1)      (256 1 1)        10    1.02KB        0B         -           -         0         1         1  kernel_thresh(float*, float*, unsigned int)
+  800.27ms    2.98us                   -              -         -         -         -    1.02KB  344.09MB/s         0         1         1  [CUDA memcpy DtoH]
+
+Regs: Number of registers used per CUDA thread.
+SSMem: Static shared memory allocated per CUDA block.
+DSMem: Dynamic shared memory allocated per CUDA block.
+
+=== Done! ===
