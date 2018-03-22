@@ -428,7 +428,7 @@ printf("Time for  transpose: %Lg %Lg seconds\n",t_kernel_ap3,t_kernel_ap4);
   //long double t_min_max3;
 
   printf("Time to execute DT: %Lg secs\n",t_kernel_ap1+t_kernel_ap2);
-    
+  printf("Total time: %Lg secs\n",t_kernel_ap1 + t_kernel_ap2 + t_kernel_ap3 + t_kernel_ap4);  
   for(int file_no = 0;file_no<Num_Files;file_no++)
   {
     int img_index= file_no*Num_Pixels;
