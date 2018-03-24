@@ -1,2 +1,0 @@
-cudaCheckError() failed at naive.cu:263 : invalid configuration argument
-======== Warning: Application returned non-zero code 255
