@@ -1,0 +1,6018 @@
+Script began: Thu Mar 22 01:57:14 PDT 2018
+Node: compute-1-14.local
+Current directory: /data/users/jbhanush/Project/h3n
+
+=== Running 5 trials of naive ... ===
+*** Trial 1 ***
+3002. 
+.. 
+grad_100007.pgm 
+grad_100039.pgm 
+grad_100075.pgm 
+grad_100080.pgm 
+grad_100098.pgm 
+grad_100099.pgm 
+grad_10081.pgm 
+grad_101027.pgm 
+grad_101084.pgm 
+grad_101085.pgm 
+grad_101087.pgm 
+grad_102061.pgm 
+grad_102062.pgm 
+grad_103006.pgm 
+grad_103029.pgm 
+grad_103041.pgm 
+grad_103070.pgm 
+grad_103078.pgm 
+grad_104010.pgm 
+grad_104022.pgm 
+grad_104055.pgm 
+grad_105019.pgm 
+grad_105025.pgm 
+grad_105027.pgm 
+grad_105053.pgm 
+grad_106005.pgm 
+grad_106020.pgm 
+grad_106024.pgm 
+grad_106025.pgm 
+grad_106047.pgm 
+grad_107014.pgm 
+grad_107045.pgm 
+grad_107072.pgm 
+grad_108004.pgm 
+grad_108005.pgm 
+grad_108036.pgm 
+grad_108041.pgm 
+grad_108069.pgm 
+grad_108070.pgm 
+grad_108073.pgm 
+grad_108082.pgm 
+grad_109034.pgm 
+grad_109053.pgm 
+grad_109055.pgm 
+grad_1_100007.pgm 
+grad_1_100039.pgm 
+grad_1_100075.pgm 
+grad_1_100080.pgm 
+grad_1_100098.pgm 
+grad_1_100099.pgm 
+grad_1_10081.pgm 
+grad_1_101027.pgm 
+grad_1_101084.pgm 
+grad_1_101085.pgm 
+grad_1_101087.pgm 
+grad_1_102061.pgm 
+grad_1_102062.pgm 
+grad_1_103006.pgm 
+grad_1_103029.pgm 
+grad_1_103041.pgm 
+grad_1_103070.pgm 
+grad_1_103078.pgm 
+grad_1_104010.pgm 
+grad_1_104022.pgm 
+grad_1_104055.pgm 
+grad_1_105019.pgm 
+grad_1_105025.pgm 
+grad_1_105027.pgm 
+grad_1_105053.pgm 
+grad_1_106005.pgm 
+grad_1_106020.pgm 
+grad_1_106024.pgm 
+grad_1_106025.pgm 
+grad_1_106047.pgm 
+grad_1_107014.pgm 
+grad_1_107045.pgm 
+grad_1_107072.pgm 
+grad_1_108004.pgm 
+grad_1_108005.pgm 
+grad_1_108036.pgm 
+grad_1_108041.pgm 
+grad_1_108069.pgm 
+grad_1_108070.pgm 
+grad_1_108073.pgm 
+grad_1_108082.pgm 
+grad_1_109034.pgm 
+grad_1_109053.pgm 
+grad_1_109055.pgm 
+grad_1_112056.pgm 
+grad_1_112082.pgm 
+grad_1_112090.pgm 
+grad_1_113009.pgm 
+grad_1_113016.pgm 
+grad_1_113044.pgm 
+grad_1_117025.pgm 
+grad_1_117054.pgm 
+grad_1_118015.pgm 
+grad_1_118020.pgm 
+grad_1_118031.pgm 
+grad_1_118035.pgm 
+grad_1_118072.pgm 
+grad_1_119082.pgm 
+grad_1_120003.pgm 
+grad_1_12003.pgm 
+grad_1_120093.pgm 
+grad_112056.pgm 
+grad_1_12074.pgm 
+grad_112082.pgm 
+grad_1_12084.pgm 
+grad_112090.pgm 
+grad_1_122048.pgm 
+grad_1_123057.pgm 
+grad_1_123074.pgm 
+grad_1_124084.pgm 
+grad_1_126007.pgm 
+grad_1_126039.pgm 
+grad_1_128035.pgm 
+grad_1_130014.pgm 
+grad_1_130026.pgm 
+grad_1_130034.pgm 
+grad_1_130066.pgm 
+grad_113009.pgm 
+grad_113016.pgm 
+grad_113044.pgm 
+grad_1_134008.pgm 
+grad_2018.pgm 
+grad_1_134035.pgm 
+grad_1_134049.pgm 
+grad_1_134052.pgm 
+grad_1_134067.pgm 
+grad_1_135037.pgm 
+grad_1_135069.pgm 
+grad_1_138032.pgm 
+grad_1_138078.pgm 
+grad_1_140006.pgm 
+grad_1_140055.pgm 
+grad_1_140075.pgm 
+grad_1_140088.pgm 
+grad_1_14037.pgm 
+grad_1_14085.pgm 
+grad_1_14092.pgm 
+grad_1_141012.pgm 
+grad_1_141048.pgm 
+grad_1_143090.pgm 
+grad_1_144067.pgm 
+grad_1_145014.pgm 
+grad_1_145053.pgm 
+grad_1_145059.pgm 
+grad_1_145079.pgm 
+grad_1_145086.pgm 
+grad_1_146074.pgm 
+grad_1_147021.pgm 
+grad_1_147062.pgm 
+grad_1_147077.pgm 
+grad_1_147080.pgm 
+grad_1_147091.pgm 
+grad_1_148026.pgm 
+grad_1_148089.pgm 
+grad_1_15004.pgm 
+grad_1_15011.pgm 
+grad_1_15062.pgm 
+grad_1_15088.pgm 
+grad_1_151087.pgm 
+grad_1_153077.pgm 
+grad_1_153093.pgm 
+grad_1_155060.pgm 
+grad_1_156054.pgm 
+grad_1_156065.pgm 
+grad_1_156079.pgm 
+grad_1_157032.pgm 
+grad_1_157036.pgm 
+grad_1_157055.pgm 
+grad_1_157087.pgm 
+grad_1_159002.pgm 
+grad_1_159008.pgm 
+grad_1_159022.pgm 
+grad_1_159029.pgm 
+grad_1_159045.pgm 
+grad_1_159091.pgm 
+grad_1_160006.pgm 
+grad_1_16004.pgm 
+grad_1_160067.pgm 
+grad_1_160068.pgm 
+grad_1_16052.pgm 
+grad_1_16068.pgm 
+grad_1_16077.pgm 
+grad_1_161045.pgm 
+grad_1_161062.pgm 
+grad_1_163004.pgm 
+grad_1_163014.pgm 
+grad_1_163062.pgm 
+grad_1_163085.pgm 
+grad_1_163096.pgm 
+grad_1_164046.pgm 
+grad_1_164074.pgm 
+grad_1_166081.pgm 
+grad_1_167062.pgm 
+grad_1_167083.pgm 
+grad_1_168084.pgm 
+grad_1_169012.pgm 
+grad_1_170054.pgm 
+grad_1_170057.pgm 
+grad_117025.pgm 
+grad_117054.pgm 
+grad_1_17067.pgm 
+grad_1_172032.pgm 
+grad_1_173036.pgm 
+grad_1_175032.pgm 
+grad_1_175043.pgm 
+grad_1_175083.pgm 
+grad_1_176019.pgm 
+grad_1_176035.pgm 
+grad_1_176039.pgm 
+grad_1_176051.pgm 
+grad_1_178054.pgm 
+grad_1_179084.pgm 
+grad_118015.pgm 
+grad_118020.pgm 
+grad_118031.pgm 
+grad_118035.pgm 
+grad_118072.pgm 
+grad_1_181018.pgm 
+grad_1_181021.pgm 
+grad_1_181079.pgm 
+grad_1_181091.pgm 
+grad_1_182053.pgm 
+grad_1_183055.pgm 
+grad_1_183066.pgm 
+grad_1_183087.pgm 
+grad_1_185092.pgm 
+grad_1_187003.pgm 
+grad_1_187029.pgm 
+grad_1_187039.pgm 
+grad_1_187058.pgm 
+grad_1_187071.pgm 
+grad_1_187083.pgm 
+grad_1_187099.pgm 
+grad_1_188005.pgm 
+grad_1_188025.pgm 
+grad_1_188063.pgm 
+grad_1_188091.pgm 
+grad_1_189003.pgm 
+grad_1_189006.pgm 
+grad_1_189011.pgm 
+grad_1_189013.pgm 
+grad_1_189029.pgm 
+grad_1_189080.pgm 
+grad_1_189096.pgm 
+grad_1_19021.pgm 
+grad_119082.pgm 
+grad_1_196015.pgm 
+grad_1_196027.pgm 
+grad_1_196040.pgm 
+grad_1_196062.pgm 
+grad_1_196073.pgm 
+grad_1_196088.pgm 
+grad_1_197017.pgm 
+grad_1_198004.pgm 
+grad_1_198023.pgm 
+grad_1_198054.pgm 
+grad_1_198087.pgm 
+grad_120003.pgm 
+grad_1_20008.pgm 
+grad_12003.pgm 
+grad_1_20069.pgm 
+grad_120093.pgm 
+grad_1_201080.pgm 
+grad_1_2018.pgm 
+grad_1_202000.pgm 
+grad_1_202012.pgm 
+grad_1_206062.pgm 
+grad_1_206097.pgm 
+grad_1_207038.pgm 
+grad_1_207049.pgm 
+grad_1_207056.pgm 
+grad_12074.pgm 
+grad_1_208001.pgm 
+grad_1_208078.pgm 
+grad_12084.pgm 
+grad_1_209021.pgm 
+grad_1_209070.pgm 
+grad_1_2092.pgm 
+grad_1_210088.pgm 
+grad_1_21077.pgm 
+grad_1_216041.pgm 
+grad_1_216053.pgm 
+grad_1_216066.pgm 
+grad_1_216081.pgm 
+grad_1_217013.pgm 
+grad_1_217090.pgm 
+grad_1_219090.pgm 
+grad_1_220003.pgm 
+grad_1_220075.pgm 
+grad_1_22013.pgm 
+grad_122048.pgm 
+grad_1_22090.pgm 
+grad_1_22093.pgm 
+grad_1_223004.pgm 
+grad_1_223060.pgm 
+grad_1_223061.pgm 
+grad_1_225017.pgm 
+grad_1_225022.pgm 
+grad_1_226022.pgm 
+grad_1_226033.pgm 
+grad_1_226043.pgm 
+grad_1_226060.pgm 
+grad_1_227040.pgm 
+grad_1_227046.pgm 
+grad_1_227092.pgm 
+grad_1_228076.pgm 
+grad_1_229036.pgm 
+grad_1_230063.pgm 
+grad_1_230098.pgm 
+grad_1_23025.pgm 
+grad_1_23050.pgm 
+grad_123057.pgm 
+grad_123074.pgm 
+grad_1_23080.pgm 
+grad_1_23084.pgm 
+grad_1_231015.pgm 
+grad_1_232038.pgm 
+grad_1_232076.pgm 
+grad_1_235098.pgm 
+grad_1_236017.pgm 
+grad_1_236037.pgm 
+grad_1_238011.pgm 
+grad_1_238025.pgm 
+grad_1_239007.pgm 
+grad_1_239096.pgm 
+grad_1_24004.pgm 
+grad_1_24063.pgm 
+grad_1_24077.pgm 
+grad_124084.pgm 
+grad_1_241004.pgm 
+grad_1_241048.pgm 
+grad_1_242078.pgm 
+grad_1_243095.pgm 
+grad_1_245051.pgm 
+grad_1_246009.pgm 
+grad_1_246016.pgm 
+grad_1_246053.pgm 
+grad_1_247003.pgm 
+grad_1_247012.pgm 
+grad_1_247085.pgm 
+grad_1_249021.pgm 
+grad_1_249061.pgm 
+grad_1_249087.pgm 
+grad_1_250047.pgm 
+grad_1_250087.pgm 
+grad_1_25098.pgm 
+grad_1_253016.pgm 
+grad_1_253027.pgm 
+grad_1_253036.pgm 
+grad_1_253055.pgm 
+grad_1_253092.pgm 
+grad_1_254033.pgm 
+grad_1_254054.pgm 
+grad_1_257098.pgm 
+grad_1_258089.pgm 
+grad_1_259060.pgm 
+grad_1_260058.pgm 
+grad_126007.pgm 
+grad_1_260081.pgm 
+grad_1_26031.pgm 
+grad_126039.pgm 
+grad_1_267036.pgm 
+grad_1_268002.pgm 
+grad_1_268048.pgm 
+grad_1_268074.pgm 
+grad_1_27059.pgm 
+grad_1_271008.pgm 
+grad_1_271031.pgm 
+grad_1_271035.pgm 
+grad_1_274007.pgm 
+grad_1_277053.pgm 
+grad_1_277095.pgm 
+grad_1_279005.pgm 
+grad_128035.pgm 
+grad_1_28075.pgm 
+grad_1_28083.pgm 
+grad_1_28096.pgm 
+grad_1_281017.pgm 
+grad_1_285022.pgm 
+grad_1_285036.pgm 
+grad_1_285079.pgm 
+grad_1_286092.pgm 
+grad_1_288024.pgm 
+grad_1_289011.pgm 
+grad_1_290035.pgm 
+grad_1_29030.pgm 
+grad_1_291000.pgm 
+grad_1_292066.pgm 
+grad_1_293029.pgm 
+grad_1_295087.pgm 
+grad_1_296007.pgm 
+grad_1_296028.pgm 
+grad_1_296058.pgm 
+grad_1_296059.pgm 
+grad_1_299086.pgm 
+grad_1_299091.pgm 
+grad_1_300091.pgm 
+grad_130014.pgm 
+grad_130026.pgm 
+grad_130034.pgm 
+grad_130066.pgm 
+grad_1_301007.pgm 
+grad_1_302003.pgm 
+grad_1_302008.pgm 
+grad_1_302022.pgm 
+grad_1_304034.pgm 
+grad_1_304074.pgm 
+grad_1_306005.pgm 
+grad_1_306051.pgm 
+grad_1_306052.pgm 
+grad_1_3063.pgm 
+grad_1_309004.pgm 
+grad_1_309040.pgm 
+grad_1_3096.pgm 
+grad_1_310007.pgm 
+grad_1_311068.pgm 
+grad_1_311081.pgm 
+grad_1_314016.pgm 
+grad_1_317043.pgm 
+grad_1_317080.pgm 
+grad_1_323016.pgm 
+grad_1_326025.pgm 
+grad_1_326038.pgm 
+grad_1_326085.pgm 
+grad_1_33039.pgm 
+grad_1_33044.pgm 
+grad_1_33066.pgm 
+grad_1_334025.pgm 
+grad_1_335088.pgm 
+grad_1_335094.pgm 
+grad_134008.pgm 
+grad_134035.pgm 
+grad_134049.pgm 
+grad_134052.pgm 
+grad_134067.pgm 
+grad_1_344010.pgm 
+grad_1_346016.pgm 
+grad_1_347031.pgm 
+grad_1_35008.pgm 
+grad_1_35010.pgm 
+grad_1_35028.pgm 
+grad_135037.pgm 
+grad_1_35049.pgm 
+grad_1_35058.pgm 
+grad_135069.pgm 
+grad_1_35070.pgm 
+grad_1_35091.pgm 
+grad_1_351093.pgm 
+grad_1_353013.pgm 
+grad_1_36046.pgm 
+grad_1_361010.pgm 
+grad_1_361084.pgm 
+grad_1_365025.pgm 
+grad_1_365072.pgm 
+grad_1_365073.pgm 
+grad_1_368016.pgm 
+grad_1_368037.pgm 
+grad_1_368078.pgm 
+grad_1_370036.pgm 
+grad_1_37073.pgm 
+grad_1_372019.pgm 
+grad_1_372047.pgm 
+grad_1_374020.pgm 
+grad_1_374067.pgm 
+grad_1_376001.pgm 
+grad_1_376020.pgm 
+grad_1_376043.pgm 
+grad_1_376086.pgm 
+grad_138032.pgm 
+grad_138078.pgm 
+grad_1_38082.pgm 
+grad_1_38092.pgm 
+grad_1_384022.pgm 
+grad_1_384089.pgm 
+grad_1_385022.pgm 
+grad_1_385028.pgm 
+grad_1_385039.pgm 
+grad_1_388006.pgm 
+grad_1_388016.pgm 
+grad_1_388018.pgm 
+grad_1_388067.pgm 
+grad_1_393035.pgm 
+grad_140006.pgm 
+grad_140055.pgm 
+grad_140075.pgm 
+grad_140088.pgm 
+grad_14037.pgm 
+grad_14085.pgm 
+grad_14092.pgm 
+grad_1_41004.pgm 
+grad_1_41006.pgm 
+grad_141012.pgm 
+grad_1_41025.pgm 
+grad_1_41029.pgm 
+grad_1_41033.pgm 
+grad_141048.pgm 
+grad_1_41069.pgm 
+grad_1_41085.pgm 
+grad_1_41096.pgm 
+grad_1_42012.pgm 
+grad_1_42044.pgm 
+grad_1_42049.pgm 
+grad_1_42078.pgm 
+grad_1_43033.pgm 
+grad_1_43051.pgm 
+grad_1_43070.pgm 
+grad_1_43074.pgm 
+grad_1_43083.pgm 
+grad_143090.pgm 
+grad_144067.pgm 
+grad_1_45000.pgm 
+grad_145014.pgm 
+grad_145053.pgm 
+grad_145059.pgm 
+grad_1_45077.pgm 
+grad_145079.pgm 
+grad_145086.pgm 
+grad_1_45096.pgm 
+grad_146074.pgm 
+grad_1_46076.pgm 
+grad_147021.pgm 
+grad_147062.pgm 
+grad_147077.pgm 
+grad_147080.pgm 
+grad_147091.pgm 
+grad_1_48017.pgm 
+grad_1_48025.pgm 
+grad_148026.pgm 
+grad_1_48055.pgm 
+grad_148089.pgm 
+grad_1_49024.pgm 
+grad_15004.pgm 
+grad_15011.pgm 
+grad_15062.pgm 
+grad_15088.pgm 
+grad_1_5096.pgm 
+grad_1_51084.pgm 
+grad_151087.pgm 
+grad_153077.pgm 
+grad_153093.pgm 
+grad_1_54005.pgm 
+grad_1_54082.pgm 
+grad_155060.pgm 
+grad_1_55067.pgm 
+grad_1_55073.pgm 
+grad_1_55075.pgm 
+grad_1_56028.pgm 
+grad_156054.pgm 
+grad_156065.pgm 
+grad_156079.pgm 
+grad_157032.pgm 
+grad_157036.pgm 
+grad_157055.pgm 
+grad_157087.pgm 
+grad_1_58060.pgm 
+grad_159002.pgm 
+grad_159008.pgm 
+grad_159022.pgm 
+grad_159029.pgm 
+grad_159045.pgm 
+grad_1_59078.pgm 
+grad_159091.pgm 
+grad_160006.pgm 
+grad_16004.pgm 
+grad_160067.pgm 
+grad_160068.pgm 
+grad_1_60079.pgm 
+grad_1_6046.pgm 
+grad_16052.pgm 
+grad_16068.pgm 
+grad_16077.pgm 
+grad_1_61034.pgm 
+grad_161045.pgm 
+grad_1_61060.pgm 
+grad_161062.pgm 
+grad_1_61086.pgm 
+grad_1_62096.pgm 
+grad_163004.pgm 
+grad_163014.pgm 
+grad_163062.pgm 
+grad_163085.pgm 
+grad_163096.pgm 
+grad_164046.pgm 
+grad_1_64061.pgm 
+grad_164074.pgm 
+grad_1_65010.pgm 
+grad_1_65019.pgm 
+grad_1_65033.pgm 
+grad_1_65074.pgm 
+grad_1_65084.pgm 
+grad_1_65132.pgm 
+grad_1_66039.pgm 
+grad_1_66053.pgm 
+grad_1_66075.pgm 
+grad_166081.pgm 
+grad_167062.pgm 
+grad_1_67079.pgm 
+grad_167083.pgm 
+grad_1_68077.pgm 
+grad_168084.pgm 
+grad_1_69000.pgm 
+grad_1_69007.pgm 
+grad_169012.pgm 
+grad_1_69015.pgm 
+grad_1_69020.pgm 
+grad_1_69022.pgm 
+grad_1_69040.pgm 
+grad_1_70011.pgm 
+grad_170054.pgm 
+grad_170057.pgm 
+grad_1_70090.pgm 
+grad_17067.pgm 
+grad_1_71046.pgm 
+grad_1_71076.pgm 
+grad_1_71099.pgm 
+grad_172032.pgm 
+grad_173036.pgm 
+grad_175032.pgm 
+grad_175043.pgm 
+grad_175083.pgm 
+grad_1_76002.pgm 
+grad_176019.pgm 
+grad_176035.pgm 
+grad_176039.pgm 
+grad_176051.pgm 
+grad_1_76053.pgm 
+grad_1_77062.pgm 
+grad_1_78004.pgm 
+grad_1_78019.pgm 
+grad_178054.pgm 
+grad_1_78098.pgm 
+grad_1_79073.pgm 
+grad_179084.pgm 
+grad_1_80085.pgm 
+grad_1_80090.pgm 
+grad_1_80099.pgm 
+grad_1_8023.pgm 
+grad_1_8049.pgm 
+grad_1_8068.pgm 
+grad_181018.pgm 
+grad_181021.pgm 
+grad_1_81066.pgm 
+grad_181079.pgm 
+grad_1_81090.pgm 
+grad_181091.pgm 
+grad_1_81095.pgm 
+grad_1_8143.pgm 
+grad_182053.pgm 
+grad_183055.pgm 
+grad_183066.pgm 
+grad_183087.pgm 
+grad_1_85048.pgm 
+grad_185092.pgm 
+grad_1_86000.pgm 
+grad_1_86016.pgm 
+grad_1_86068.pgm 
+grad_187003.pgm 
+grad_1_87015.pgm 
+grad_187029.pgm 
+grad_187039.pgm 
+grad_1_87046.pgm 
+grad_187058.pgm 
+grad_1_87065.pgm 
+grad_187071.pgm 
+grad_187083.pgm 
+grad_187099.pgm 
+grad_188005.pgm 
+grad_188025.pgm 
+grad_188063.pgm 
+grad_188091.pgm 
+grad_189003.pgm 
+grad_189006.pgm 
+grad_189011.pgm 
+grad_189013.pgm 
+grad_189029.pgm 
+grad_1_89072.pgm 
+grad_189080.pgm 
+grad_189096.pgm 
+grad_1_90076.pgm 
+grad_19021.pgm 
+grad_1_92014.pgm 
+grad_1_92059.pgm 
+grad_1_94079.pgm 
+grad_1_94095.pgm 
+grad_1_95006.pgm 
+grad_196015.pgm 
+grad_196027.pgm 
+grad_196040.pgm 
+grad_196062.pgm 
+grad_196073.pgm 
+grad_196088.pgm 
+grad_1_97010.pgm 
+grad_1_97017.pgm 
+grad_197017.pgm 
+grad_1_97033.pgm 
+grad_198004.pgm 
+grad_198023.pgm 
+grad_198054.pgm 
+grad_198087.pgm 
+grad_20008.pgm 
+grad_20069.pgm 
+grad_201080.pgm 
+grad_202000.pgm 
+grad_202012.pgm 
+grad_206062.pgm 
+grad_206097.pgm 
+grad_207038.pgm 
+grad_207049.pgm 
+grad_207056.pgm 
+grad_208001.pgm 
+grad_208078.pgm 
+grad_209021.pgm 
+grad_209070.pgm 
+grad_2092.pgm 
+grad_2_100007.pgm 
+grad_2_100039.pgm 
+grad_2_100075.pgm 
+grad_2_100080.pgm 
+grad_2_100098.pgm 
+grad_2_100099.pgm 
+grad_2_10081.pgm 
+grad_210088.pgm 
+grad_2_101027.pgm 
+grad_2_101084.pgm 
+grad_2_101085.pgm 
+grad_2_101087.pgm 
+grad_2_102061.pgm 
+grad_2_102062.pgm 
+grad_2_103006.pgm 
+grad_2_103029.pgm 
+grad_2_103041.pgm 
+grad_2_103070.pgm 
+grad_2_103078.pgm 
+grad_2_104010.pgm 
+grad_2_104022.pgm 
+grad_2_104055.pgm 
+grad_2_105019.pgm 
+grad_2_105025.pgm 
+grad_2_105027.pgm 
+grad_2_105053.pgm 
+grad_2_106005.pgm 
+grad_2_106020.pgm 
+grad_2_106024.pgm 
+grad_2_106025.pgm 
+grad_2_106047.pgm 
+grad_2_107014.pgm 
+grad_2_107045.pgm 
+grad_2_107072.pgm 
+grad_21077.pgm 
+grad_2_108004.pgm 
+grad_2_108005.pgm 
+grad_2_108036.pgm 
+grad_2_108041.pgm 
+grad_2_108069.pgm 
+grad_2_108070.pgm 
+grad_2_108073.pgm 
+grad_2_108082.pgm 
+grad_3063.pgm 
+grad_2_109034.pgm 
+grad_2_109053.pgm 
+grad_2_109055.pgm 
+grad_2_112056.pgm 
+grad_2_112082.pgm 
+grad_2_112090.pgm 
+grad_2_113009.pgm 
+grad_2_113016.pgm 
+grad_2_113044.pgm 
+grad_2_117025.pgm 
+grad_2_117054.pgm 
+grad_2_118015.pgm 
+grad_2_118020.pgm 
+grad_2_118031.pgm 
+grad_2_118035.pgm 
+grad_2_118072.pgm 
+grad_2_119082.pgm 
+grad_2_120003.pgm 
+grad_2_12003.pgm 
+grad_2_120093.pgm 
+grad_2_12074.pgm 
+grad_2_12084.pgm 
+grad_2_122048.pgm 
+grad_2_123057.pgm 
+grad_2_123074.pgm 
+grad_2_124084.pgm 
+grad_2_126007.pgm 
+grad_2_126039.pgm 
+grad_2_128035.pgm 
+grad_2_130014.pgm 
+grad_2_130026.pgm 
+grad_2_130034.pgm 
+grad_2_130066.pgm 
+grad_2_134008.pgm 
+grad_2_134035.pgm 
+grad_2_134049.pgm 
+grad_2_134052.pgm 
+grad_2_134067.pgm 
+grad_2_135037.pgm 
+grad_2_135069.pgm 
+grad_2_138032.pgm 
+grad_2_138078.pgm 
+grad_2_140006.pgm 
+grad_2_140055.pgm 
+grad_2_140075.pgm 
+grad_2_140088.pgm 
+grad_2_14037.pgm 
+grad_2_14085.pgm 
+grad_2_14092.pgm 
+grad_2_141012.pgm 
+grad_2_141048.pgm 
+grad_2_143090.pgm 
+grad_2_144067.pgm 
+grad_2_145014.pgm 
+grad_2_145053.pgm 
+grad_2_145059.pgm 
+grad_2_145079.pgm 
+grad_2_145086.pgm 
+grad_2_146074.pgm 
+grad_2_147021.pgm 
+grad_2_147062.pgm 
+grad_2_147077.pgm 
+grad_2_147080.pgm 
+grad_2_147091.pgm 
+grad_2_148026.pgm 
+grad_2_148089.pgm 
+grad_2_15004.pgm 
+grad_2_15011.pgm 
+grad_2_15062.pgm 
+grad_2_15088.pgm 
+grad_2_151087.pgm 
+grad_2_153077.pgm 
+grad_2_153093.pgm 
+grad_2_155060.pgm 
+grad_2_156054.pgm 
+grad_2_156065.pgm 
+grad_2_156079.pgm 
+grad_2_157032.pgm 
+grad_2_157036.pgm 
+grad_2_157055.pgm 
+grad_2_157087.pgm 
+grad_2_159002.pgm 
+grad_2_159008.pgm 
+grad_2_159022.pgm 
+grad_2_159029.pgm 
+grad_2_159045.pgm 
+grad_2_159091.pgm 
+grad_2_160006.pgm 
+grad_2_16004.pgm 
+grad_2_160067.pgm 
+grad_2_160068.pgm 
+grad_216041.pgm 
+grad_2_16052.pgm 
+grad_216053.pgm 
+grad_216066.pgm 
+grad_2_16068.pgm 
+grad_2_16077.pgm 
+grad_216081.pgm 
+grad_2_161045.pgm 
+grad_2_161062.pgm 
+grad_2_163004.pgm 
+grad_2_163014.pgm 
+grad_2_163062.pgm 
+grad_2_163085.pgm 
+grad_2_163096.pgm 
+grad_2_164046.pgm 
+grad_2_164074.pgm 
+grad_2_166081.pgm 
+grad_2_167062.pgm 
+grad_2_167083.pgm 
+grad_2_168084.pgm 
+grad_2_169012.pgm 
+grad_2_170054.pgm 
+grad_2_170057.pgm 
+grad_217013.pgm 
+grad_2_17067.pgm 
+grad_217090.pgm 
+grad_2_172032.pgm 
+grad_2_173036.pgm 
+grad_2_175032.pgm 
+grad_2_175043.pgm 
+grad_2_175083.pgm 
+grad_2_176019.pgm 
+grad_2_176035.pgm 
+grad_2_176039.pgm 
+grad_2_176051.pgm 
+grad_2_178054.pgm 
+grad_2_179084.pgm 
+grad_2_181018.pgm 
+grad_2_181021.pgm 
+grad_2_181079.pgm 
+grad_2_181091.pgm 
+grad_2_182053.pgm 
+grad_2_183055.pgm 
+grad_2_183066.pgm 
+grad_2_183087.pgm 
+grad_2_185092.pgm 
+grad_2_187003.pgm 
+grad_2_187029.pgm 
+grad_2_187039.pgm 
+grad_2_187058.pgm 
+grad_2_187071.pgm 
+grad_2_187083.pgm 
+grad_2_187099.pgm 
+grad_2_188005.pgm 
+grad_2_188025.pgm 
+grad_2_188063.pgm 
+grad_2_188091.pgm 
+grad_2_189003.pgm 
+grad_2_189006.pgm 
+grad_2_189011.pgm 
+grad_2_189013.pgm 
+grad_2_189029.pgm 
+grad_2_189080.pgm 
+grad_2_189096.pgm 
+grad_2_19021.pgm 
+grad_219090.pgm 
+grad_2_196015.pgm 
+grad_2_196027.pgm 
+grad_2_196040.pgm 
+grad_2_196062.pgm 
+grad_2_196073.pgm 
+grad_2_196088.pgm 
+grad_2_197017.pgm 
+grad_2_198004.pgm 
+grad_2_198023.pgm 
+grad_2_198054.pgm 
+grad_2_198087.pgm 
+grad_220003.pgm 
+grad_2_20008.pgm 
+grad_2_20069.pgm 
+grad_220075.pgm 
+grad_2_201080.pgm 
+grad_22013.pgm 
+grad_2_2018.pgm 
+grad_2_202000.pgm 
+grad_2_202012.pgm 
+grad_2_206062.pgm 
+grad_2_206097.pgm 
+grad_2_207038.pgm 
+grad_2_207049.pgm 
+grad_2_207056.pgm 
+grad_2_208001.pgm 
+grad_2_208078.pgm 
+grad_2_209021.pgm 
+grad_2_209070.pgm 
+grad_22090.pgm 
+grad_2_2092.pgm 
+grad_22093.pgm 
+grad_2_210088.pgm 
+grad_2_21077.pgm 
+grad_2_216041.pgm 
+grad_2_216053.pgm 
+grad_2_216066.pgm 
+grad_2_216081.pgm 
+grad_2_217013.pgm 
+grad_2_217090.pgm 
+grad_2_219090.pgm 
+grad_2_220003.pgm 
+grad_2_220075.pgm 
+grad_2_22013.pgm 
+grad_2_22090.pgm 
+grad_2_22093.pgm 
+grad_2_223004.pgm 
+grad_2_223060.pgm 
+grad_2_223061.pgm 
+grad_2_225017.pgm 
+grad_2_225022.pgm 
+grad_2_226022.pgm 
+grad_2_226033.pgm 
+grad_2_226043.pgm 
+grad_2_226060.pgm 
+grad_2_227040.pgm 
+grad_2_227046.pgm 
+grad_2_227092.pgm 
+grad_2_228076.pgm 
+grad_2_229036.pgm 
+grad_223004.pgm 
+grad_2_230063.pgm 
+grad_2_230098.pgm 
+grad_2_23025.pgm 
+grad_2_23050.pgm 
+grad_223060.pgm 
+grad_223061.pgm 
+grad_2_23080.pgm 
+grad_2_23084.pgm 
+grad_2_231015.pgm 
+grad_2_232038.pgm 
+grad_2_232076.pgm 
+grad_2_235098.pgm 
+grad_2_236017.pgm 
+grad_2_236037.pgm 
+grad_2_238011.pgm 
+grad_2_238025.pgm 
+grad_2_239007.pgm 
+grad_2_239096.pgm 
+grad_2_24004.pgm 
+grad_2_24063.pgm 
+grad_2_24077.pgm 
+grad_2_241004.pgm 
+grad_2_241048.pgm 
+grad_2_242078.pgm 
+grad_2_243095.pgm 
+grad_2_245051.pgm 
+grad_2_246009.pgm 
+grad_2_246016.pgm 
+grad_2_246053.pgm 
+grad_2_247003.pgm 
+grad_2_247012.pgm 
+grad_2_247085.pgm 
+grad_2_249021.pgm 
+grad_2_249061.pgm 
+grad_2_249087.pgm 
+grad_2_250047.pgm 
+grad_2_250087.pgm 
+grad_225017.pgm 
+grad_225022.pgm 
+grad_2_25098.pgm 
+grad_2_253016.pgm 
+grad_2_253027.pgm 
+grad_2_253036.pgm 
+grad_2_253055.pgm 
+grad_2_253092.pgm 
+grad_2_254033.pgm 
+grad_2_254054.pgm 
+grad_2_257098.pgm 
+grad_2_258089.pgm 
+grad_2_259060.pgm 
+grad_2_260058.pgm 
+grad_2_260081.pgm 
+grad_226022.pgm 
+grad_2_26031.pgm 
+grad_226033.pgm 
+grad_226043.pgm 
+grad_226060.pgm 
+grad_2_267036.pgm 
+grad_2_268002.pgm 
+grad_2_268048.pgm 
+grad_2_268074.pgm 
+grad_227040.pgm 
+grad_227046.pgm 
+grad_2_27059.pgm 
+grad_227092.pgm 
+grad_2_271008.pgm 
+grad_2_271031.pgm 
+grad_2_271035.pgm 
+grad_2_274007.pgm 
+grad_2_277053.pgm 
+grad_2_277095.pgm 
+grad_2_279005.pgm 
+grad_2_28075.pgm 
+grad_228076.pgm 
+grad_2_28083.pgm 
+grad_2_28096.pgm 
+grad_2_281017.pgm 
+grad_2_285022.pgm 
+grad_2_285036.pgm 
+grad_2_285079.pgm 
+grad_2_286092.pgm 
+grad_2_288024.pgm 
+grad_2_289011.pgm 
+grad_2_290035.pgm 
+grad_2_29030.pgm 
+grad_229036.pgm 
+grad_2_291000.pgm 
+grad_2_292066.pgm 
+grad_2_293029.pgm 
+grad_2_295087.pgm 
+grad_2_296007.pgm 
+grad_2_296028.pgm 
+grad_2_296058.pgm 
+grad_2_296059.pgm 
+grad_2_299086.pgm 
+grad_2_299091.pgm 
+grad_2_300091.pgm 
+grad_230063.pgm 
+grad_230098.pgm 
+grad_2_301007.pgm 
+grad_2_302003.pgm 
+grad_2_302008.pgm 
+grad_2_302022.pgm 
+grad_23025.pgm 
+grad_2_304034.pgm 
+grad_2_304074.pgm 
+grad_23050.pgm 
+grad_2_306005.pgm 
+grad_2_306051.pgm 
+grad_2_306052.pgm 
+grad_2_3063.pgm 
+grad_23080.pgm 
+grad_23084.pgm 
+grad_2_309004.pgm 
+grad_2_309040.pgm 
+grad_2_3096.pgm 
+grad_2_310007.pgm 
+grad_231015.pgm 
+grad_2_311068.pgm 
+grad_2_311081.pgm 
+grad_2_314016.pgm 
+grad_2_317043.pgm 
+grad_2_317080.pgm 
+grad_232038.pgm 
+grad_232076.pgm 
+grad_2_323016.pgm 
+grad_2_326025.pgm 
+grad_2_326038.pgm 
+grad_2_326085.pgm 
+grad_2_33039.pgm 
+grad_2_33044.pgm 
+grad_2_33066.pgm 
+grad_2_334025.pgm 
+grad_2_335088.pgm 
+grad_2_335094.pgm 
+grad_2_344010.pgm 
+grad_2_346016.pgm 
+grad_2_347031.pgm 
+grad_2_35008.pgm 
+grad_2_35010.pgm 
+grad_2_35028.pgm 
+grad_2_35049.pgm 
+grad_2_35058.pgm 
+grad_2_35070.pgm 
+grad_2_35091.pgm 
+grad_235098.pgm 
+grad_2_351093.pgm 
+grad_2_353013.pgm 
+grad_236017.pgm 
+grad_236037.pgm 
+grad_2_36046.pgm 
+grad_2_361010.pgm 
+grad_2_361084.pgm 
+grad_2_365025.pgm 
+grad_2_365072.pgm 
+grad_2_365073.pgm 
+grad_2_368016.pgm 
+grad_2_368037.pgm 
+grad_2_368078.pgm 
+grad_2_370036.pgm 
+grad_2_37073.pgm 
+grad_2_372019.pgm 
+grad_2_372047.pgm 
+grad_2_374020.pgm 
+grad_2_374067.pgm 
+grad_2_376001.pgm 
+grad_2_376020.pgm 
+grad_2_376043.pgm 
+grad_2_376086.pgm 
+grad_238011.pgm 
+grad_238025.pgm 
+grad_2_38082.pgm 
+grad_2_38092.pgm 
+grad_2_384022.pgm 
+grad_2_384089.pgm 
+grad_2_385022.pgm 
+grad_2_385028.pgm 
+grad_2_385039.pgm 
+grad_2_388006.pgm 
+grad_2_388016.pgm 
+grad_2_388018.pgm 
+grad_2_388067.pgm 
+grad_239007.pgm 
+grad_239096.pgm 
+grad_2_393035.pgm 
+grad_24004.pgm 
+grad_24063.pgm 
+grad_24077.pgm 
+grad_2_41004.pgm 
+grad_241004.pgm 
+grad_2_41006.pgm 
+grad_2_41025.pgm 
+grad_2_41029.pgm 
+grad_2_41033.pgm 
+grad_241048.pgm 
+grad_2_41069.pgm 
+grad_2_41085.pgm 
+grad_2_41096.pgm 
+grad_2_42012.pgm 
+grad_2_42044.pgm 
+grad_2_42049.pgm 
+grad_2_42078.pgm 
+grad_242078.pgm 
+grad_2_43033.pgm 
+grad_2_43051.pgm 
+grad_2_43070.pgm 
+grad_2_43074.pgm 
+grad_2_43083.pgm 
+grad_243095.pgm 
+grad_2_45000.pgm 
+grad_245051.pgm 
+grad_2_45077.pgm 
+grad_2_45096.pgm 
+grad_246009.pgm 
+grad_246016.pgm 
+grad_246053.pgm 
+grad_2_46076.pgm 
+grad_247003.pgm 
+grad_247012.pgm 
+grad_247085.pgm 
+grad_2_48017.pgm 
+grad_2_48025.pgm 
+grad_2_48055.pgm 
+grad_249021.pgm 
+grad_2_49024.pgm 
+grad_249061.pgm 
+grad_249087.pgm 
+grad_250047.pgm 
+grad_250087.pgm 
+grad_2_5096.pgm 
+grad_25098.pgm 
+grad_2_51084.pgm 
+grad_253016.pgm 
+grad_253027.pgm 
+grad_253036.pgm 
+grad_253055.pgm 
+grad_253092.pgm 
+grad_2_54005.pgm 
+grad_254033.pgm 
+grad_254054.pgm 
+grad_2_54082.pgm 
+grad_2_55067.pgm 
+grad_2_55073.pgm 
+grad_2_55075.pgm 
+grad_2_56028.pgm 
+grad_257098.pgm 
+grad_2_58060.pgm 
+grad_258089.pgm 
+grad_259060.pgm 
+grad_2_59078.pgm 
+grad_260058.pgm 
+grad_2_60079.pgm 
+grad_260081.pgm 
+grad_26031.pgm 
+grad_2_6046.pgm 
+grad_2_61034.pgm 
+grad_2_61060.pgm 
+grad_2_61086.pgm 
+grad_2_62096.pgm 
+grad_2_64061.pgm 
+grad_2_65010.pgm 
+grad_2_65019.pgm 
+grad_2_65033.pgm 
+grad_2_65074.pgm 
+grad_2_65084.pgm 
+grad_2_65132.pgm 
+grad_2_66039.pgm 
+grad_2_66053.pgm 
+grad_2_66075.pgm 
+grad_267036.pgm 
+grad_2_67079.pgm 
+grad_268002.pgm 
+grad_268048.pgm 
+grad_268074.pgm 
+grad_2_68077.pgm 
+grad_2_69000.pgm 
+grad_2_69007.pgm 
+grad_2_69015.pgm 
+grad_2_69020.pgm 
+grad_2_69022.pgm 
+grad_2_69040.pgm 
+grad_2_70011.pgm 
+grad_2_70090.pgm 
+grad_27059.pgm 
+grad_271008.pgm 
+grad_271031.pgm 
+grad_271035.pgm 
+grad_2_71046.pgm 
+grad_2_71076.pgm 
+grad_2_71099.pgm 
+grad_274007.pgm 
+grad_2_76002.pgm 
+grad_2_76053.pgm 
+grad_277053.pgm 
+grad_2_77062.pgm 
+grad_277095.pgm 
+grad_2_78004.pgm 
+grad_2_78019.pgm 
+grad_2_78098.pgm 
+grad_279005.pgm 
+grad_2_79073.pgm 
+grad_2_80085.pgm 
+grad_2_80090.pgm 
+grad_2_80099.pgm 
+grad_2_8023.pgm 
+grad_2_8049.pgm 
+grad_2_8068.pgm 
+grad_28075.pgm 
+grad_28083.pgm 
+grad_28096.pgm 
+grad_281017.pgm 
+grad_2_81066.pgm 
+grad_2_81090.pgm 
+grad_2_81095.pgm 
+grad_2_8143.pgm 
+grad_285022.pgm 
+grad_285036.pgm 
+grad_2_85048.pgm 
+grad_285079.pgm 
+grad_2_86000.pgm 
+grad_2_86016.pgm 
+grad_2_86068.pgm 
+grad_286092.pgm 
+grad_2_87015.pgm 
+grad_2_87046.pgm 
+grad_2_87065.pgm 
+grad_288024.pgm 
+grad_289011.pgm 
+grad_2_89072.pgm 
+grad_290035.pgm 
+grad_2_90076.pgm 
+grad_29030.pgm 
+grad_291000.pgm 
+grad_2_92014.pgm 
+grad_2_92059.pgm 
+grad_292066.pgm 
+grad_293029.pgm 
+grad_2_94079.pgm 
+grad_2_94095.pgm 
+grad_2_95006.pgm 
+grad_295087.pgm 
+grad_296007.pgm 
+grad_296028.pgm 
+grad_296058.pgm 
+grad_296059.pgm 
+grad_2_97010.pgm 
+grad_2_97017.pgm 
+grad_2_97033.pgm 
+grad_299086.pgm 
+grad_299091.pgm 
+grad_300091.pgm 
+grad_301007.pgm 
+grad_302003.pgm 
+grad_302008.pgm 
+grad_302022.pgm 
+grad_304034.pgm 
+grad_304074.pgm 
+grad_306005.pgm 
+grad_306051.pgm 
+grad_306052.pgm 
+grad_309004.pgm 
+grad_309040.pgm 
+grad_3096.pgm 
+grad_3_100007.pgm 
+grad_3_100039.pgm 
+grad_3_100075.pgm 
+grad_310007.pgm 
+grad_3_100080.pgm 
+grad_3_100098.pgm 
+grad_3_100099.pgm 
+grad_3_10081.pgm 
+grad_3_101027.pgm 
+grad_3_101084.pgm 
+grad_3_101085.pgm 
+grad_3_101087.pgm 
+grad_3_102061.pgm 
+grad_3_102062.pgm 
+grad_3_103006.pgm 
+grad_3_103029.pgm 
+grad_3_103041.pgm 
+grad_3_103070.pgm 
+grad_3_103078.pgm 
+grad_3_104010.pgm 
+grad_3_104022.pgm 
+grad_3_104055.pgm 
+grad_3_105019.pgm 
+grad_3_105025.pgm 
+grad_3_105027.pgm 
+grad_3_105053.pgm 
+grad_3_106005.pgm 
+grad_3_106020.pgm 
+grad_3_106024.pgm 
+grad_3_106025.pgm 
+grad_3_106047.pgm 
+grad_3_107014.pgm 
+grad_3_107045.pgm 
+grad_3_107072.pgm 
+grad_3_108004.pgm 
+grad_3_108005.pgm 
+grad_3_108036.pgm 
+grad_3_108041.pgm 
+grad_3_108069.pgm 
+grad_3_108070.pgm 
+grad_3_108073.pgm 
+grad_3_108082.pgm 
+grad_3_109034.pgm 
+grad_3_109053.pgm 
+grad_3_109055.pgm 
+grad_311068.pgm 
+grad_311081.pgm 
+grad_3_112056.pgm 
+grad_3_112082.pgm 
+grad_3_112090.pgm 
+grad_3_113009.pgm 
+grad_3_113016.pgm 
+grad_3_113044.pgm 
+grad_3_117025.pgm 
+grad_5096.pgm 
+grad_3_117054.pgm 
+grad_3_118015.pgm 
+grad_3_118020.pgm 
+grad_3_118031.pgm 
+grad_3_118035.pgm 
+grad_3_118072.pgm 
+grad_3_119082.pgm 
+grad_3_120003.pgm 
+grad_3_12003.pgm 
+grad_3_120093.pgm 
+grad_3_12074.pgm 
+grad_3_12084.pgm 
+grad_3_122048.pgm 
+grad_3_123057.pgm 
+grad_3_123074.pgm 
+grad_3_124084.pgm 
+grad_3_126007.pgm 
+grad_3_126039.pgm 
+grad_3_128035.pgm 
+grad_3_130014.pgm 
+grad_3_130026.pgm 
+grad_3_130034.pgm 
+grad_3_130066.pgm 
+grad_3_134008.pgm 
+grad_3_134035.pgm 
+grad_3_134049.pgm 
+grad_3_134052.pgm 
+grad_3_134067.pgm 
+grad_3_135037.pgm 
+grad_3_135069.pgm 
+grad_3_138032.pgm 
+grad_3_138078.pgm 
+grad_3_140006.pgm 
+grad_3_140055.pgm 
+grad_3_140075.pgm 
+grad_3_140088.pgm 
+grad_314016.pgm 
+grad_3_14037.pgm 
+grad_3_14085.pgm 
+grad_3_14092.pgm 
+grad_3_141012.pgm 
+grad_3_141048.pgm 
+grad_3_143090.pgm 
+grad_3_144067.pgm 
+grad_3_145014.pgm 
+grad_3_145053.pgm 
+grad_3_145059.pgm 
+grad_3_145079.pgm 
+grad_3_145086.pgm 
+grad_3_146074.pgm 
+grad_3_147021.pgm 
+grad_3_147062.pgm 
+grad_3_147077.pgm 
+grad_3_147080.pgm 
+grad_3_147091.pgm 
+grad_3_148026.pgm 
+grad_3_148089.pgm 
+grad_3_15004.pgm 
+grad_3_15011.pgm 
+grad_3_15062.pgm 
+grad_3_15088.pgm 
+grad_3_151087.pgm 
+grad_3_153077.pgm 
+grad_3_153093.pgm 
+grad_3_155060.pgm 
+grad_3_156054.pgm 
+grad_3_156065.pgm 
+grad_3_156079.pgm 
+grad_3_157032.pgm 
+grad_3_157036.pgm 
+grad_3_157055.pgm 
+grad_3_157087.pgm 
+grad_3_159002.pgm 
+grad_3_159008.pgm 
+grad_3_159022.pgm 
+grad_3_159029.pgm 
+grad_3_159045.pgm 
+grad_3_159091.pgm 
+grad_3_160006.pgm 
+grad_3_16004.pgm 
+grad_3_160067.pgm 
+grad_3_160068.pgm 
+grad_3_16052.pgm 
+grad_3_16068.pgm 
+grad_3_16077.pgm 
+grad_3_161045.pgm 
+grad_3_161062.pgm 
+grad_3_163004.pgm 
+grad_3_163014.pgm 
+grad_3_163062.pgm 
+grad_3_163085.pgm 
+grad_3_163096.pgm 
+grad_3_164046.pgm 
+grad_3_164074.pgm 
+grad_3_166081.pgm 
+grad_3_167062.pgm 
+grad_3_167083.pgm 
+grad_3_168084.pgm 
+grad_3_169012.pgm 
+grad_3_170054.pgm 
+grad_3_170057.pgm 
+grad_317043.pgm 
+grad_3_17067.pgm 
+grad_317080.pgm 
+grad_3_172032.pgm 
+grad_3_173036.pgm 
+grad_3_175032.pgm 
+grad_3_175043.pgm 
+grad_3_175083.pgm 
+grad_3_176019.pgm 
+grad_3_176035.pgm 
+grad_3_176039.pgm 
+grad_3_176051.pgm 
+grad_3_178054.pgm 
+grad_3_179084.pgm 
+grad_3_181018.pgm 
+grad_3_181021.pgm 
+grad_3_181079.pgm 
+grad_3_181091.pgm 
+grad_3_182053.pgm 
+grad_3_183055.pgm 
+grad_3_183066.pgm 
+grad_3_183087.pgm 
+grad_3_185092.pgm 
+grad_3_187003.pgm 
+grad_3_187029.pgm 
+grad_3_187039.pgm 
+grad_3_187058.pgm 
+grad_3_187071.pgm 
+grad_3_187083.pgm 
+grad_3_187099.pgm 
+grad_3_188005.pgm 
+grad_3_188025.pgm 
+grad_3_188063.pgm 
+grad_3_188091.pgm 
+grad_3_189003.pgm 
+grad_3_189006.pgm 
+grad_3_189011.pgm 
+grad_3_189013.pgm 
+grad_3_189029.pgm 
+grad_3_189080.pgm 
+grad_3_189096.pgm 
+grad_3_19021.pgm 
+grad_3_196015.pgm 
+grad_3_196027.pgm 
+grad_3_196040.pgm 
+grad_3_196062.pgm 
+grad_3_196073.pgm 
+grad_3_196088.pgm 
+grad_3_197017.pgm 
+grad_3_198004.pgm 
+grad_3_198023.pgm 
+grad_3_198054.pgm 
+grad_3_198087.pgm 
+grad_3_20008.pgm 
+grad_3_20069.pgm 
+grad_3_201080.pgm 
+grad_3_2018.pgm 
+grad_3_202000.pgm 
+grad_3_202012.pgm 
+grad_3_206062.pgm 
+grad_3_206097.pgm 
+grad_3_207038.pgm 
+grad_3_207049.pgm 
+grad_3_207056.pgm 
+grad_3_208001.pgm 
+grad_3_208078.pgm 
+grad_3_209021.pgm 
+grad_3_209070.pgm 
+grad_3_2092.pgm 
+grad_3_210088.pgm 
+grad_3_21077.pgm 
+grad_3_216041.pgm 
+grad_3_216053.pgm 
+grad_3_216066.pgm 
+grad_3_216081.pgm 
+grad_3_217013.pgm 
+grad_3_217090.pgm 
+grad_3_219090.pgm 
+grad_3_220003.pgm 
+grad_3_220075.pgm 
+grad_3_22013.pgm 
+grad_3_22090.pgm 
+grad_3_22093.pgm 
+grad_3_223004.pgm 
+grad_3_223060.pgm 
+grad_3_223061.pgm 
+grad_3_225017.pgm 
+grad_3_225022.pgm 
+grad_3_226022.pgm 
+grad_3_226033.pgm 
+grad_3_226043.pgm 
+grad_3_226060.pgm 
+grad_3_227040.pgm 
+grad_3_227046.pgm 
+grad_3_227092.pgm 
+grad_3_228076.pgm 
+grad_3_229036.pgm 
+grad_3_230063.pgm 
+grad_3_230098.pgm 
+grad_323016.pgm 
+grad_3_23025.pgm 
+grad_3_23050.pgm 
+grad_3_23080.pgm 
+grad_3_23084.pgm 
+grad_3_231015.pgm 
+grad_3_232038.pgm 
+grad_3_232076.pgm 
+grad_3_235098.pgm 
+grad_3_236017.pgm 
+grad_3_236037.pgm 
+grad_3_238011.pgm 
+grad_3_238025.pgm 
+grad_3_239007.pgm 
+grad_3_239096.pgm 
+grad_3_24004.pgm 
+grad_3_24063.pgm 
+grad_3_24077.pgm 
+grad_3_241004.pgm 
+grad_3_241048.pgm 
+grad_3_242078.pgm 
+grad_3_243095.pgm 
+grad_3_245051.pgm 
+grad_3_246009.pgm 
+grad_3_246016.pgm 
+grad_3_246053.pgm 
+grad_3_247003.pgm 
+grad_3_247012.pgm 
+grad_3_247085.pgm 
+grad_3_249021.pgm 
+grad_3_249061.pgm 
+grad_3_249087.pgm 
+grad_3_250047.pgm 
+grad_3_250087.pgm 
+grad_3_25098.pgm 
+grad_3_253016.pgm 
+grad_3_253027.pgm 
+grad_3_253036.pgm 
+grad_3_253055.pgm 
+grad_3_253092.pgm 
+grad_3_254033.pgm 
+grad_3_254054.pgm 
+grad_3_257098.pgm 
+grad_3_258089.pgm 
+grad_3_259060.pgm 
+grad_3_260058.pgm 
+grad_3_260081.pgm 
+grad_326025.pgm 
+grad_3_26031.pgm 
+grad_326038.pgm 
+grad_326085.pgm 
+grad_3_267036.pgm 
+grad_3_268002.pgm 
+grad_3_268048.pgm 
+grad_3_268074.pgm 
+grad_3_27059.pgm 
+grad_3_271008.pgm 
+grad_3_271031.pgm 
+grad_3_271035.pgm 
+grad_3_274007.pgm 
+grad_3_277053.pgm 
+grad_3_277095.pgm 
+grad_3_279005.pgm 
+grad_3_28075.pgm 
+grad_3_28083.pgm 
+grad_3_28096.pgm 
+grad_3_281017.pgm 
+grad_3_285022.pgm 
+grad_3_285036.pgm 
+grad_3_285079.pgm 
+grad_3_286092.pgm 
+grad_3_288024.pgm 
+grad_3_289011.pgm 
+grad_3_290035.pgm 
+grad_3_29030.pgm 
+grad_3_291000.pgm 
+grad_3_292066.pgm 
+grad_3_293029.pgm 
+grad_3_295087.pgm 
+grad_3_296007.pgm 
+grad_3_296028.pgm 
+grad_3_296058.pgm 
+grad_3_296059.pgm 
+grad_3_299086.pgm 
+grad_3_299091.pgm 
+grad_3_300091.pgm 
+grad_3_301007.pgm 
+grad_3_302003.pgm 
+grad_3_302008.pgm 
+grad_3_302022.pgm 
+grad_33039.pgm 
+grad_3_304034.pgm 
+grad_3_304074.pgm 
+grad_33044.pgm 
+grad_3_306005.pgm 
+grad_3_306051.pgm 
+grad_3_306052.pgm 
+grad_3_3063.pgm 
+grad_33066.pgm 
+grad_3_309004.pgm 
+grad_3_309040.pgm 
+grad_3_3096.pgm 
+grad_3_310007.pgm 
+grad_3_311068.pgm 
+grad_3_311081.pgm 
+grad_3_314016.pgm 
+grad_3_317043.pgm 
+grad_3_317080.pgm 
+grad_3_323016.pgm 
+grad_3_326025.pgm 
+grad_3_326038.pgm 
+grad_3_326085.pgm 
+grad_3_33039.pgm 
+grad_3_33044.pgm 
+grad_3_33066.pgm 
+grad_3_334025.pgm 
+grad_3_335088.pgm 
+grad_3_335094.pgm 
+grad_334025.pgm 
+grad_3_344010.pgm 
+grad_3_346016.pgm 
+grad_3_347031.pgm 
+grad_3_35008.pgm 
+grad_3_35010.pgm 
+grad_3_35028.pgm 
+grad_3_35049.pgm 
+grad_3_35058.pgm 
+grad_3_35070.pgm 
+grad_335088.pgm 
+grad_3_35091.pgm 
+grad_335094.pgm 
+grad_3_351093.pgm 
+grad_3_353013.pgm 
+grad_3_36046.pgm 
+grad_3_361010.pgm 
+grad_3_361084.pgm 
+grad_3_365025.pgm 
+grad_3_365072.pgm 
+grad_3_365073.pgm 
+grad_3_368016.pgm 
+grad_3_368037.pgm 
+grad_3_368078.pgm 
+grad_3_370036.pgm 
+grad_3_37073.pgm 
+grad_3_372019.pgm 
+grad_3_372047.pgm 
+grad_3_374020.pgm 
+grad_3_374067.pgm 
+grad_3_376001.pgm 
+grad_3_376020.pgm 
+grad_3_376043.pgm 
+grad_3_376086.pgm 
+grad_3_38082.pgm 
+grad_3_38092.pgm 
+grad_3_384022.pgm 
+grad_3_384089.pgm 
+grad_3_385022.pgm 
+grad_3_385028.pgm 
+grad_3_385039.pgm 
+grad_3_388006.pgm 
+grad_3_388016.pgm 
+grad_3_388018.pgm 
+grad_3_388067.pgm 
+grad_3_393035.pgm 
+grad_3_41004.pgm 
+grad_3_41006.pgm 
+grad_3_41025.pgm 
+grad_3_41029.pgm 
+grad_3_41033.pgm 
+grad_3_41069.pgm 
+grad_3_41085.pgm 
+grad_3_41096.pgm 
+grad_3_42012.pgm 
+grad_3_42044.pgm 
+grad_3_42049.pgm 
+grad_3_42078.pgm 
+grad_3_43033.pgm 
+grad_3_43051.pgm 
+grad_3_43070.pgm 
+grad_3_43074.pgm 
+grad_3_43083.pgm 
+grad_344010.pgm 
+grad_3_45000.pgm 
+grad_3_45077.pgm 
+grad_3_45096.pgm 
+grad_346016.pgm 
+grad_3_46076.pgm 
+grad_347031.pgm 
+grad_3_48017.pgm 
+grad_3_48025.pgm 
+grad_3_48055.pgm 
+grad_3_49024.pgm 
+grad_35008.pgm 
+grad_35010.pgm 
+grad_35028.pgm 
+grad_35049.pgm 
+grad_35058.pgm 
+grad_35070.pgm 
+grad_35091.pgm 
+grad_3_5096.pgm 
+grad_3_51084.pgm 
+grad_351093.pgm 
+grad_353013.pgm 
+grad_3_54005.pgm 
+grad_3_54082.pgm 
+grad_3_55067.pgm 
+grad_3_55073.pgm 
+grad_3_55075.pgm 
+grad_3_56028.pgm 
+grad_3_58060.pgm 
+grad_3_59078.pgm 
+grad_3_60079.pgm 
+grad_3_6046.pgm 
+grad_36046.pgm 
+grad_361010.pgm 
+grad_3_61034.pgm 
+grad_3_61060.pgm 
+grad_361084.pgm 
+grad_3_61086.pgm 
+grad_3_62096.pgm 
+grad_3_64061.pgm 
+grad_3_65010.pgm 
+grad_3_65019.pgm 
+grad_365025.pgm 
+grad_3_65033.pgm 
+grad_365072.pgm 
+grad_365073.pgm 
+grad_3_65074.pgm 
+grad_3_65084.pgm 
+grad_3_65132.pgm 
+grad_3_66039.pgm 
+grad_3_66053.pgm 
+grad_3_66075.pgm 
+grad_3_67079.pgm 
+grad_368016.pgm 
+grad_368037.pgm 
+grad_3_68077.pgm 
+grad_368078.pgm 
+grad_3_69000.pgm 
+grad_3_69007.pgm 
+grad_3_69015.pgm 
+grad_3_69020.pgm 
+grad_3_69022.pgm 
+grad_3_69040.pgm 
+grad_3_70011.pgm 
+grad_370036.pgm 
+grad_3_70090.pgm 
+grad_37073.pgm 
+grad_3_71046.pgm 
+grad_3_71076.pgm 
+grad_3_71099.pgm 
+grad_372019.pgm 
+grad_372047.pgm 
+grad_374020.pgm 
+grad_374067.pgm 
+grad_376001.pgm 
+grad_3_76002.pgm 
+grad_376020.pgm 
+grad_376043.pgm 
+grad_3_76053.pgm 
+grad_376086.pgm 
+grad_3_77062.pgm 
+grad_3_78004.pgm 
+grad_3_78019.pgm 
+grad_3_78098.pgm 
+grad_3_79073.pgm 
+grad_3_80085.pgm 
+grad_3_80090.pgm 
+grad_3_80099.pgm 
+grad_3_8023.pgm 
+grad_3_8049.pgm 
+grad_3_8068.pgm 
+grad_38082.pgm 
+grad_38092.pgm 
+grad_3_81066.pgm 
+grad_3_81090.pgm 
+grad_3_81095.pgm 
+grad_3_8143.pgm 
+grad_384022.pgm 
+grad_384089.pgm 
+grad_385022.pgm 
+grad_385028.pgm 
+grad_385039.pgm 
+grad_3_85048.pgm 
+grad_3_86000.pgm 
+grad_3_86016.pgm 
+grad_3_86068.pgm 
+grad_3_87015.pgm 
+grad_3_87046.pgm 
+grad_3_87065.pgm 
+grad_388006.pgm 
+grad_388016.pgm 
+grad_388018.pgm 
+grad_388067.pgm 
+grad_3_89072.pgm 
+grad_3_90076.pgm 
+grad_3_92014.pgm 
+grad_3_92059.pgm 
+grad_393035.pgm 
+grad_3_94079.pgm 
+grad_3_94095.pgm 
+grad_3_95006.pgm 
+grad_3_97010.pgm 
+grad_3_97017.pgm 
+grad_3_97033.pgm 
+grad_4_100007.pgm 
+grad_4_100039.pgm 
+grad_4_100075.pgm 
+grad_4_100080.pgm 
+grad_4_100098.pgm 
+grad_4_100099.pgm 
+grad_41004.pgm 
+grad_41006.pgm 
+grad_4_10081.pgm 
+grad_4_101027.pgm 
+grad_4_101084.pgm 
+grad_4_101085.pgm 
+grad_4_101087.pgm 
+grad_4_102061.pgm 
+grad_4_102062.pgm 
+grad_41025.pgm 
+grad_41029.pgm 
+grad_4_103006.pgm 
+grad_4_103029.pgm 
+grad_4_103041.pgm 
+grad_4_103070.pgm 
+grad_4_103078.pgm 
+grad_41033.pgm 
+grad_4_104010.pgm 
+grad_4_104022.pgm 
+grad_4_104055.pgm 
+grad_4_105019.pgm 
+grad_4_105025.pgm 
+grad_4_105027.pgm 
+grad_4_105053.pgm 
+grad_4_106005.pgm 
+grad_4_106020.pgm 
+grad_4_106024.pgm 
+grad_4_106025.pgm 
+grad_4_106047.pgm 
+grad_41069.pgm 
+grad_4_107014.pgm 
+grad_4_107045.pgm 
+grad_4_107072.pgm 
+grad_4_108004.pgm 
+grad_4_108005.pgm 
+grad_4_108036.pgm 
+grad_4_108041.pgm 
+grad_4_108069.pgm 
+grad_4_108070.pgm 
+grad_4_108073.pgm 
+grad_4_108082.pgm 
+grad_41085.pgm 
+grad_4_109034.pgm 
+grad_4_109053.pgm 
+grad_4_109055.pgm 
+grad_41096.pgm 
+grad_4_112056.pgm 
+grad_4_112082.pgm 
+grad_4_112090.pgm 
+grad_4_113009.pgm 
+grad_4_113016.pgm 
+grad_4_113044.pgm 
+grad_4_117025.pgm 
+grad_4_117054.pgm 
+grad_4_118015.pgm 
+grad_4_118020.pgm 
+grad_4_118031.pgm 
+grad_4_118035.pgm 
+grad_4_118072.pgm 
+grad_4_119082.pgm 
+grad_4_120003.pgm 
+grad_4_12003.pgm 
+grad_4_120093.pgm 
+grad_4_12074.pgm 
+grad_4_12084.pgm 
+grad_4_122048.pgm 
+grad_4_123057.pgm 
+grad_4_123074.pgm 
+grad_4_124084.pgm 
+grad_4_126007.pgm 
+grad_4_126039.pgm 
+grad_4_128035.pgm 
+grad_4_130014.pgm 
+grad_4_130026.pgm 
+grad_4_130034.pgm 
+grad_4_130066.pgm 
+grad_4_134008.pgm 
+grad_4_134035.pgm 
+grad_4_134049.pgm 
+grad_4_134052.pgm 
+grad_4_134067.pgm 
+grad_4_135037.pgm 
+grad_4_135069.pgm 
+grad_4_138032.pgm 
+grad_4_138078.pgm 
+grad_4_140006.pgm 
+grad_4_140055.pgm 
+grad_4_140075.pgm 
+grad_4_140088.pgm 
+grad_4_14037.pgm 
+grad_4_14085.pgm 
+grad_4_14092.pgm 
+grad_4_141012.pgm 
+grad_4_141048.pgm 
+grad_4_143090.pgm 
+grad_4_144067.pgm 
+grad_4_145014.pgm 
+grad_4_145053.pgm 
+grad_4_145059.pgm 
+grad_4_145079.pgm 
+grad_4_145086.pgm 
+grad_4_146074.pgm 
+grad_4_147021.pgm 
+grad_4_147062.pgm 
+grad_4_147077.pgm 
+grad_4_147080.pgm 
+grad_4_147091.pgm 
+grad_4_148026.pgm 
+grad_4_148089.pgm 
+grad_4_15004.pgm 
+grad_4_15011.pgm 
+grad_4_15062.pgm 
+grad_4_15088.pgm 
+grad_4_151087.pgm 
+grad_4_153077.pgm 
+grad_4_153093.pgm 
+grad_4_155060.pgm 
+grad_4_156054.pgm 
+grad_4_156065.pgm 
+grad_4_156079.pgm 
+grad_4_157032.pgm 
+grad_4_157036.pgm 
+grad_4_157055.pgm 
+grad_4_157087.pgm 
+grad_4_159002.pgm 
+grad_4_159008.pgm 
+grad_4_159022.pgm 
+grad_4_159029.pgm 
+grad_4_159045.pgm 
+grad_4_159091.pgm 
+grad_4_160006.pgm 
+grad_4_16004.pgm 
+grad_4_160067.pgm 
+grad_4_160068.pgm 
+grad_4_16052.pgm 
+grad_4_16068.pgm 
+grad_4_16077.pgm 
+grad_4_161045.pgm 
+grad_4_161062.pgm 
+grad_4_163004.pgm 
+grad_4_163014.pgm 
+grad_4_163062.pgm 
+grad_4_163085.pgm 
+grad_4_163096.pgm 
+grad_4_164046.pgm 
+grad_4_164074.pgm 
+grad_4_166081.pgm 
+grad_4_167062.pgm 
+grad_4_167083.pgm 
+grad_4_168084.pgm 
+grad_4_169012.pgm 
+grad_4_170054.pgm 
+grad_4_170057.pgm 
+grad_4_17067.pgm 
+grad_4_172032.pgm 
+grad_4_173036.pgm 
+grad_4_175032.pgm 
+grad_4_175043.pgm 
+grad_4_175083.pgm 
+grad_4_176019.pgm 
+grad_4_176035.pgm 
+grad_4_176039.pgm 
+grad_4_176051.pgm 
+grad_4_178054.pgm 
+grad_4_179084.pgm 
+grad_4_181018.pgm 
+grad_4_181021.pgm 
+grad_4_181079.pgm 
+grad_4_181091.pgm 
+grad_4_182053.pgm 
+grad_4_183055.pgm 
+grad_4_183066.pgm 
+grad_4_183087.pgm 
+grad_4_185092.pgm 
+grad_4_187003.pgm 
+grad_4_187029.pgm 
+grad_4_187039.pgm 
+grad_4_187058.pgm 
+grad_4_187071.pgm 
+grad_4_187083.pgm 
+grad_4_187099.pgm 
+grad_4_188005.pgm 
+grad_4_188025.pgm 
+grad_4_188063.pgm 
+grad_4_188091.pgm 
+grad_4_189003.pgm 
+grad_4_189006.pgm 
+grad_4_189011.pgm 
+grad_4_189013.pgm 
+grad_4_189029.pgm 
+grad_4_189080.pgm 
+grad_4_189096.pgm 
+grad_4_19021.pgm 
+grad_4_196015.pgm 
+grad_4_196027.pgm 
+grad_4_196040.pgm 
+grad_4_196062.pgm 
+grad_4_196073.pgm 
+grad_4_196088.pgm 
+grad_4_197017.pgm 
+grad_4_198004.pgm 
+grad_4_198023.pgm 
+grad_4_198054.pgm 
+grad_4_198087.pgm 
+grad_4_20008.pgm 
+grad_4_20069.pgm 
+grad_4_201080.pgm 
+grad_42012.pgm 
+grad_4_2018.pgm 
+grad_4_202000.pgm 
+grad_4_202012.pgm 
+grad_42044.pgm 
+grad_42049.pgm 
+grad_4_206062.pgm 
+grad_4_206097.pgm 
+grad_4_207038.pgm 
+grad_4_207049.pgm 
+grad_4_207056.pgm 
+grad_42078.pgm 
+grad_4_208001.pgm 
+grad_4_208078.pgm 
+grad_4_209021.pgm 
+grad_4_209070.pgm 
+grad_4_2092.pgm 
+grad_4_210088.pgm 
+grad_4_21077.pgm 
+grad_4_216041.pgm 
+grad_4_216053.pgm 
+grad_4_216066.pgm 
+grad_4_216081.pgm 
+grad_4_217013.pgm 
+grad_4_217090.pgm 
+grad_4_219090.pgm 
+grad_4_220003.pgm 
+grad_4_220075.pgm 
+grad_4_22013.pgm 
+grad_4_22090.pgm 
+grad_4_22093.pgm 
+grad_4_223004.pgm 
+grad_4_223060.pgm 
+grad_4_223061.pgm 
+grad_4_225017.pgm 
+grad_4_225022.pgm 
+grad_4_226022.pgm 
+grad_4_226033.pgm 
+grad_4_226043.pgm 
+grad_4_226060.pgm 
+grad_4_227040.pgm 
+grad_4_227046.pgm 
+grad_4_227092.pgm 
+grad_4_228076.pgm 
+grad_4_229036.pgm 
+grad_4_230063.pgm 
+grad_4_230098.pgm 
+grad_4_23025.pgm 
+grad_4_23050.pgm 
+grad_4_23080.pgm 
+grad_4_23084.pgm 
+grad_4_231015.pgm 
+grad_4_232038.pgm 
+grad_4_232076.pgm 
+grad_4_235098.pgm 
+grad_4_236017.pgm 
+grad_4_236037.pgm 
+grad_4_238011.pgm 
+grad_4_238025.pgm 
+grad_4_239007.pgm 
+grad_4_239096.pgm 
+grad_4_24004.pgm 
+grad_4_24063.pgm 
+grad_4_24077.pgm 
+grad_4_241004.pgm 
+grad_4_241048.pgm 
+grad_4_242078.pgm 
+grad_4_243095.pgm 
+grad_4_245051.pgm 
+grad_4_246009.pgm 
+grad_4_246016.pgm 
+grad_4_246053.pgm 
+grad_4_247003.pgm 
+grad_4_247012.pgm 
+grad_4_247085.pgm 
+grad_4_249021.pgm 
+grad_4_249061.pgm 
+grad_4_249087.pgm 
+grad_4_250047.pgm 
+grad_4_250087.pgm 
+grad_4_25098.pgm 
+grad_4_253016.pgm 
+grad_4_253027.pgm 
+grad_4_253036.pgm 
+grad_4_253055.pgm 
+grad_4_253092.pgm 
+grad_4_254033.pgm 
+grad_4_254054.pgm 
+grad_4_257098.pgm 
+grad_4_258089.pgm 
+grad_4_259060.pgm 
+grad_4_260058.pgm 
+grad_4_260081.pgm 
+grad_4_26031.pgm 
+grad_4_267036.pgm 
+grad_4_268002.pgm 
+grad_4_268048.pgm 
+grad_4_268074.pgm 
+grad_4_27059.pgm 
+grad_4_271008.pgm 
+grad_4_271031.pgm 
+grad_4_271035.pgm 
+grad_4_274007.pgm 
+grad_4_277053.pgm 
+grad_4_277095.pgm 
+grad_4_279005.pgm 
+grad_4_28075.pgm 
+grad_4_28083.pgm 
+grad_4_28096.pgm 
+grad_4_281017.pgm 
+grad_4_285022.pgm 
+grad_4_285036.pgm 
+grad_4_285079.pgm 
+grad_4_286092.pgm 
+grad_4_288024.pgm 
+grad_4_289011.pgm 
+grad_4_290035.pgm 
+grad_4_29030.pgm 
+grad_4_291000.pgm 
+grad_4_292066.pgm 
+grad_4_293029.pgm 
+grad_4_295087.pgm 
+grad_4_296007.pgm 
+grad_4_296028.pgm 
+grad_4_296058.pgm 
+grad_4_296059.pgm 
+grad_4_299086.pgm 
+grad_4_299091.pgm 
+grad_4_300091.pgm 
+grad_4_301007.pgm 
+grad_4_302003.pgm 
+grad_4_302008.pgm 
+grad_4_302022.pgm 
+grad_43033.pgm 
+grad_4_304034.pgm 
+grad_4_304074.pgm 
+grad_43051.pgm 
+grad_4_306005.pgm 
+grad_4_306051.pgm 
+grad_4_306052.pgm 
+grad_4_3063.pgm 
+grad_43070.pgm 
+grad_43074.pgm 
+grad_43083.pgm 
+grad_4_309004.pgm 
+grad_4_309040.pgm 
+grad_4_3096.pgm 
+grad_4_310007.pgm 
+grad_4_311068.pgm 
+grad_4_311081.pgm 
+grad_4_314016.pgm 
+grad_4_317043.pgm 
+grad_4_317080.pgm 
+grad_4_323016.pgm 
+grad_4_326025.pgm 
+grad_4_326038.pgm 
+grad_4_326085.pgm 
+grad_4_33039.pgm 
+grad_4_33044.pgm 
+grad_4_33066.pgm 
+grad_4_334025.pgm 
+grad_4_335088.pgm 
+grad_4_335094.pgm 
+grad_4_344010.pgm 
+grad_4_346016.pgm 
+grad_4_347031.pgm 
+grad_4_35008.pgm 
+grad_4_35010.pgm 
+grad_4_35028.pgm 
+grad_4_35049.pgm 
+grad_4_35058.pgm 
+grad_4_35070.pgm 
+grad_4_35091.pgm 
+grad_4_351093.pgm 
+grad_4_353013.pgm 
+grad_4_36046.pgm 
+grad_4_361010.pgm 
+grad_4_361084.pgm 
+grad_4_365025.pgm 
+grad_4_365072.pgm 
+grad_4_365073.pgm 
+grad_4_368016.pgm 
+grad_4_368037.pgm 
+grad_4_368078.pgm 
+grad_4_370036.pgm 
+grad_4_37073.pgm 
+grad_4_372019.pgm 
+grad_4_372047.pgm 
+grad_4_374020.pgm 
+grad_4_374067.pgm 
+grad_4_376001.pgm 
+grad_4_376020.pgm 
+grad_4_376043.pgm 
+grad_4_376086.pgm 
+grad_4_38082.pgm 
+grad_4_38092.pgm 
+grad_4_384022.pgm 
+grad_4_384089.pgm 
+grad_4_385022.pgm 
+grad_4_385028.pgm 
+grad_4_385039.pgm 
+grad_4_388006.pgm 
+grad_4_388016.pgm 
+grad_4_388018.pgm 
+grad_4_388067.pgm 
+grad_4_393035.pgm 
+grad_4_41004.pgm 
+grad_4_41006.pgm 
+grad_4_41025.pgm 
+grad_4_41029.pgm 
+grad_4_41033.pgm 
+grad_4_41069.pgm 
+grad_4_41085.pgm 
+grad_4_41096.pgm 
+grad_4_42012.pgm 
+grad_4_42044.pgm 
+grad_4_42049.pgm 
+grad_4_42078.pgm 
+grad_4_43033.pgm 
+grad_4_43051.pgm 
+grad_4_43070.pgm 
+grad_4_43074.pgm 
+grad_4_43083.pgm 
+grad_4_45000.pgm 
+grad_4_45077.pgm 
+grad_4_45096.pgm 
+grad_4_46076.pgm 
+grad_4_48017.pgm 
+grad_4_48025.pgm 
+grad_4_48055.pgm 
+grad_4_49024.pgm 
+grad_45000.pgm 
+grad_45077.pgm 
+grad_4_5096.pgm 
+grad_45096.pgm 
+grad_4_51084.pgm 
+grad_4_54005.pgm 
+grad_4_54082.pgm 
+grad_4_55067.pgm 
+grad_4_55073.pgm 
+grad_4_55075.pgm 
+grad_4_56028.pgm 
+grad_4_58060.pgm 
+grad_4_59078.pgm 
+grad_4_60079.pgm 
+grad_4_6046.pgm 
+grad_46076.pgm 
+grad_4_61034.pgm 
+grad_4_61060.pgm 
+grad_4_61086.pgm 
+grad_4_62096.pgm 
+grad_4_64061.pgm 
+grad_4_65010.pgm 
+grad_4_65019.pgm 
+grad_4_65033.pgm 
+grad_4_65074.pgm 
+grad_4_65084.pgm 
+grad_4_65132.pgm 
+grad_4_66039.pgm 
+grad_4_66053.pgm 
+grad_4_66075.pgm 
+grad_4_67079.pgm 
+grad_4_68077.pgm 
+grad_4_69000.pgm 
+grad_4_69007.pgm 
+grad_4_69015.pgm 
+grad_4_69020.pgm 
+grad_4_69022.pgm 
+grad_4_69040.pgm 
+grad_4_70011.pgm 
+grad_4_70090.pgm 
+grad_4_71046.pgm 
+grad_4_71076.pgm 
+grad_4_71099.pgm 
+grad_4_76002.pgm 
+grad_4_76053.pgm 
+grad_4_77062.pgm 
+grad_4_78004.pgm 
+grad_4_78019.pgm 
+grad_4_78098.pgm 
+grad_4_79073.pgm 
+grad_4_80085.pgm 
+grad_4_80090.pgm 
+grad_4_80099.pgm 
+grad_48017.pgm 
+grad_4_8023.pgm 
+grad_48025.pgm 
+grad_4_8049.pgm 
+grad_48055.pgm 
+grad_4_8068.pgm 
+grad_4_81066.pgm 
+grad_4_81090.pgm 
+grad_4_81095.pgm 
+grad_4_8143.pgm 
+grad_4_85048.pgm 
+grad_4_86000.pgm 
+grad_4_86016.pgm 
+grad_4_86068.pgm 
+grad_4_87015.pgm 
+grad_4_87046.pgm 
+grad_4_87065.pgm 
+grad_4_89072.pgm 
+grad_4_90076.pgm 
+grad_49024.pgm 
+grad_4_92014.pgm 
+grad_4_92059.pgm 
+grad_4_94079.pgm 
+grad_4_94095.pgm 
+grad_4_95006.pgm 
+grad_4_97010.pgm 
+grad_4_97017.pgm 
+grad_4_97033.pgm 
+grad_5_100007.pgm 
+grad_5_100039.pgm 
+grad_5_100075.pgm 
+grad_5_100080.pgm 
+grad_5_100098.pgm 
+grad_5_100099.pgm 
+grad_5_10081.pgm 
+grad_5_101027.pgm 
+grad_5_101084.pgm 
+grad_5_101085.pgm 
+grad_5_101087.pgm 
+grad_5_102061.pgm 
+grad_5_102062.pgm 
+grad_5_103006.pgm 
+grad_5_103029.pgm 
+grad_5_103041.pgm 
+grad_5_103070.pgm 
+grad_5_103078.pgm 
+grad_5_104010.pgm 
+grad_5_104022.pgm 
+grad_5_104055.pgm 
+grad_5_105019.pgm 
+grad_5_105025.pgm 
+grad_5_105027.pgm 
+grad_5_105053.pgm 
+grad_5_106005.pgm 
+grad_5_106020.pgm 
+grad_5_106024.pgm 
+grad_5_106025.pgm 
+grad_5_106047.pgm 
+grad_5_107014.pgm 
+grad_5_107045.pgm 
+grad_5_107072.pgm 
+grad_5_108004.pgm 
+grad_5_108005.pgm 
+grad_5_108036.pgm 
+grad_5_108041.pgm 
+grad_5_108069.pgm 
+grad_5_108070.pgm 
+grad_5_108073.pgm 
+grad_5_108082.pgm 
+grad_51084.pgm 
+grad_5_109034.pgm 
+grad_5_109053.pgm 
+grad_5_109055.pgm 
+grad_5_112056.pgm 
+grad_5_112082.pgm 
+grad_5_112090.pgm 
+grad_5_113009.pgm 
+grad_5_113016.pgm 
+grad_5_113044.pgm 
+grad_5_117025.pgm 
+grad_5_117054.pgm 
+grad_5_118015.pgm 
+grad_5_118020.pgm 
+grad_5_118031.pgm 
+grad_5_118035.pgm 
+grad_5_118072.pgm 
+grad_5_119082.pgm 
+grad_5_120003.pgm 
+grad_5_12003.pgm 
+grad_5_120093.pgm 
+grad_5_12074.pgm 
+grad_5_12084.pgm 
+grad_5_122048.pgm 
+grad_5_123057.pgm 
+grad_5_123074.pgm 
+grad_5_124084.pgm 
+grad_5_126007.pgm 
+grad_5_126039.pgm 
+grad_5_128035.pgm 
+grad_5_130014.pgm 
+grad_5_130026.pgm 
+grad_5_130034.pgm 
+grad_5_130066.pgm 
+grad_5_134008.pgm 
+grad_5_134035.pgm 
+grad_5_134049.pgm 
+grad_5_134052.pgm 
+grad_5_134067.pgm 
+grad_5_135037.pgm 
+grad_5_135069.pgm 
+grad_5_138032.pgm 
+grad_5_138078.pgm 
+grad_5_140006.pgm 
+grad_5_140055.pgm 
+grad_5_140075.pgm 
+grad_5_140088.pgm 
+grad_5_14037.pgm 
+grad_5_14085.pgm 
+grad_5_14092.pgm 
+grad_5_141012.pgm 
+grad_5_141048.pgm 
+grad_5_143090.pgm 
+grad_5_144067.pgm 
+grad_5_145014.pgm 
+grad_5_145053.pgm 
+grad_5_145059.pgm 
+grad_5_145079.pgm 
+grad_5_145086.pgm 
+grad_5_146074.pgm 
+grad_5_147021.pgm 
+grad_5_147062.pgm 
+grad_5_147077.pgm 
+grad_5_147080.pgm 
+grad_5_147091.pgm 
+grad_5_148026.pgm 
+grad_5_148089.pgm 
+grad_5_15004.pgm 
+grad_5_15011.pgm 
+grad_5_15062.pgm 
+grad_5_15088.pgm 
+grad_5_151087.pgm 
+grad_5_153077.pgm 
+grad_5_153093.pgm 
+grad_5_155060.pgm 
+grad_5_156054.pgm 
+grad_5_156065.pgm 
+grad_5_156079.pgm 
+grad_5_157032.pgm 
+grad_5_157036.pgm 
+grad_5_157055.pgm 
+grad_5_157087.pgm 
+grad_5_159002.pgm 
+grad_5_159008.pgm 
+grad_5_159022.pgm 
+grad_5_159029.pgm 
+grad_5_159045.pgm 
+grad_5_159091.pgm 
+grad_5_160006.pgm 
+grad_5_16004.pgm 
+grad_5_160067.pgm 
+grad_5_160068.pgm 
+grad_5_16052.pgm 
+grad_5_16068.pgm 
+grad_5_16077.pgm 
+grad_5_161045.pgm 
+grad_5_161062.pgm 
+grad_5_163004.pgm 
+grad_5_163014.pgm 
+grad_5_163062.pgm 
+grad_5_163085.pgm 
+grad_5_163096.pgm 
+grad_5_164046.pgm 
+grad_5_164074.pgm 
+grad_5_166081.pgm 
+grad_5_167062.pgm 
+grad_5_167083.pgm 
+grad_5_168084.pgm 
+grad_5_169012.pgm 
+grad_5_170054.pgm 
+grad_5_170057.pgm 
+grad_5_17067.pgm 
+grad_5_172032.pgm 
+grad_5_173036.pgm 
+grad_5_175032.pgm 
+grad_5_175043.pgm 
+grad_5_175083.pgm 
+grad_5_176019.pgm 
+grad_5_176035.pgm 
+grad_5_176039.pgm 
+grad_5_176051.pgm 
+grad_5_178054.pgm 
+grad_5_179084.pgm 
+grad_5_181018.pgm 
+grad_5_181021.pgm 
+grad_5_181079.pgm 
+grad_5_181091.pgm 
+grad_5_182053.pgm 
+grad_5_183055.pgm 
+grad_5_183066.pgm 
+grad_5_183087.pgm 
+grad_5_185092.pgm 
+grad_5_187003.pgm 
+grad_5_187029.pgm 
+grad_5_187039.pgm 
+grad_5_187058.pgm 
+grad_5_187071.pgm 
+grad_5_187083.pgm 
+grad_5_187099.pgm 
+grad_5_188005.pgm 
+grad_5_188025.pgm 
+grad_5_188063.pgm 
+grad_5_188091.pgm 
+grad_5_189003.pgm 
+grad_5_189006.pgm 
+grad_5_189011.pgm 
+grad_5_189013.pgm 
+grad_5_189029.pgm 
+grad_5_189080.pgm 
+grad_5_189096.pgm 
+grad_5_19021.pgm 
+grad_5_196015.pgm 
+grad_5_196027.pgm 
+grad_5_196040.pgm 
+grad_5_196062.pgm 
+grad_5_196073.pgm 
+grad_5_196088.pgm 
+grad_5_197017.pgm 
+grad_5_198004.pgm 
+grad_5_198023.pgm 
+grad_5_198054.pgm 
+grad_5_198087.pgm 
+grad_5_20008.pgm 
+grad_5_20069.pgm 
+grad_5_201080.pgm 
+grad_5_2018.pgm 
+grad_5_202000.pgm 
+grad_5_202012.pgm 
+grad_5_206062.pgm 
+grad_5_206097.pgm 
+grad_5_207038.pgm 
+grad_5_207049.pgm 
+grad_5_207056.pgm 
+grad_5_208001.pgm 
+grad_5_208078.pgm 
+grad_5_209021.pgm 
+grad_5_209070.pgm 
+grad_5_2092.pgm 
+grad_5_210088.pgm 
+grad_5_21077.pgm 
+grad_5_216041.pgm 
+grad_5_216053.pgm 
+grad_5_216066.pgm 
+grad_5_216081.pgm 
+grad_5_217013.pgm 
+grad_5_217090.pgm 
+grad_5_219090.pgm 
+grad_5_220003.pgm 
+grad_5_220075.pgm 
+grad_5_22013.pgm 
+grad_5_22090.pgm 
+grad_5_22093.pgm 
+grad_5_223004.pgm 
+grad_5_223060.pgm 
+grad_5_223061.pgm 
+grad_5_225017.pgm 
+grad_5_225022.pgm 
+grad_5_226022.pgm 
+grad_5_226033.pgm 
+grad_5_226043.pgm 
+grad_5_226060.pgm 
+grad_5_227040.pgm 
+grad_5_227046.pgm 
+grad_5_227092.pgm 
+grad_5_228076.pgm 
+grad_5_229036.pgm 
+grad_5_230063.pgm 
+grad_5_230098.pgm 
+grad_5_23025.pgm 
+grad_5_23050.pgm 
+grad_5_23080.pgm 
+grad_5_23084.pgm 
+grad_5_231015.pgm 
+grad_5_232038.pgm 
+grad_5_232076.pgm 
+grad_5_235098.pgm 
+grad_5_236017.pgm 
+grad_5_236037.pgm 
+grad_5_238011.pgm 
+grad_5_238025.pgm 
+grad_5_239007.pgm 
+grad_5_239096.pgm 
+grad_5_24004.pgm 
+grad_5_24063.pgm 
+grad_5_24077.pgm 
+grad_5_241004.pgm 
+grad_5_241048.pgm 
+grad_5_242078.pgm 
+grad_5_243095.pgm 
+grad_5_245051.pgm 
+grad_5_246009.pgm 
+grad_5_246016.pgm 
+grad_5_246053.pgm 
+grad_5_247003.pgm 
+grad_5_247012.pgm 
+grad_5_247085.pgm 
+grad_5_249021.pgm 
+grad_5_249061.pgm 
+grad_5_249087.pgm 
+grad_5_250047.pgm 
+grad_5_250087.pgm 
+grad_5_25098.pgm 
+grad_5_253016.pgm 
+grad_5_253027.pgm 
+grad_5_253036.pgm 
+grad_5_253055.pgm 
+grad_5_253092.pgm 
+grad_5_254033.pgm 
+grad_5_254054.pgm 
+grad_5_257098.pgm 
+grad_5_258089.pgm 
+grad_5_259060.pgm 
+grad_5_260058.pgm 
+grad_5_260081.pgm 
+grad_5_26031.pgm 
+grad_5_267036.pgm 
+grad_5_268002.pgm 
+grad_5_268048.pgm 
+grad_5_268074.pgm 
+grad_5_27059.pgm 
+grad_5_271008.pgm 
+grad_5_271031.pgm 
+grad_5_271035.pgm 
+grad_5_274007.pgm 
+grad_5_277053.pgm 
+grad_5_277095.pgm 
+grad_5_279005.pgm 
+grad_5_28075.pgm 
+grad_5_28083.pgm 
+grad_5_28096.pgm 
+grad_5_281017.pgm 
+grad_5_285022.pgm 
+grad_5_285036.pgm 
+grad_5_285079.pgm 
+grad_5_286092.pgm 
+grad_5_288024.pgm 
+grad_5_289011.pgm 
+grad_5_290035.pgm 
+grad_5_29030.pgm 
+grad_5_291000.pgm 
+grad_5_292066.pgm 
+grad_5_293029.pgm 
+grad_5_295087.pgm 
+grad_5_296007.pgm 
+grad_5_296028.pgm 
+grad_5_296058.pgm 
+grad_5_296059.pgm 
+grad_5_299086.pgm 
+grad_5_299091.pgm 
+grad_5_300091.pgm 
+grad_5_301007.pgm 
+grad_5_302003.pgm 
+grad_5_302008.pgm 
+grad_5_302022.pgm 
+grad_5_304034.pgm 
+grad_5_304074.pgm 
+grad_5_306005.pgm 
+grad_5_306051.pgm 
+grad_5_306052.pgm 
+grad_5_3063.pgm 
+grad_5_309004.pgm 
+grad_5_309040.pgm 
+grad_5_3096.pgm 
+grad_5_310007.pgm 
+grad_5_311068.pgm 
+grad_5_311081.pgm 
+grad_5_314016.pgm 
+grad_5_317043.pgm 
+grad_5_317080.pgm 
+grad_5_323016.pgm 
+grad_5_326025.pgm 
+grad_5_326038.pgm 
+grad_5_326085.pgm 
+grad_5_33039.pgm 
+grad_5_33044.pgm 
+grad_5_33066.pgm 
+grad_5_334025.pgm 
+grad_5_335088.pgm 
+grad_5_335094.pgm 
+grad_5_344010.pgm 
+grad_5_346016.pgm 
+grad_5_347031.pgm 
+grad_5_35008.pgm 
+grad_5_35010.pgm 
+grad_5_35028.pgm 
+grad_5_35049.pgm 
+grad_5_35058.pgm 
+grad_5_35070.pgm 
+grad_5_35091.pgm 
+grad_5_351093.pgm 
+grad_5_353013.pgm 
+grad_5_36046.pgm 
+grad_5_361010.pgm 
+grad_5_361084.pgm 
+grad_5_365025.pgm 
+grad_5_365072.pgm 
+grad_5_365073.pgm 
+grad_5_368016.pgm 
+grad_5_368037.pgm 
+grad_5_368078.pgm 
+grad_5_370036.pgm 
+grad_5_37073.pgm 
+grad_5_372019.pgm 
+grad_5_372047.pgm 
+grad_5_374020.pgm 
+grad_5_374067.pgm 
+grad_5_376001.pgm 
+grad_5_376020.pgm 
+grad_5_376043.pgm 
+grad_5_376086.pgm 
+grad_5_38082.pgm 
+grad_5_38092.pgm 
+grad_5_384022.pgm 
+grad_5_384089.pgm 
+grad_5_385022.pgm 
+grad_5_385028.pgm 
+grad_5_385039.pgm 
+grad_5_388006.pgm 
+grad_5_388016.pgm 
+grad_5_388018.pgm 
+grad_5_388067.pgm 
+grad_5_393035.pgm 
+grad_54005.pgm 
+grad_54082.pgm 
+grad_5_41004.pgm 
+grad_5_41006.pgm 
+grad_5_41025.pgm 
+grad_5_41029.pgm 
+grad_5_41033.pgm 
+grad_5_41069.pgm 
+grad_5_41085.pgm 
+grad_5_41096.pgm 
+grad_5_42012.pgm 
+grad_5_42044.pgm 
+grad_5_42049.pgm 
+grad_5_42078.pgm 
+grad_5_43033.pgm 
+grad_5_43051.pgm 
+grad_5_43070.pgm 
+grad_5_43074.pgm 
+grad_5_43083.pgm 
+grad_5_45000.pgm 
+grad_5_45077.pgm 
+grad_5_45096.pgm 
+grad_5_46076.pgm 
+grad_5_48017.pgm 
+grad_5_48025.pgm 
+grad_5_48055.pgm 
+grad_5_49024.pgm 
+grad_55067.pgm 
+grad_55073.pgm 
+grad_55075.pgm 
+grad_5_5096.pgm 
+grad_5_51084.pgm 
+grad_5_54005.pgm 
+grad_5_54082.pgm 
+grad_5_55067.pgm 
+grad_5_55073.pgm 
+grad_5_55075.pgm 
+grad_5_56028.pgm 
+grad_5_58060.pgm 
+grad_5_59078.pgm 
+grad_5_60079.pgm 
+grad_56028.pgm 
+grad_5_6046.pgm 
+grad_5_61034.pgm 
+grad_5_61060.pgm 
+grad_5_61086.pgm 
+grad_5_62096.pgm 
+grad_5_64061.pgm 
+grad_5_65010.pgm 
+grad_5_65019.pgm 
+grad_5_65033.pgm 
+grad_5_65074.pgm 
+grad_5_65084.pgm 
+grad_5_65132.pgm 
+grad_5_66039.pgm 
+grad_5_66053.pgm 
+grad_5_66075.pgm 
+grad_5_67079.pgm 
+grad_5_68077.pgm 
+grad_5_69000.pgm 
+grad_5_69007.pgm 
+grad_5_69015.pgm 
+grad_5_69020.pgm 
+grad_5_69022.pgm 
+grad_5_69040.pgm 
+grad_5_70011.pgm 
+grad_5_70090.pgm 
+grad_5_71046.pgm 
+grad_5_71076.pgm 
+grad_5_71099.pgm 
+grad_5_76002.pgm 
+grad_5_76053.pgm 
+grad_5_77062.pgm 
+grad_5_78004.pgm 
+grad_5_78019.pgm 
+grad_5_78098.pgm 
+grad_5_79073.pgm 
+grad_5_80085.pgm 
+grad_5_80090.pgm 
+grad_5_80099.pgm 
+grad_5_8023.pgm 
+grad_5_8049.pgm 
+grad_58060.pgm 
+grad_5_8068.pgm 
+grad_5_81066.pgm 
+grad_5_81090.pgm 
+grad_5_81095.pgm 
+grad_5_8143.pgm 
+grad_5_85048.pgm 
+grad_5_86000.pgm 
+grad_5_86016.pgm 
+grad_5_86068.pgm 
+grad_5_87015.pgm 
+grad_5_87046.pgm 
+grad_5_87065.pgm 
+grad_5_89072.pgm 
+grad_5_90076.pgm 
+grad_59078.pgm 
+grad_5_92014.pgm 
+grad_5_92059.pgm 
+grad_5_94079.pgm 
+grad_5_94095.pgm 
+grad_5_95006.pgm 
+grad_5_97010.pgm 
+grad_5_97017.pgm 
+grad_5_97033.pgm 
+grad_60079.pgm 
+grad_6046.pgm 
+grad_61034.pgm 
+grad_61060.pgm 
+grad_61086.pgm 
+grad_62096.pgm 
+grad_64061.pgm 
+grad_65010.pgm 
+grad_65019.pgm 
+grad_65033.pgm 
+grad_65074.pgm 
+grad_65084.pgm 
+grad_65132.pgm 
+grad_66039.pgm 
+grad_66053.pgm 
+grad_66075.pgm 
+grad_67079.pgm 
+grad_68077.pgm 
+grad_69000.pgm 
+grad_69007.pgm 
+grad_69015.pgm 
+grad_69020.pgm 
+grad_69022.pgm 
+grad_69040.pgm 
+grad_70011.pgm 
+grad_70090.pgm 
+grad_71046.pgm 
+grad_71076.pgm 
+grad_71099.pgm 
+grad_76002.pgm 
+grad_76053.pgm 
+grad_77062.pgm 
+grad_78004.pgm 
+grad_78019.pgm 
+grad_78098.pgm 
+grad_79073.pgm 
+grad_80085.pgm 
+grad_80090.pgm 
+grad_80099.pgm 
+grad_8023.pgm 
+grad_8049.pgm 
+grad_8068.pgm 
+grad_81066.pgm 
+grad_81090.pgm 
+grad_81095.pgm 
+grad_8143.pgm 
+grad_85048.pgm 
+grad_86000.pgm 
+grad_86016.pgm 
+grad_86068.pgm 
+grad_87015.pgm 
+grad_87046.pgm 
+grad_87065.pgm 
+grad_89072.pgm 
+grad_90076.pgm 
+grad_92014.pgm 
+grad_92059.pgm 
+grad_94079.pgm 
+grad_94095.pgm 
+grad_95006.pgm 
+grad_97010.pgm 
+grad_97017.pgm 
+grad_97033.pgm 
+Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+max_width_height:481  MAX_THREADS: 256 num_blocks:2 threads:256
+Time for all transpose: 158.374 seconds
+Time to execute DT: 121.079 secs
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:253.00 min:0.00 s=16.03
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:251.00 min:0.00 s=16.10
+max:243.00 min:0.00 s=16.36
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:253.00 min:0.00 s=16.03
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:251.00 min:0.00 s=16.10
+max:243.00 min:0.00 s=16.36
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:251.00 min:0.00 s=16.10
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:253.00 min:0.00 s=16.03
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:240.00 min:0.00 s=16.46
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:251.00 min:0.00 s=16.10
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:253.00 min:0.00 s=16.03
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:251.00 min:0.00 s=16.10
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:244.00 min:0.00 s=16.32
+max:252.00 min:0.00 s=16.06
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:249.00 min:0.00 s=16.16
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:253.00 min:0.00 s=16.03
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:252.00 min:0.00 s=16.06
+max:255.00 min:0.00 s=15.97
+max:252.00 min:0.00 s=16.06
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:240.00 min:0.00 s=16.46
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:253.00 min:0.00 s=16.03
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:249.00 min:0.00 s=16.16
+max:253.00 min:0.00 s=16.03
+max:253.00 min:0.00 s=16.03
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:253.00 min:0.00 s=16.03
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:253.00 min:0.00 s=16.03
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:253.00 min:0.00 s=16.03
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:251.00 min:0.00 s=16.10
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:238.00 min:0.00 s=16.53
+max:253.00 min:0.00 s=16.03
+max:254.00 min:0.00 s=16.00
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:244.00 min:0.00 s=16.32
+max:252.00 min:0.00 s=16.06
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:247.00 min:0.00 s=16.23
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:238.00 min:0.00 s=16.53
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:253.00 min:0.00 s=16.03
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:252.00 min:0.00 s=16.06
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:251.00 min:0.00 s=16.10
+max:251.00 min:0.00 s=16.10
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:249.00 min:0.00 s=16.16
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:253.00 min:0.00 s=16.03
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:251.00 min:0.00 s=16.10
+max:255.00 min:0.00 s=15.97
+max:243.00 min:0.00 s=16.36
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:251.00 min:0.00 s=16.10
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:253.00 min:0.00 s=16.03
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:240.00 min:0.00 s=16.46
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:253.00 min:0.00 s=16.03
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:251.00 min:0.00 s=16.10
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:244.00 min:0.00 s=16.32
+max:252.00 min:0.00 s=16.06
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:249.00 min:0.00 s=16.16
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:252.00 min:0.00 s=16.06
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:252.00 min:0.00 s=16.06
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:253.00 min:0.00 s=16.03
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:249.00 min:0.00 s=16.16
+max:253.00 min:0.00 s=16.03
+max:253.00 min:0.00 s=16.03
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:253.00 min:0.00 s=16.03
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:253.00 min:0.00 s=16.03
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:238.00 min:0.00 s=16.53
+max:253.00 min:0.00 s=16.03
+max:254.00 min:0.00 s=16.00
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:252.00 min:0.00 s=16.06
+max:255.00 min:0.00 s=15.97
+max:252.00 min:0.00 s=16.06
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:247.00 min:0.00 s=16.23
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:238.00 min:0.00 s=16.53
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:253.00 min:0.00 s=16.03
+max:255.00 min:0.00 s=15.97
+max:252.00 min:0.00 s=16.06
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:251.00 min:0.00 s=16.10
+max:251.00 min:0.00 s=16.10
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:253.00 min:0.00 s=16.03
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:253.00 min:0.00 s=16.03
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:251.00 min:0.00 s=16.10
+max:243.00 min:0.00 s=16.36
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:249.00 min:0.00 s=16.16
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:251.00 min:0.00 s=16.10
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:253.00 min:0.00 s=16.03
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:240.00 min:0.00 s=16.46
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:253.00 min:0.00 s=16.03
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:253.00 min:0.00 s=16.03
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:251.00 min:0.00 s=16.10
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:253.00 min:0.00 s=16.03
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:244.00 min:0.00 s=16.32
+max:252.00 min:0.00 s=16.06
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:249.00 min:0.00 s=16.16
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:252.00 min:0.00 s=16.06
+max:255.00 min:0.00 s=15.97
+max:252.00 min:0.00 s=16.06
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:253.00 min:0.00 s=16.03
+max:255.00 min:0.00 s=15.97
+max:253.00 min:0.00 s=16.03
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:249.00 min:0.00 s=16.16
+max:253.00 min:0.00 s=16.03
+max:253.00 min:0.00 s=16.03
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:253.00 min:0.00 s=16.03
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:253.00 min:0.00 s=16.03
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:253.00 min:0.00 s=16.03
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:238.00 min:0.00 s=16.53
+max:253.00 min:0.00 s=16.03
+max:254.00 min:0.00 s=16.00
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:247.00 min:0.00 s=16.23
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:238.00 min:0.00 s=16.53
+max:255.00 min:0.00 s=15.97
+max:253.00 min:0.00 s=16.03
+max:255.00 min:0.00 s=15.97
+max:252.00 min:0.00 s=16.06
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:251.00 min:0.00 s=16.10
+max:251.00 min:0.00 s=16.10
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:253.00 min:0.00 s=16.03
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:251.00 min:0.00 s=16.10
+max:243.00 min:0.00 s=16.36
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:251.00 min:0.00 s=16.10
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:253.00 min:0.00 s=16.03
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:240.00 min:0.00 s=16.46
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:253.00 min:0.00 s=16.03
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:251.00 min:0.00 s=16.10
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:244.00 min:0.00 s=16.32
+max:252.00 min:0.00 s=16.06
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:249.00 min:0.00 s=16.16
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:252.00 min:0.00 s=16.06
+max:255.00 min:0.00 s=15.97
+max:252.00 min:0.00 s=16.06
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:253.00 min:0.00 s=16.03
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:249.00 min:0.00 s=16.16
+max:253.00 min:0.00 s=16.03
+max:253.00 min:0.00 s=16.03
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:253.00 min:0.00 s=16.03
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:253.00 min:0.00 s=16.03
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:238.00 min:0.00 s=16.53
+max:253.00 min:0.00 s=16.03
+max:254.00 min:0.00 s=16.00
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:247.00 min:0.00 s=16.23
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:238.00 min:0.00 s=16.53
+max:255.00 min:0.00 s=15.97
+max:253.00 min:0.00 s=16.03
+max:255.00 min:0.00 s=15.97
+max:252.00 min:0.00 s=16.06
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:251.00 min:0.00 s=16.10
+max:251.00 min:0.00 s=16.10
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:253.00 min:0.00 s=16.03
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:251.00 min:0.00 s=16.10
+max:243.00 min:0.00 s=16.36
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:251.00 min:0.00 s=16.10
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:253.00 min:0.00 s=16.03
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:240.00 min:0.00 s=16.46
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:253.00 min:0.00 s=16.03
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:251.00 min:0.00 s=16.10
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:244.00 min:0.00 s=16.32
+max:252.00 min:0.00 s=16.06
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:249.00 min:0.00 s=16.16
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:252.00 min:0.00 s=16.06
+max:255.00 min:0.00 s=15.97
+max:252.00 min:0.00 s=16.06
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:253.00 min:0.00 s=16.03
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:249.00 min:0.00 s=16.16
+max:253.00 min:0.00 s=16.03
+max:253.00 min:0.00 s=16.03
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:253.00 min:0.00 s=16.03
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:253.00 min:0.00 s=16.03
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:238.00 min:0.00 s=16.53
+max:253.00 min:0.00 s=16.03
+max:254.00 min:0.00 s=16.00
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:247.00 min:0.00 s=16.23
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:238.00 min:0.00 s=16.53
+max:255.00 min:0.00 s=15.97
+max:253.00 min:0.00 s=16.03
+max:255.00 min:0.00 s=15.97
+max:252.00 min:0.00 s=16.06
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:251.00 min:0.00 s=16.10
+max:251.00 min:0.00 s=16.10
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:238.00 min:0.00 s=16.53
+max:253.00 min:0.00 s=16.03
+max:254.00 min:0.00 s=16.00
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:254.00 min:0.00 s=16.00
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:247.00 min:0.00 s=16.23
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:238.00 min:0.00 s=16.53
+max:255.00 min:0.00 s=15.97
+max:253.00 min:0.00 s=16.03
+max:255.00 min:0.00 s=15.97
+max:252.00 min:0.00 s=16.06
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:251.00 min:0.00 s=16.10
+max:251.00 min:0.00 s=16.10
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+max:255.00 min:0.00 s=15.97
+0=20.0 1=1.0 2=2.0 3=23.0 4=4.0 
+========= CUDA-MEMCHECK
+========= ERROR SUMMARY: 0 errors
+
+=== Done! ===

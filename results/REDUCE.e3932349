@@ -1,0 +1,32 @@
+==17700== NVPROF is profiling process 17700, command: ./naive2 test.pgm out_test.pgm
+==17700== Profiling application: ./naive2 test.pgm out_test.pgm
+==17700== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 92.97%  16.3342s         4  4.08356s  3.97674s  4.19355s  kernel_all_pix_float(float*, float*, unsigned int, unsigned int)
+  3.92%  687.81ms         2  343.90ms  2.8480us  687.81ms  [CUDA memcpy DtoH]
+  2.60%  457.04ms      6002  76.148us  1.6950us  446.45ms  [CUDA memcpy HtoD]
+  0.51%  89.363ms      6000  14.893us  14.351us  16.461us  void transpose_readWrite_alignment_kernel<float, int=1, bool=0, int=6, int=5, int=3>(cublasTransposeParams<float>, float const *, float*, float const *)
+  0.00%  8.0500us         2  4.0250us  3.2220us  4.8280us  kernel_thresh(float*, float*, unsigned int)
+
+==17700== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 89.08%  16.3343s         6  2.72238s  9.0210us  4.19356s  cudaThreadSynchronize
+  6.57%  1.20557s      6004  200.79us  10.318us  688.40ms  cudaMemcpy
+  2.12%  388.87ms     18004  21.599us  3.4060us  143.04ms  cudaMalloc
+  1.17%  215.22ms      6000  35.870us     506ns  211.25ms  cudaFree
+  0.40%  72.460ms      6006  12.064us  9.6380us  643.34us  cudaLaunch
+  0.32%  58.284ms     48000  1.2140us     729ns  437.57us  cudaEventCreateWithFlags
+  0.17%  31.772ms     60000     529ns     412ns  441.81us  cudaDeviceGetAttribute
+  0.04%  7.2870ms     24022     303ns     197ns  400.19us  cudaSetupArgument
+  0.04%  6.5112ms       664  9.8060us     203ns  953.29us  cuDeviceGetAttribute
+  0.03%  5.0723ms      6000     845ns     705ns  8.5080us  cudaGetDevice
+  0.02%  3.8228ms         4  955.71us  651.66us  1.5357ms  cudaGetDeviceProperties
+  0.02%  3.6990ms     12000     308ns     214ns  6.4690us  cudaGetLastError
+  0.01%  2.0275ms      6006     337ns     255ns  5.8010us  cudaConfigureCall
+  0.00%  590.26us         8  73.782us  70.242us  78.078us  cuDeviceTotalMem
+  0.00%  505.15us         8  63.143us  59.476us  68.865us  cuDeviceGetName
+  0.00%  4.3020us        12     358ns     262ns     625ns  cuDeviceGet
+  0.00%  3.2160us         3  1.0720us     388ns  2.4250us  cuDeviceGetCount
+  0.00%  2.6410us         1  2.6410us  2.6410us  2.6410us  cudaGetDeviceCount
+  0.00%     761ns         1     761ns     761ns     761ns  cuInit
+  0.00%     562ns         1     562ns     562ns     562ns  cuDriverGetVersion

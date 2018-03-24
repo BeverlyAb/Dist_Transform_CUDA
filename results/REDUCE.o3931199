@@ -1,0 +1,50 @@
+Script began: Thu Mar 22 03:31:14 PDT 2018
+Node: compute-1-14.local
+Current directory: /data/users/jbhanush/Project/h3n
+
+=== Running 5 trials of naive ... ===
+*** Trial 1 ***
+======== NVPROF is profiling naive2...
+======== Command: naive2 test.pgm out_test.pgm
+Device Number: 0
+  Device name: Tesla M2090
+  Memory Clock Rate (KHz): 1848000
+  Memory Bus Width (bits): 384
+  Peak Memory Bandwidth (GB/s): 177.408000
+
+ Shared Memory per block(bytes): 49152
+Total memory available(bytes): 65536
+Device Number: 1
+  Device name: Tesla M2090
+  Memory Clock Rate (KHz): 1848000
+  Memory Bus Width (bits): 384
+  Peak Memory Bandwidth (GB/s): 177.408000
+
+ Shared Memory per block(bytes): 49152
+Total memory available(bytes): 65536
+Device Number: 2
+  Device name: Tesla M2090
+  Memory Clock Rate (KHz): 1848000
+  Memory Bus Width (bits): 384
+  Peak Memory Bandwidth (GB/s): 177.408000
+
+ Shared Memory per block(bytes): 49152
+Total memory available(bytes): 65536
+Device Number: 3
+  Device name: Tesla M2090
+  Memory Clock Rate (KHz): 1848000
+  Memory Bus Width (bits): 384
+  Peak Memory Bandwidth (GB/s): 177.408000
+
+ Shared Memory per block(bytes): 49152
+Total memory available(bytes): 65536
+3002Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+max_width_height:481  MAX_THREADS: 256 num_blocks:2 threads:256
+======== Profiling result:
+ Time(%)      Time   Calls       Avg       Min       Max  Name
+   96.05    12.50s       2     6.25s     6.25s     6.25s  kernel_all_pix_float(float*, float*, unsigned int, unsigned int)
+    3.65  474.90ms    2615  181.60us    1.70us  462.57ms  [CUDA memcpy HtoD]
+    0.30   39.18ms    2614   14.99us   13.91us   16.39us  void transpose_readWrite_alignment_kernel<float, int=1, bool=0, int=6, int=5, int=3>(cublasTransposeParams<float>)
+
+=== Done! ===

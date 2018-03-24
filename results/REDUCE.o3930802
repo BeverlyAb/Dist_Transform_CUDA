@@ -1,0 +1,16 @@
+Script began: Thu Mar 22 02:35:14 PDT 2018
+Node: compute-1-14.local
+Current directory: /data/users/jbhanush/Project/h3n
+
+=== Running 5 trials of naive ... ===
+*** Trial 1 ***
+3002Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+max_width_height:481  MAX_THREADS: 256 num_blocks:2 threads:256
+Time for  transpose: 158.051 53.8662 seconds
+Time to execute DT: 0.000109 secs
+0=20.0 1=1.0 2=2.0 3=23.0 4=4.0 
+========= CUDA-MEMCHECK
+========= ERROR SUMMARY: 0 errors
+
+=== Done! ===

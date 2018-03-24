@@ -1,0 +1,18 @@
+CUBLAS error in file 'naive.cu', line 45
+ 
+error 1 
+terminating!
+naive2: naive.cu:48: void __cublasSafeCall(cublasStatus_t, const char*, int): Assertion `0' failed.
+========= Error: process didn't terminate successfully
+CUBLAS error in file 'naive.cu', line 45
+ 
+error 1 
+terminating!
+naive2: naive.cu:48: void __cublasSafeCall(cublasStatus_t, const char*, int): Assertion `0' failed.
+========= Error: process didn't terminate successfully
+CUBLAS error in file 'naive.cu', line 45
+ 
+error 1 
+terminating!
+naive2: naive.cu:48: void __cublasSafeCall(cublasStatus_t, const char*, int): Assertion `0' failed.
+========= Error: process didn't terminate successfully

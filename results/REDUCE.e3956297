@@ -1,0 +1,18 @@
+CUBLAS error in file 'naive.cu', line 45
+ 
+error 1 
+terminating!
+naive2: naive.cu:48: void __cublasSafeCall(cublasStatus_t, const char*, int): Assertion `0' failed.
+/var/spool/sge/compute-1-14/job_scripts/3956297: line 43: 12827 Aborted                 (core dumped) ./naive2 2 out_test.pgm
+CUBLAS error in file 'naive.cu', line 45
+ 
+error 1 
+terminating!
+naive2: naive.cu:48: void __cublasSafeCall(cublasStatus_t, const char*, int): Assertion `0' failed.
+/var/spool/sge/compute-1-14/job_scripts/3956297: line 43: 12837 Aborted                 (core dumped) ./naive2 2 out_test.pgm
+CUBLAS error in file 'naive.cu', line 45
+ 
+error 1 
+terminating!
+naive2: naive.cu:48: void __cublasSafeCall(cublasStatus_t, const char*, int): Assertion `0' failed.
+/var/spool/sge/compute-1-14/job_scripts/3956297: line 43: 12841 Aborted                 (core dumped) ./naive2 2 out_test.pgm

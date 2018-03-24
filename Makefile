@@ -1,9 +1,5 @@
-naive: naive.cu timer.c
-	nvcc  -G -g -lcublas naive.cu timer.c -o naive2
-
-
-cdt: naive.cu timer.c
-	nvcc -I. naive.cu timer.c -o naive
+dt: naive.cu timer.c
+	nvcc  -G -g -lcublas naive.cu timer.c -o dt
 
 run:
 	qsub cuda2.sh

@@ -1,8 +1,8 @@
 #!/bin/bash
-#$ -N REDUCE
+#$ -N DT
 #$ -q gpu
 #$ -l gpu=1
-#$ -pe gpu-node-cores 2
+#$ -pe gpu-node-cores 6
 
 # Notes: 
 # The GPU node (compute-1-14) has 4 Tesla M2090 GPU cards. The node also
@@ -39,12 +39,12 @@ echo "Node:" `hostname`
 echo "Current directory: ${PWD}"
 
 echo ""
-echo "=== Running 5 trials of naive ... ==="
-for trial in 1 ; do
+echo "=== Running 5 trials of Sampled Distance Transform... ==="
+for trial in 1 2 3; do
   echo "*** Trial ${trial} ***"
 #  nvprof ./naive input.pgm out.pgm
 #  cuda-memcheck ./naive dog3.pgm out_dog3.pgm
-   ./naive2 test.pgm out_test.pgm
+   ./dt
 done
 
 echo ""

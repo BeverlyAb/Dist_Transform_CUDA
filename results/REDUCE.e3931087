@@ -1,0 +1,6 @@
+CUBLAS error in file 'naive.cu', line 45
+ 
+error 1 
+terminating!
+naive2: naive.cu:48: void __cublasSafeCall(cublasStatus_t, const char*, int): Assertion `0' failed.
+======== Warning: Application received signal 134

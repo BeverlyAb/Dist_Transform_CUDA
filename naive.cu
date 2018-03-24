@@ -230,10 +230,6 @@ int
 main(int argc, char** argv)
 {
   
-  if (argc != 3) {
-    fprintf(stderr, "usage: %s input(pbm) output(pgm)\n", argv[0]);
-    return 1;
-  }
   //char *input_name = argv[1];
   //char *output_name = argv[2];
 //---Print device properties----//

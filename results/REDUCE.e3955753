@@ -1,0 +1,4 @@
+./naive2: error while loading shared libraries: libcublas.so.6.5: cannot open shared object file: No such file or directory
+./naive2: error while loading shared libraries: libcublas.so.6.5: cannot open shared object file: No such file or directory
+./naive2: error while loading shared libraries: libcublas.so.6.5: cannot open shared object file: No such file or directory
+./naive2: error while loading shared libraries: libcublas.so.6.5: cannot open shared object file: No such file or directory

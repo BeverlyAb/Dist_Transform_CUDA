@@ -1,0 +1,167 @@
+Script began: Fri Mar 23 18:18:39 PDT 2018
+Node: compute-1-14.local
+Current directory: /data/users/jbhanush/Project/h3n
+
+=== Running 5 trials of naive ... ===
+*** Trial 1 ***
+Device Number: 0
+  Device name: Tesla M2090
+  Memory Clock Rate (KHz): 1848000
+  Memory Bus Width (bits): 384
+  Peak Memory Bandwidth (GB/s): 177.408000
+
+ Shared Memory per block(bytes): 49152
+Total memory available(bytes): 65536
+Device Number: 1
+  Device name: Tesla M2090
+  Memory Clock Rate (KHz): 1848000
+  Memory Bus Width (bits): 384
+  Peak Memory Bandwidth (GB/s): 177.408000
+
+ Shared Memory per block(bytes): 49152
+Total memory available(bytes): 65536
+Device Number: 2
+  Device name: Tesla M2090
+  Memory Clock Rate (KHz): 1848000
+  Memory Bus Width (bits): 384
+  Peak Memory Bandwidth (GB/s): 177.408000
+
+ Shared Memory per block(bytes): 49152
+Total memory available(bytes): 65536
+Device Number: 3
+  Device name: Tesla M2090
+  Memory Clock Rate (KHz): 1848000
+  Memory Bus Width (bits): 384
+  Peak Memory Bandwidth (GB/s): 177.408000
+
+ Shared Memory per block(bytes): 49152
+Total memory available(bytes): 65536
+3002Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+max_width_height:481  MAX_THREADS: 256 num_blocks:2 threads:256
+Time for  transpose: 1.37449 0.569667 seconds
+Time to execute DT: 11.6422 secs
+Total time: 13.5864 secs
+0=20.0 1=1.0 2=2.0 3=23.0 4=4.0 
+*** Trial 2 ***
+Device Number: 0
+  Device name: Tesla M2090
+  Memory Clock Rate (KHz): 1848000
+  Memory Bus Width (bits): 384
+  Peak Memory Bandwidth (GB/s): 177.408000
+
+ Shared Memory per block(bytes): 49152
+Total memory available(bytes): 65536
+Device Number: 1
+  Device name: Tesla M2090
+  Memory Clock Rate (KHz): 1848000
+  Memory Bus Width (bits): 384
+  Peak Memory Bandwidth (GB/s): 177.408000
+
+ Shared Memory per block(bytes): 49152
+Total memory available(bytes): 65536
+Device Number: 2
+  Device name: Tesla M2090
+  Memory Clock Rate (KHz): 1848000
+  Memory Bus Width (bits): 384
+  Peak Memory Bandwidth (GB/s): 177.408000
+
+ Shared Memory per block(bytes): 49152
+Total memory available(bytes): 65536
+Device Number: 3
+  Device name: Tesla M2090
+  Memory Clock Rate (KHz): 1848000
+  Memory Bus Width (bits): 384
+  Peak Memory Bandwidth (GB/s): 177.408000
+
+ Shared Memory per block(bytes): 49152
+Total memory available(bytes): 65536
+3002Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+max_width_height:481  MAX_THREADS: 256 num_blocks:2 threads:256
+Time for  transpose: 1.38694 0.573704 seconds
+Time to execute DT: 11.6486 secs
+Total time: 13.6093 secs
+0=20.0 1=1.0 2=2.0 3=23.0 4=4.0 
+*** Trial 32 ***
+Device Number: 0
+  Device name: Tesla M2090
+  Memory Clock Rate (KHz): 1848000
+  Memory Bus Width (bits): 384
+  Peak Memory Bandwidth (GB/s): 177.408000
+
+ Shared Memory per block(bytes): 49152
+Total memory available(bytes): 65536
+Device Number: 1
+  Device name: Tesla M2090
+  Memory Clock Rate (KHz): 1848000
+  Memory Bus Width (bits): 384
+  Peak Memory Bandwidth (GB/s): 177.408000
+
+ Shared Memory per block(bytes): 49152
+Total memory available(bytes): 65536
+Device Number: 2
+  Device name: Tesla M2090
+  Memory Clock Rate (KHz): 1848000
+  Memory Bus Width (bits): 384
+  Peak Memory Bandwidth (GB/s): 177.408000
+
+ Shared Memory per block(bytes): 49152
+Total memory available(bytes): 65536
+Device Number: 3
+  Device name: Tesla M2090
+  Memory Clock Rate (KHz): 1848000
+  Memory Bus Width (bits): 384
+  Peak Memory Bandwidth (GB/s): 177.408000
+
+ Shared Memory per block(bytes): 49152
+Total memory available(bytes): 65536
+3002Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+max_width_height:481  MAX_THREADS: 256 num_blocks:2 threads:256
+Time for  transpose: 1.42661 0.57047 seconds
+Time to execute DT: 11.6454 secs
+Total time: 13.6424 secs
+0=20.0 1=1.0 2=2.0 3=23.0 4=4.0 
+*** Trial 3 ***
+Device Number: 0
+  Device name: Tesla M2090
+  Memory Clock Rate (KHz): 1848000
+  Memory Bus Width (bits): 384
+  Peak Memory Bandwidth (GB/s): 177.408000
+
+ Shared Memory per block(bytes): 49152
+Total memory available(bytes): 65536
+Device Number: 1
+  Device name: Tesla M2090
+  Memory Clock Rate (KHz): 1848000
+  Memory Bus Width (bits): 384
+  Peak Memory Bandwidth (GB/s): 177.408000
+
+ Shared Memory per block(bytes): 49152
+Total memory available(bytes): 65536
+Device Number: 2
+  Device name: Tesla M2090
+  Memory Clock Rate (KHz): 1848000
+  Memory Bus Width (bits): 384
+  Peak Memory Bandwidth (GB/s): 177.408000
+
+ Shared Memory per block(bytes): 49152
+Total memory available(bytes): 65536
+Device Number: 3
+  Device name: Tesla M2090
+  Memory Clock Rate (KHz): 1848000
+  Memory Bus Width (bits): 384
+  Peak Memory Bandwidth (GB/s): 177.408000
+
+ Shared Memory per block(bytes): 49152
+Total memory available(bytes): 65536
+3002Timer: gettimeofday
+Timer resolution: ~ 1 us (?)
+max_width_height:481  MAX_THREADS: 256 num_blocks:2 threads:256
+Time for  transpose: 1.37908 0.567795 seconds
+Time to execute DT: 11.6482 secs
+Total time: 13.5951 secs
+0=20.0 1=1.0 2=2.0 3=23.0 4=4.0 
+
+=== Done! ===

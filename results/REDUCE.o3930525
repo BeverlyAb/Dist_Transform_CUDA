@@ -1,0 +1,20 @@
+Script began: Thu Mar 22 01:58:15 PDT 2018
+Node: compute-1-14.local
+Current directory: /data/users/jbhanush/Project/h3n
+
+=== Running 5 trials of naive ... ===
+*** Trial 1 ***
+3002out of memory in naive.cu at line 262
+========= CUDA-MEMCHECK
+========= Program hit error 2 on CUDA API call to cudaMalloc 
+=========     Saved host backtrace up to driver entry point at error
+=========     Host Frame:/usr/lib64/libcuda.so.1 [0x2e40d3]
+=========     Host Frame:/data/apps/cuda/5.0/lib64/libcudart.so.5.0 (cudaMalloc + 0x22c) [0x376dc]
+=========     Host Frame:./naive2 [0x68dd]
+=========     Host Frame:./naive2 [0x4884]
+=========     Host Frame:/lib64/libc.so.6 (__libc_start_main + 0xfd) [0x1ed1d]
+=========     Host Frame:./naive2 [0x2429]
+=========
+========= ERROR SUMMARY: 1 error
+
+=== Done! ===
